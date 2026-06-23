@@ -1,20 +1,20 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-23T14:55:46.027Z
+Generated: 2026-06-23T15:13:34.604Z
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,405,288 |
-| Unique rules after dedup | 1,169,622 |
-| Duplicates removed | 235,666 |
+| Total rules parsed | 1,405,322 |
+| Unique rules after dedup | 1,169,623 |
+| Duplicates removed | 235,699 |
 | Invalid rules | N/A |
 | Sources processed | 24 |
 
 ## Rule Type Distribution
 
-- network: 1,071,020
+- network: 1,071,021
 - generic-hide: 389
 - script: 2,814
 - image: 1,301
@@ -45,7 +45,7 @@ Generated: 2026-06-23T14:55:46.027Z
 
 ## Category Distribution
 
-- ads: 265,061
+- ads: 265,065
 - annoyances: 54,397
 - social: 19,694
 - ads-regional: 19,631
@@ -82,7 +82,7 @@ Generated: 2026-06-23T14:55:46.027Z
 - run.app: 777
 - intellitxt.com: 752
 - co.jp: 590
-- wixstudio.com: 499
+- wixstudio.com: 495
 - co.kr: 484
 - ero-advertising.com: 393
 - com.cn: 376

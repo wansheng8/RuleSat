@@ -1,13 +1,13 @@
 {
   "mode": "all",
-  "elapsed": "92.9s",
+  "elapsed": "84.5s",
   "fetchedCount": 24,
-  "totalParsed": 1405288,
-  "totalUnique": 1169622,
-  "duplicatesRemoved": 235666,
+  "totalParsed": 1405322,
+  "totalUnique": 1169623,
+  "duplicatesRemoved": 235699,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1071020,
+    "network": 1071021,
     "generic-hide": 389,
     "script": 2814,
     "image": 1301,
@@ -37,7 +37,7 @@
     "important": 42
   },
   "categories": {
-    "ads": 265061,
+    "ads": 265065,
     "annoyances": 54397,
     "social": 19694,
     "ads-regional": 19631,
@@ -108,7 +108,7 @@
     ],
     [
       "wixstudio.com",
-      499
+      495
     ],
     [
       "co.kr",

@@ -1,13 +1,13 @@
 {
   "mode": "all",
-  "elapsed": "90.8s",
+  "elapsed": "88.3s",
   "fetchedCount": 24,
-  "totalParsed": 1405284,
-  "totalUnique": 1169618,
+  "totalParsed": 1405285,
+  "totalUnique": 1169619,
   "duplicatesRemoved": 235666,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1071015,
+    "network": 1071018,
     "generic-hide": 389,
     "script": 2814,
     "image": 1301,
@@ -28,7 +28,7 @@
     "other": 1,
     "object": 13,
     "document": 653,
-    "css": 79176,
+    "css": 79174,
     "rewrite": 20,
     "css-extended": 816,
     "replace": 2,
@@ -37,7 +37,7 @@
     "important": 42
   },
   "categories": {
-    "ads": 265057,
+    "ads": 265058,
     "annoyances": 54396,
     "social": 19694,
     "ads-regional": 19631,
@@ -108,7 +108,7 @@
     ],
     [
       "wixstudio.com",
-      506
+      505
     ],
     [
       "co.kr",

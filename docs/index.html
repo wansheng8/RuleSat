@@ -58,14 +58,16 @@
     <h2>使用方式</h2>
     <div class="usage">
       <h3>AdGuard / uBlock Origin / Adblock Plus 浏览器插件</h3>
-      <p>在插件设置中添加以下订阅地址:</p>
-      <pre><code>https://raw.githubusercontent.com/<span id="repoPath">USER/REPO</span>/main/output/filter-adguard.txt</code></pre>
+      <p>在插件设置中添加以下订阅地址 (任选其一):</p>
+      <pre><code>https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/output/filter-adguard.txt
+https://cdn.jsdelivr.net/gh/<span class="repo-path">USER/REPO</span>@main/output/filter-adguard.txt</code></pre>
     </div>
     <div class="usage">
       <h3>AdGuard Home / Pi-hole / DNS 服务器</h3>
       <p>使用 Hosts 格式或域名列表:</p>
       <pre><code>https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/output/filter-hosts.txt
-https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/output/filter-domains.txt</code></pre>
+https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/output/filter-domains.txt
+https://cdn.jsdelivr.net/gh/<span class="repo-path">USER/REPO</span>@main/output/filter-hosts.txt</code></pre>
     </div>
 
     <h2>过滤器文件下载</h2>
@@ -84,10 +86,10 @@ https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/
       { name: 'filter-abp.txt',         format: 'Adblock Plus',   desc: 'Adblock Plus 浏览器插件' },
       { name: 'filter-hosts.txt',       format: 'Hosts',          desc: '标准 hosts 文件 (0.0.0.0)' },
       { name: 'filter-domains.txt',     format: 'Domain List',    desc: '纯域名列表 (一行一个)' },
-      { name: 'filter-dnsmasq.conf',    format: 'Dnsmasq',        desc: 'Dnsmasq DNS 服务器配置' },
+      { name: 'filter-dnsmasq.conf.gz', format: 'Dnsmasq (gz)',   desc: 'Dnsmasq DNS 服务器 (gzip压缩)' },
       { name: 'filter-unbound.conf',    format: 'Unbound',        desc: 'Unbound DNS 服务器配置' },
       { name: 'filter-bind-rpz.conf',   format: 'BIND RPZ',       desc: 'BIND RPZ 区域文件' },
-      { name: 'filter-rules.json',      format: 'JSON',           desc: '完整规则数据 (JSON)' },
+      { name: 'filter-rules.json.gz',   format: 'JSON (gz)',      desc: '完整规则数据 (gzip压缩)' },
       { name: 'REPORT.md',              format: 'Report',         desc: '统计报告' },
     ];
 
@@ -97,7 +99,7 @@ https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/
     const listEl = document.getElementById('filterList');
     for (const f of files) {
       const rawUrl = `https://raw.githubusercontent.com/${repoPath}/main/output/${f.name}`;
-      const dlUrl = `https://github.com/${repoPath}/raw/main/output/${f.name}`;
+      const cdnUrl = `https://cdn.jsdelivr.net/gh/${repoPath}@main/output/${f.name}`;
       listEl.innerHTML += `
         <div class="filter-card">
           <div>
@@ -105,7 +107,10 @@ https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/
             <div class="size">${f.desc}</div>
             <span class="format">${f.format}</span>
           </div>
-          <a href="${rawUrl}" target="_blank">Download</a>
+          <div style="display:flex;gap:8px;flex-shrink:0;">
+            <a href="${rawUrl}" target="_blank">Raw</a>
+            <a href="${cdnUrl}" target="_blank">CDN</a>
+          </div>
         </div>`;
     }
 

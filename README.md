@@ -1,46 +1,113 @@
 # Adblock Filter Aggregator
 
-多源广告拦截过滤规则聚合引擎。从 30 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
+[![Update Filter Lists](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml/badge.svg)](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml)
 
-## 自动更新
+多源广告拦截过滤规则聚合引擎。从 **24** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
 
-每 **12 小时**通过 GitHub Actions 自动更新。所有过滤器文件可直接作为订阅地址使用。
+## 实时统计
+
+| 指标 | 数值 |
+|---|---|
+| 唯一规则总数 | **1,169,618** |
+| 规则来源 | 24 |
+| 规则类别 | 23 |
+| 重复移除 | 235,666 |
+| 最后更新 | 2026-06-23 14:26:24 |
 
 ## 浏览器插件订阅地址
 
-| 插件 | 订阅地址 |
-|---|---|
-| AdGuard | `https://raw.githubusercontent.com/{USER}/{REPO}/main/output/filter-adguard.txt` |
-| uBlock Origin | `https://raw.githubusercontent.com/{USER}/{REPO}/main/output/filter-ublock.txt` |
-| Adblock Plus | `https://raw.githubusercontent.com/{USER}/{REPO}/main/output/filter-abp.txt` |
+| 插件 | Raw | CDN |
+|---|---|---|
+| AdGuard | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-adguard.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-adguard.txt) |
+| uBlock Origin | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-ublock.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-ublock.txt) |
+| Adblock Plus | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-abp.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-abp.txt) |
 
 ## DNS / Hosts 订阅地址
 
-| 工具 | 订阅地址 |
+| 工具 | Raw | CDN |
+|---|---|---|
+| AdGuard Home | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-adguard.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-adguard.txt) |
+| Pi-hole / Hosts | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-hosts.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-hosts.txt) |
+| 域名列表 | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-domains.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-domains.txt) |
+
+## 所有文件下载
+
+| 文件 (点击下载) | CDN 加速 | 格式 | 说明 |
+|---|---|---|---|
+| [filter-adguard.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-adguard.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-adguard.txt) | AdGuard | AdGuard 浏览器插件 / AdGuard Home |
+| [filter-ublock.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-ublock.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-ublock.txt) | uBlock Origin | uBlock Origin 浏览器插件 |
+| [filter-abp.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-abp.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-abp.txt) | Adblock Plus | Adblock Plus 浏览器插件 |
+| [filter-hosts.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-hosts.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-hosts.txt) | Hosts | Pi-hole / 标准 hosts 文件 |
+| [filter-domains.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-domains.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-domains.txt) | 域名列表 | 纯域名列表 (一行一个) |
+| [filter-dnsmasq.conf.gz](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-dnsmasq.conf.gz) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-dnsmasq.conf.gz) | Dnsmasq (gz) | Dnsmasq DNS 服务器 (gzip) |
+| [filter-unbound.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-unbound.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-unbound.conf) | Unbound | Unbound DNS 服务器 |
+| [filter-bind-rpz.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-bind-rpz.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-bind-rpz.conf) | BIND RPZ | BIND DNS RPZ 区域文件 |
+| [filter-rules.json.gz](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-rules.json.gz) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-rules.json.gz) | JSON (gz) | 完整规则数据 (gzip) |
+| [REPORT.md](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/REPORT.md) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/REPORT.md) | 报告 | 统计报告 |
+
+
+## 规则类别分布
+
+| 类别 | 规则数 |
 |---|---|
-| AdGuard Home | `https://raw.githubusercontent.com/{USER}/{REPO}/main/output/filter-adguard.txt` |
-| Pi-hole / Hosts | `https://raw.githubusercontent.com/{USER}/{REPO}/main/output/filter-hosts.txt` |
-| 域名列表 | `https://raw.githubusercontent.com/{USER}/{REPO}/main/output/filter-domains.txt` |
+| ads-malware-tracking | 746,251 |
+| ads | 265,057 |
+| phishing | 144,730 |
+| ads-malware | 82,658 |
+| privacy | 63,776 |
+| tracking | 63,585 |
+| annoyances | 54,396 |
+| malware | 22,802 |
+| social | 19,694 |
+| ads-regional | 19,631 |
+| cookies | 18,261 |
+| regional-ru | 17,883 |
+| regional-cn | 15,657 |
+| spam | 8,140 |
+| whitelist | 7,101 |
+| popup | 3,949 |
+| abuse | 1,394 |
+| mining | 903 |
+| spyware | 690 |
+| redirect | 320 |
+| stylesheet | 122 |
+| mobile-ads | 41 |
+| font | 6 |
 
-## 部署到 GitHub
 
-1. Fork 或创建仓库
-2. 在 Settings > Pages 中设置 Source 为 "Deploy from a branch"，Branch 选 `main`，Folder 选 `/docs`
-3. 在 Settings > Actions > General 中确保 Workflow permissions 选择 "Read and write permissions"
-4. GitHub Actions 将每 12 小时自动运行更新
+## 规则类型分布
 
-## 本地运行
+| 类型 | 数量 |
+|---|---|
+| network | 1,071,015 |
+| css | 79,176 |
+| third-party | 7,200 |
+| popup | 3,194 |
+| script | 2,814 |
+| all | 1,433 |
+| image | 1,301 |
+| css-extended | 816 |
+| document | 653 |
+| xhr | 608 |
+| generic-hide | 389 |
+| subdocument | 227 |
+| removeparam | 218 |
+| badfilter | 181 |
+| media | 85 |
+| stylesheet | 77 |
+| ping | 59 |
+| important | 42 |
+| csp | 41 |
+| redirect | 31 |
+| rewrite | 20 |
+| object | 13 |
+| websocket | 11 |
+| element-hiding | 4 |
+| font | 4 |
+| generic-block | 3 |
+| replace | 2 |
+| other | 1 |
 
-```bash
-# 完整流程
-node src/cli.js all
-
-# 仅抓取
-node src/cli.js fetch
-
-# 运行测试
-npm test
-```
 
 ## 规则来源
 
@@ -60,19 +127,10 @@ npm test
 - URLhaus Malware
 - EasyList China
 
-## 输出格式
+## 自动更新
 
-| 文件 | 格式 | 大小 | 用途 |
-|---|---|---|---|
-| filter-adguard.txt | AdGuard | ~28MB | AdGuard 系列 |
-| filter-ublock.txt | uBlock Origin | ~28MB | uBlock Origin |
-| filter-abp.txt | Adblock Plus | ~28MB | Adblock Plus |
-| filter-hosts.txt | Hosts | ~29MB | Pi-hole / hosts |
-| filter-dnsmasq.conf | Dnsmasq | ~101MB | Dnsmasq DNS |
-| filter-unbound.conf | Unbound | ~51MB | Unbound DNS |
-| filter-bind-rpz.conf | BIND RPZ | ~60MB | BIND DNS |
-| filter-domains.txt | 域名列表 | ~21MB | 通用 |
-| filter-rules.json | JSON | ~129MB | 程序化使用 |
+每 **12 小时**通过 GitHub Actions 自动更新本 README 及所有过滤器文件。  
+[查看更新历史](https://github.com/wansheng8/RuleSat/commits/main/output)
 
 ## License
 

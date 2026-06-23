@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adblock Filter Aggregator - 广告拦截过滤器规则合集</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+    .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2rem; margin-bottom: 8px; color: #58a6ff; }
+    .subtitle { color: #8b949e; margin-bottom: 32px; font-size: 1.05rem; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px; }
+    .stat-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; text-align: center; }
+    .stat-card .value { font-size: 2rem; font-weight: 700; color: #58a6ff; }
+    .stat-card .label { font-size: 0.85rem; color: #8b949e; margin-top: 4px; }
+    h2 { font-size: 1.3rem; margin: 32px 0 16px; color: #f0f6fc; border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+    .filter-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+    .filter-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; display: flex; justify-content: space-between; align-items: center; transition: border-color 0.2s; }
+    .filter-card:hover { border-color: #58a6ff; }
+    .filter-card .name { font-weight: 600; font-size: 0.95rem; }
+    .filter-card .size { color: #8b949e; font-size: 0.82rem; margin-top: 2px; }
+    .filter-card .format { display: inline-block; background: #1f6feb22; color: #58a6ff; padding: 2px 8px; border-radius: 12px; font-size: 0.72rem; margin-top: 4px; }
+    .filter-card a { color: #c9d1d9; text-decoration: none; background: #21262d; border: 1px solid #30363d; padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; white-space: nowrap; transition: background 0.2s; }
+    .filter-card a:hover { background: #30363d; }
+    .usage { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 24px; }
+    .usage h3 { color: #f0f6fc; margin-bottom: 8px; font-size: 1rem; }
+    .usage code { background: #0d1117; padding: 2px 8px; border-radius: 4px; font-size: 0.9rem; color: #7ee787; }
+    .usage pre { background: #0d1117; padding: 12px 16px; border-radius: 6px; overflow-x: auto; margin: 8px 0; font-size: 0.88rem; }
+    footer { text-align: center; color: #484f58; margin-top: 48px; font-size: 0.82rem; }
+    footer a { color: #58a6ff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Adblock Filter Aggregator</h1>
+    <p class="subtitle">多源聚合 | 智能去重 | 多格式输出 | 每12小时自动更新</p>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="value" id="totalRules">-</div>
+        <div class="label">唯一规则总数</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" id="totalSources">-</div>
+        <div class="label">规则来源</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" id="ruleTypes">-</div>
+        <div class="label">规则类别</div>
+      </div>
+      <div class="stat-card">
+        <div class="value" id="lastUpdate">-</div>
+        <div class="label">最后更新</div>
+      </div>
+    </div>
+
+    <h2>使用方式</h2>
+    <div class="usage">
+      <h3>AdGuard / uBlock Origin / Adblock Plus 浏览器插件</h3>
+      <p>在插件设置中添加以下订阅地址:</p>
+      <pre><code>https://raw.githubusercontent.com/<span id="repoPath">USER/REPO</span>/main/output/filter-adguard.txt</code></pre>
+    </div>
+    <div class="usage">
+      <h3>AdGuard Home / Pi-hole / DNS 服务器</h3>
+      <p>使用 Hosts 格式或域名列表:</p>
+      <pre><code>https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/output/filter-hosts.txt
+https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/output/filter-domains.txt</code></pre>
+    </div>
+
+    <h2>过滤器文件下载</h2>
+    <div class="filter-list" id="filterList">
+    </div>
+
+    <footer>
+      <p>Powered by <a href="https://github.com" target="_blank">GitHub Actions</a> | Auto-updated every 12 hours</p>
+    </footer>
+  </div>
+
+  <script>
+    const files = [
+      { name: 'filter-adguard.txt',     format: 'AdGuard',        desc: 'AdGuard 浏览器插件 / AdGuard Home' },
+      { name: 'filter-ublock.txt',      format: 'uBlock Origin',  desc: 'uBlock Origin 浏览器插件' },
+      { name: 'filter-abp.txt',         format: 'Adblock Plus',   desc: 'Adblock Plus 浏览器插件' },
+      { name: 'filter-hosts.txt',       format: 'Hosts',          desc: '标准 hosts 文件 (0.0.0.0)' },
+      { name: 'filter-domains.txt',     format: 'Domain List',    desc: '纯域名列表 (一行一个)' },
+      { name: 'filter-dnsmasq.conf',    format: 'Dnsmasq',        desc: 'Dnsmasq DNS 服务器配置' },
+      { name: 'filter-unbound.conf',    format: 'Unbound',        desc: 'Unbound DNS 服务器配置' },
+      { name: 'filter-bind-rpz.conf',   format: 'BIND RPZ',       desc: 'BIND RPZ 区域文件' },
+      { name: 'filter-rules.json',      format: 'JSON',           desc: '完整规则数据 (JSON)' },
+      { name: 'REPORT.md',              format: 'Report',         desc: '统计报告' },
+    ];
+
+    const repoPath = window.location.pathname.replace(/\/.*$/, '').replace(/^\//, '') || 'USER/REPO';
+    document.querySelectorAll('.repo-path, #repoPath').forEach(el => el.textContent = repoPath);
+
+    const listEl = document.getElementById('filterList');
+    for (const f of files) {
+      const rawUrl = `https://raw.githubusercontent.com/${repoPath}/main/output/${f.name}`;
+      const dlUrl = `https://github.com/${repoPath}/raw/main/output/${f.name}`;
+      listEl.innerHTML += `
+        <div class="filter-card">
+          <div>
+            <div class="name">${f.name}</div>
+            <div class="size">${f.desc}</div>
+            <span class="format">${f.format}</span>
+          </div>
+          <a href="${rawUrl}" target="_blank">Download</a>
+        </div>`;
+    }
+
+    fetch(`https://raw.githubusercontent.com/${repoPath}/main/output/report.json`)
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('totalRules').textContent = (data.totalUnique || 0).toLocaleString();
+        document.getElementById('totalSources').textContent = data.sourceCount || '-';
+        document.getElementById('ruleTypes').textContent = Object.keys(data.categories || {}).length || '-';
+        document.getElementById('lastUpdate').textContent = data.elapsed || '-';
+      })
+      .catch(() => {});
+
+    const intervalDays = 0.5;
+    document.querySelector('footer p').innerHTML =
+      `Last generated: check <a href="https://github.com/${repoPath}/commits/main/output" target="_blank">commit history</a> | Auto-updated every 12 hours`;
+  </script>
+</body>
+</html>

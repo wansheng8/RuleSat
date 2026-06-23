@@ -1,0 +1,29 @@
+{
+  "name": "adblock-filter-aggregator",
+  "version": "1.0.0",
+  "description": "广告拦截器和DNS过滤器规则聚合引擎 - 获取、解析、去重、合并、分类百万级过滤规则",
+  "main": "src/index.js",
+  "bin": {
+    "adblock-agg": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "fetch": "node src/cli.js fetch",
+    "process": "node src/cli.js process",
+    "build": "node src/cli.js build",
+    "all": "node src/cli.js all",
+    "test": "node --test test/*.test.js",
+    "lint": "echo ok"
+  },
+  "keywords": [
+    "adblock",
+    "adguard",
+    "ublock",
+    "filter",
+    "dns",
+    "antimalware",
+    "antiphishing",
+    "privacy"
+  ],
+  "license": "MIT"
+}

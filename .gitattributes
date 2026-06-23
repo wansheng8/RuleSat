@@ -1,0 +1,6 @@
+# Filter output files - large text files
+output/*.txt text eol=lf
+output/*.conf text eol=lf
+output/*.json text eol=lf
+output/*.md text eol=lf
+output/*.gz binary

@@ -1,0 +1,266 @@
+{
+  "mode": "all",
+  "elapsed": "191.7s",
+  "fetchedCount": 24,
+  "totalParsed": 1405284,
+  "totalUnique": 1169618,
+  "duplicatesRemoved": 235666,
+  "sourceCount": 24,
+  "ruleTypes": {
+    "network": 1071015,
+    "generic-hide": 389,
+    "script": 2814,
+    "image": 1301,
+    "third-party": 7200,
+    "media": 85,
+    "stylesheet": 77,
+    "element-hiding": 4,
+    "xhr": 608,
+    "subdocument": 227,
+    "generic-block": 3,
+    "popup": 3194,
+    "websocket": 11,
+    "ping": 59,
+    "font": 4,
+    "badfilter": 181,
+    "removeparam": 218,
+    "csp": 41,
+    "other": 1,
+    "object": 13,
+    "document": 653,
+    "css": 79176,
+    "rewrite": 20,
+    "css-extended": 816,
+    "replace": 2,
+    "all": 1433,
+    "redirect": 31,
+    "important": 42
+  },
+  "categories": {
+    "ads": 265057,
+    "annoyances": 54396,
+    "social": 19694,
+    "ads-regional": 19631,
+    "stylesheet": 122,
+    "regional-cn": 15657,
+    "regional-ru": 17883,
+    "tracking": 63585,
+    "privacy": 63776,
+    "spyware": 690,
+    "popup": 3949,
+    "malware": 22802,
+    "phishing": 144730,
+    "ads-malware-tracking": 746251,
+    "ads-malware": 82658,
+    "abuse": 1394,
+    "spam": 8140,
+    "cookies": 18261,
+    "mining": 903,
+    "redirect": 320,
+    "whitelist": 7101,
+    "font": 6,
+    "mobile-ads": 41
+  },
+  "topDomains": [
+    [
+      "in.net",
+      6772
+    ],
+    [
+      "com.br",
+      6531
+    ],
+    [
+      "actonservice.com",
+      2974
+    ],
+    [
+      "co.uk",
+      2133
+    ],
+    [
+      "omtrdc.net",
+      1762
+    ],
+    [
+      "2o7.net",
+      1727
+    ],
+    [
+      "com.au",
+      1414
+    ],
+    [
+      "optimizely.com",
+      1107
+    ],
+    [
+      "run.app",
+      777
+    ],
+    [
+      "intellitxt.com",
+      752
+    ],
+    [
+      "co.jp",
+      590
+    ],
+    [
+      "wixstudio.com",
+      506
+    ],
+    [
+      "co.kr",
+      484
+    ],
+    [
+      "ero-advertising.com",
+      393
+    ],
+    [
+      "com.cn",
+      376
+    ],
+    [
+      "qq.com",
+      317
+    ],
+    [
+      "pages.dev",
+      311
+    ],
+    [
+      "px-cloud.net",
+      308
+    ],
+    [
+      "vercel.app",
+      296
+    ],
+    [
+      "hitbox.com",
+      291
+    ],
+    [
+      "com.tr",
+      281
+    ],
+    [
+      "tiktokv.com",
+      262
+    ],
+    [
+      "cloudfront.net",
+      237
+    ],
+    [
+      "amazonaws.com",
+      226
+    ],
+    [
+      "iocnt.de",
+      225
+    ],
+    [
+      "adobe.com",
+      222
+    ],
+    [
+      "co.nz",
+      216
+    ],
+    [
+      "xiaomi.com",
+      210
+    ],
+    [
+      "vivoglobal.com",
+      205
+    ],
+    [
+      "weebly.com",
+      205
+    ],
+    [
+      "p2l.info",
+      198
+    ],
+    [
+      "co.il",
+      197
+    ],
+    [
+      "co.za",
+      173
+    ],
+    [
+      "com.bd",
+      173
+    ],
+    [
+      "netlify.app",
+      166
+    ],
+    [
+      "lgsmartad.com",
+      160
+    ],
+    [
+      "casalemedia.com",
+      154
+    ],
+    [
+      "com.pl",
+      150
+    ],
+    [
+      "baidu.com",
+      150
+    ],
+    [
+      "iberostar.com",
+      147
+    ],
+    [
+      "framer.app",
+      145
+    ],
+    [
+      "com.vn",
+      139
+    ],
+    [
+      "com.tw",
+      137
+    ],
+    [
+      "doubleclick.net",
+      133
+    ],
+    [
+      "edgekey.net",
+      131
+    ],
+    [
+      "windows.net",
+      129
+    ],
+    [
+      "marketo.com",
+      128
+    ],
+    [
+      "oewabox.at",
+      126
+    ],
+    [
+      "r2.dev",
+      116
+    ],
+    [
+      "com.mx",
+      113
+    ]
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "name": "easylist",
+    "url": "https://easylist.to/easylist/easylist.txt",
+    "type": "adblock",
+    "category": "ads",
+    "enabled": true,
+    "format": "abp"
+  },
+  {
+    "name": "easyprivacy",
+    "url": "https://easylist.to/easylist/easyprivacy.txt",
+    "type": "adblock",
+    "category": "privacy",
+    "enabled": true,
+    "format": "abp"
+  },
+  {
+    "name": "adguard-base",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/general_url.txt",
+    "type": "adblock",
+    "category": "ads",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "adguard-tracking",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TrackingFilter/sections/general_url.txt",
+    "type": "adblock",
+    "category": "tracking",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "adguard-social",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SocialFilter/sections/general_url.txt",
+    "type": "adblock",
+    "category": "social",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "adguard-annoyances",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/general_url.txt",
+    "type": "adblock",
+    "category": "annoyances",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "adguard-spyware",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/general_url.txt",
+    "type": "adblock",
+    "category": "spyware",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "adguard-mobile",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/general_url.txt",
+    "type": "adblock",
+    "category": "mobile-ads",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "adguard-dns",
+    "url": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
+    "type": "dns",
+    "category": "ads",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "ublock-badware",
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+    "type": "adblock",
+    "category": "malware",
+    "enabled": true,
+    "format": "ublock"
+  },
+  {
+    "name": "ublock-privacy",
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
+    "type": "adblock",
+    "category": "privacy",
+    "enabled": true,
+    "format": "ublock"
+  },
+  {
+    "name": "ublock-resource-abuse",
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
+    "type": "adblock",
+    "category": "abuse",
+    "enabled": true,
+    "format": "ublock"
+  },
+  {
+    "name": "ublock-unbreak",
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
+    "type": "adblock",
+    "category": "whitelist",
+    "enabled": true,
+    "format": "ublock"
+  },
+  {
+    "name": "fanboy-annoyance",
+    "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
+    "type": "adblock",
+    "category": "annoyances",
+    "enabled": true,
+    "format": "abp"
+  },
+  {
+    "name": "fanboy-social",
+    "url": "https://easylist.to/easylist/fanboy-social.txt",
+    "type": "adblock",
+    "category": "social",
+    "enabled": true,
+    "format": "abp"
+  },
+  {
+    "name": "peter-lowe-hosts",
+    "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+    "type": "hosts",
+    "category": "ads",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "steven-black-hosts",
+    "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+    "type": "hosts",
+    "category": "ads-malware",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "someonewhocares-hosts",
+    "url": "https://someonewhocares.org/hosts/zero/hosts",
+    "type": "hosts",
+    "category": "ads-malware",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "malwaredomainlist",
+    "url": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+    "type": "hosts",
+    "category": "malware",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "phishing-army",
+    "url": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+    "type": "domain-list",
+    "category": "phishing",
+    "enabled": true,
+    "format": "domain"
+  },
+  {
+    "name": "nocoin-miners",
+    "url": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+    "type": "hosts",
+    "category": "mining",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "anti-popads",
+    "url": "https://raw.githubusercontent.com/Yhonay/antipopads/master/hosts",
+    "type": "hosts",
+    "category": "popup",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "oisd-full",
+    "url": "https://big.oisd.nl/domainswild",
+    "type": "domain-list",
+    "category": "ads-malware-tracking",
+    "enabled": true,
+    "format": "domain-wild"
+  },
+  {
+    "name": "hagezi-dns-pro",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt",
+    "type": "adblock",
+    "category": "ads-malware-tracking",
+    "enabled": true,
+    "format": "adguard"
+  },
+  {
+    "name": "1hosts-pro",
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/hosts.txt",
+    "type": "hosts",
+    "category": "ads-malware-tracking",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "spam404",
+    "url": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt",
+    "type": "domain-list",
+    "category": "spam",
+    "enabled": true,
+    "format": "domain"
+  },
+  {
+    "name": "dandelion-sprout-anti-malware",
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DandelionSproutAntiMalwareHosts.txt",
+    "type": "hosts",
+    "category": "malware",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "urlhaus-malware",
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-hosts.txt",
+    "type": "hosts",
+    "category": "malware",
+    "enabled": true,
+    "format": "hosts"
+  },
+  {
+    "name": "easylist-china",
+    "url": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
+    "type": "adblock",
+    "category": "ads-regional",
+    "enabled": true,
+    "format": "abp"
+  },
+  {
+    "name": "adguard-cookies",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CookiesFilter/sections/general_url.txt",
+    "type": "adblock",
+    "category": "cookies",
+    "enabled": true,
+    "format": "adguard"
+  }
+]

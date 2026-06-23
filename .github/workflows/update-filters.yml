@@ -35,6 +35,8 @@ jobs:
           rm -rf output/
           mkdir -p output
           node src/cli.js all
+          echo "filter-rules.json"  > output/.gitignore
+          echo "filter-dnsmasq.conf" >> output/.gitignore
 
       - name: Generate README
         run: node src/generate-readme.js

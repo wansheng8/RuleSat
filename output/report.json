@@ -1,17 +1,17 @@
 {
   "mode": "all",
-  "elapsed": "90.7s",
+  "elapsed": "91.4s",
   "fetchedCount": 24,
-  "totalParsed": 1395747,
-  "totalUnique": 1159676,
-  "duplicatesRemoved": 236071,
+  "totalParsed": 1373413,
+  "totalUnique": 1137058,
+  "duplicatesRemoved": 236355,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1061071,
+    "network": 1038444,
     "generic-hide": 389,
-    "script": 2814,
+    "script": 2813,
     "image": 1301,
-    "third-party": 7200,
+    "third-party": 7201,
     "media": 85,
     "stylesheet": 77,
     "element-hiding": 4,
@@ -28,7 +28,7 @@
     "other": 1,
     "object": 13,
     "document": 653,
-    "css": 79177,
+    "css": 79186,
     "rewrite": 20,
     "css-extended": 817,
     "replace": 2,
@@ -37,26 +37,26 @@
     "important": 42
   },
   "categories": {
-    "ads": 265297,
-    "annoyances": 54392,
-    "social": 19684,
-    "ads-regional": 19637,
+    "ads": 264880,
+    "annoyances": 54381,
+    "social": 19400,
+    "ads-regional": 19641,
     "stylesheet": 122,
-    "regional-cn": 15613,
-    "regional-ru": 17897,
-    "tracking": 63544,
+    "regional-cn": 15038,
+    "regional-ru": 20038,
+    "tracking": 63012,
     "privacy": 63776,
     "spyware": 690,
     "popup": 3949,
-    "malware": 22693,
-    "phishing": 144912,
-    "ads-malware-tracking": 736327,
+    "malware": 22552,
+    "phishing": 145028,
+    "ads-malware-tracking": 713587,
     "ads-malware": 82660,
-    "abuse": 1394,
+    "abuse": 1367,
     "spam": 8140,
-    "cookies": 18261,
-    "mining": 908,
-    "redirect": 320,
+    "cookies": 18260,
+    "mining": 825,
+    "redirect": 319,
     "whitelist": 7102,
     "font": 6,
     "mobile-ads": 41
@@ -64,11 +64,11 @@
   "topDomains": [
     [
       "in.net",
-      6678
+      6575
     ],
     [
       "com.br",
-      6544
+      6572
     ],
     [
       "actonservice.com",
@@ -76,35 +76,23 @@
     ],
     [
       "co.uk",
-      2135
-    ],
-    [
-      "omtrdc.net",
-      1762
+      2151
     ],
     [
       "2o7.net",
       1727
     ],
     [
+      "wixstudio.com",
+      1433
+    ],
+    [
       "com.au",
-      1417
-    ],
-    [
-      "optimizely.com",
-      1107
-    ],
-    [
-      "run.app",
-      777
+      1418
     ],
     [
       "intellitxt.com",
       752
-    ],
-    [
-      "wixstudio.com",
-      740
     ],
     [
       "co.jp",
@@ -112,7 +100,7 @@
     ],
     [
       "co.kr",
-      484
+      486
     ],
     [
       "ero-advertising.com",
@@ -120,23 +108,15 @@
     ],
     [
       "com.cn",
-      378
+      382
     ],
     [
-      "qq.com",
-      318
-    ],
-    [
-      "pages.dev",
-      312
-    ],
-    [
-      "px-cloud.net",
-      308
+      "framer.app",
+      356
     ],
     [
       "vercel.app",
-      298
+      299
     ],
     [
       "hitbox.com",
@@ -144,11 +124,7 @@
     ],
     [
       "com.tr",
-      282
-    ],
-    [
-      "tiktokv.com",
-      262
+      284
     ],
     [
       "cloudfront.net",
@@ -163,16 +139,12 @@
       225
     ],
     [
+      "co.nz",
+      223
+    ],
+    [
       "adobe.com",
       222
-    ],
-    [
-      "co.nz",
-      217
-    ],
-    [
-      "framer.app",
-      215
     ],
     [
       "xiaomi.com",
@@ -187,36 +159,28 @@
       205
     ],
     [
+      "co.il",
+      199
+    ],
+    [
       "p2l.info",
       198
     ],
     [
-      "co.il",
-      197
-    ],
-    [
       "co.za",
-      175
+      180
     ],
     [
       "com.bd",
       173
     ],
     [
-      "netlify.app",
-      166
-    ],
-    [
-      "lgsmartad.com",
-      160
+      "com.pl",
+      168
     ],
     [
       "casalemedia.com",
       154
-    ],
-    [
-      "com.pl",
-      153
     ],
     [
       "baidu.com",
@@ -227,8 +191,12 @@
       147
     ],
     [
+      "qq.com",
+      145
+    ],
+    [
       "com.vn",
-      141
+      144
     ],
     [
       "com.tw",
@@ -243,24 +211,56 @@
       131
     ],
     [
-      "windows.net",
-      129
-    ],
-    [
       "marketo.com",
       128
+    ],
+    [
+      "windows.net",
+      126
     ],
     [
       "oewabox.at",
       126
     ],
     [
-      "r2.dev",
-      115
+      "pages.dev",
+      122
+    ],
+    [
+      "workers.dev",
+      121
+    ],
+    [
+      "netlify.app",
+      121
     ],
     [
       "com.mx",
-      114
+      118
+    ],
+    [
+      "criteo.com",
+      111
+    ],
+    [
+      "omtrdc.net",
+      109
+    ],
+    [
+      "r2.dev",
+      107
+    ],
+    [
+      "googleapis.com",
+      107
+    ],
+    [
+      "liftmyresume.com",
+      106
+    ],
+    [
+      "checkm8.com",
+      104
     ]
   ]
 }

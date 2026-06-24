@@ -1,13 +1,13 @@
 {
   "mode": "all",
-  "elapsed": "84.5s",
+  "elapsed": "90.7s",
   "fetchedCount": 24,
-  "totalParsed": 1405322,
-  "totalUnique": 1169623,
-  "duplicatesRemoved": 235699,
+  "totalParsed": 1395747,
+  "totalUnique": 1159676,
+  "duplicatesRemoved": 236071,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1071021,
+    "network": 1061071,
     "generic-hide": 389,
     "script": 2814,
     "image": 1301,
@@ -28,47 +28,47 @@
     "other": 1,
     "object": 13,
     "document": 653,
-    "css": 79175,
+    "css": 79177,
     "rewrite": 20,
-    "css-extended": 816,
+    "css-extended": 817,
     "replace": 2,
     "all": 1433,
     "redirect": 31,
     "important": 42
   },
   "categories": {
-    "ads": 265065,
-    "annoyances": 54397,
-    "social": 19694,
-    "ads-regional": 19631,
+    "ads": 265297,
+    "annoyances": 54392,
+    "social": 19684,
+    "ads-regional": 19637,
     "stylesheet": 122,
-    "regional-cn": 15657,
-    "regional-ru": 17883,
-    "tracking": 63585,
+    "regional-cn": 15613,
+    "regional-ru": 17897,
+    "tracking": 63544,
     "privacy": 63776,
     "spyware": 690,
     "popup": 3949,
-    "malware": 22802,
-    "phishing": 144730,
-    "ads-malware-tracking": 746251,
-    "ads-malware": 82658,
+    "malware": 22693,
+    "phishing": 144912,
+    "ads-malware-tracking": 736327,
+    "ads-malware": 82660,
     "abuse": 1394,
     "spam": 8140,
     "cookies": 18261,
-    "mining": 903,
+    "mining": 908,
     "redirect": 320,
-    "whitelist": 7101,
+    "whitelist": 7102,
     "font": 6,
     "mobile-ads": 41
   },
   "topDomains": [
     [
       "in.net",
-      6772
+      6678
     ],
     [
       "com.br",
-      6531
+      6544
     ],
     [
       "actonservice.com",
@@ -76,7 +76,7 @@
     ],
     [
       "co.uk",
-      2133
+      2135
     ],
     [
       "omtrdc.net",
@@ -88,7 +88,7 @@
     ],
     [
       "com.au",
-      1414
+      1417
     ],
     [
       "optimizely.com",
@@ -103,12 +103,12 @@
       752
     ],
     [
-      "co.jp",
-      590
+      "wixstudio.com",
+      740
     ],
     [
-      "wixstudio.com",
-      495
+      "co.jp",
+      590
     ],
     [
       "co.kr",
@@ -120,15 +120,15 @@
     ],
     [
       "com.cn",
-      376
+      378
     ],
     [
       "qq.com",
-      317
+      318
     ],
     [
       "pages.dev",
-      311
+      312
     ],
     [
       "px-cloud.net",
@@ -136,7 +136,7 @@
     ],
     [
       "vercel.app",
-      296
+      298
     ],
     [
       "hitbox.com",
@@ -144,7 +144,7 @@
     ],
     [
       "com.tr",
-      281
+      282
     ],
     [
       "tiktokv.com",
@@ -168,7 +168,11 @@
     ],
     [
       "co.nz",
-      216
+      217
+    ],
+    [
+      "framer.app",
+      215
     ],
     [
       "xiaomi.com",
@@ -192,7 +196,7 @@
     ],
     [
       "co.za",
-      173
+      175
     ],
     [
       "com.bd",
@@ -212,7 +216,7 @@
     ],
     [
       "com.pl",
-      150
+      153
     ],
     [
       "baidu.com",
@@ -223,12 +227,8 @@
       147
     ],
     [
-      "framer.app",
-      145
-    ],
-    [
       "com.vn",
-      139
+      141
     ],
     [
       "com.tw",
@@ -256,11 +256,11 @@
     ],
     [
       "r2.dev",
-      116
+      115
     ],
     [
       "com.mx",
-      113
+      114
     ]
   ]
 }

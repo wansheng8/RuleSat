@@ -8,11 +8,11 @@
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **1,169,623** |
+| 唯一规则总数 | **1,159,676** |
 | 规则来源 | 24 |
 | 规则类别 | 23 |
-| 重复移除 | 235,699 |
-| 最后更新 | 2026-06-23 15:14:04 |
+| 重复移除 | 236,071 |
+| 最后更新 | 2026-06-24 01:52:42 |
 
 ## 浏览器插件订阅地址
 
@@ -50,24 +50,24 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 746,251 |
-| ads | 265,065 |
-| phishing | 144,730 |
-| ads-malware | 82,658 |
+| ads-malware-tracking | 736,327 |
+| ads | 265,297 |
+| phishing | 144,912 |
+| ads-malware | 82,660 |
 | privacy | 63,776 |
-| tracking | 63,585 |
-| annoyances | 54,397 |
-| malware | 22,802 |
-| social | 19,694 |
-| ads-regional | 19,631 |
+| tracking | 63,544 |
+| annoyances | 54,392 |
+| malware | 22,693 |
+| social | 19,684 |
+| ads-regional | 19,637 |
 | cookies | 18,261 |
-| regional-ru | 17,883 |
-| regional-cn | 15,657 |
+| regional-ru | 17,897 |
+| regional-cn | 15,613 |
 | spam | 8,140 |
-| whitelist | 7,101 |
+| whitelist | 7,102 |
 | popup | 3,949 |
 | abuse | 1,394 |
-| mining | 903 |
+| mining | 908 |
 | spyware | 690 |
 | redirect | 320 |
 | stylesheet | 122 |
@@ -79,14 +79,14 @@
 
 | 类型 | 数量 |
 |---|---|
-| network | 1,071,021 |
-| css | 79,175 |
+| network | 1,061,071 |
+| css | 79,177 |
 | third-party | 7,200 |
 | popup | 3,194 |
 | script | 2,814 |
 | all | 1,433 |
 | image | 1,301 |
-| css-extended | 816 |
+| css-extended | 817 |
 | document | 653 |
 | xhr | 608 |
 | generic-hide | 389 |

@@ -2,17 +2,17 @@
 
 [![Update Filter Lists](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml/badge.svg)](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml)
 
-多源广告拦截过滤规则聚合引擎。从 **24** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
+多源广告拦截过滤规则聚合引擎。从 **37** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
 
 ## 实时统计
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **1,146,575** |
-| 规则来源 | 24 |
-| 规则类别 | 23 |
-| 重复移除 | 237,373 |
-| 最后更新 | 2026-06-25 15:46:10 |
+| 唯一规则总数 | **1,237,823** |
+| 规则来源 | 37 |
+| 规则类别 | 24 |
+| 重复移除 | 712,333 |
+| 最后更新 | 2026-06-26 00:06:52 |
 
 ## 浏览器插件订阅地址
 
@@ -50,27 +50,28 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 723,514 |
-| ads | 265,172 |
-| phishing | 145,427 |
-| ads-malware | 82,661 |
-| privacy | 63,787 |
-| tracking | 63,299 |
-| annoyances | 54,389 |
-| malware | 22,324 |
-| regional-ru | 19,866 |
-| ads-regional | 19,650 |
-| social | 19,608 |
-| cookies | 18,261 |
-| regional-cn | 15,022 |
+| ads-malware-tracking | 756,339 |
+| ads | 285,121 |
+| tracking | 161,708 |
+| phishing | 145,493 |
+| ads-regional | 126,649 |
+| ads-malware | 91,204 |
+| privacy | 63,857 |
+| annoyances | 57,558 |
+| malware | 22,686 |
+| regional-ru | 20,630 |
+| social | 20,031 |
+| regional-cn | 19,453 |
+| cookies | 18,326 |
 | spam | 8,140 |
-| whitelist | 7,102 |
-| popup | 3,948 |
-| abuse | 1,383 |
+| whitelist | 7,563 |
+| popup | 4,049 |
+| annoyances-regional | 1,840 |
+| abuse | 1,496 |
 | spyware | 690 |
-| mining | 593 |
-| redirect | 321 |
-| stylesheet | 122 |
+| mining | 641 |
+| redirect | 326 |
+| stylesheet | 127 |
 | mobile-ads | 41 |
 | font | 6 |
 
@@ -79,32 +80,32 @@
 
 | 类型 | 数量 |
 |---|---|
-| network | 1,047,988 |
-| css | 79,206 |
-| third-party | 7,202 |
-| popup | 3,193 |
-| script | 2,815 |
+| network | 1,129,106 |
+| css | 88,207 |
+| third-party | 7,724 |
+| popup | 3,294 |
+| script | 2,943 |
 | all | 1,384 |
-| image | 1,301 |
-| css-extended | 817 |
+| image | 1,344 |
+| css-extended | 1,006 |
 | document | 653 |
-| xhr | 608 |
-| generic-hide | 389 |
-| subdocument | 227 |
+| xhr | 646 |
+| generic-hide | 440 |
+| subdocument | 267 |
 | removeparam | 218 |
 | badfilter | 181 |
-| media | 85 |
-| stylesheet | 77 |
-| ping | 59 |
+| media | 92 |
+| stylesheet | 78 |
+| ping | 60 |
+| csp | 43 |
 | important | 42 |
-| csp | 41 |
 | redirect | 31 |
-| rewrite | 20 |
+| rewrite | 25 |
 | object | 13 |
 | websocket | 11 |
 | element-hiding | 4 |
+| generic-block | 4 |
 | font | 4 |
-| generic-block | 3 |
 | replace | 2 |
 | other | 1 |
 
@@ -112,20 +113,27 @@
 ## 规则来源
 
 - EasyList / EasyPrivacy
-- AdGuard Base / Tracking / Social / DNS / Spyware / Mobile / Cookies
+- AdGuard Base / Tracking / Social / DNS / Spyware / Mobile / Cookies / Popup / CNAME
 - uBlock Origin Badware / Privacy / Resource Abuse / Unbreak
 - Fanboy Annoyance / Social
 - Peter Lowe's Hosts
 - StevenBlack Hosts
 - someonewhocares Hosts
 - oisd full
-- HaGeZi DNS Pro
+- HaGeZi DNS Pro / Ultimate
 - Phishing Army
 - NoCoin Miners
 - Anti-PopAds
 - Spam404
 - URLhaus Malware
-- EasyList China
+- EasyList China / Germany / Italy / Dutch
+- Dan Pollock Hosts
+- AdAway Hosts
+- Anti-AD (Chinese)
+- CJX Annoyance List
+- ABP Warning Removal
+- KADhosts
+- Ad-Wars / YHosts (Chinese)
 
 ## 自动更新
 

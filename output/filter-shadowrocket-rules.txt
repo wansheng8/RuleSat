@@ -1,5 +1,5 @@
 # Shadowrocket AdBlock Rules
-# Generated: 2026-06-25T14:54:01.686Z
+# Generated: 2026-06-25T14:58:57.771Z
 # Total source rules: 1,146,567
 # Lite rules (top domains): 15,000
 # GitHub: https://github.com/wansheng8/RuleSat
@@ -12315,8 +12315,8 @@ DOMAIN-SUFFIX,analytics.infosys.com,REJECT
 DOMAIN-SUFFIX,analytics.porsche.com,REJECT
 DOMAIN-SUFFIX,analytics.stadt-zuerich.ch,REJECT
 DOMAIN-SUFFIX,analytics.tatadigital.com,REJECT
-DOMAIN-SUFFIX,analytics.vivint.com,REJECT
 DOMAIN-SUFFIX,300statistics.net,REJECT
+DOMAIN-SUFFIX,analytics.vivint.com,REJECT
 DOMAIN-SUFFIX,302technologies.com,REJECT
 DOMAIN-SUFFIX,30statistics.net,REJECT
 DOMAIN-SUFFIX,3434849c2e.com,REJECT
@@ -12378,8 +12378,8 @@ DOMAIN-SUFFIX,smetrics.moneyhelper.org.uk,REJECT
 DOMAIN-SUFFIX,smetrics.moneywise.com,REJECT
 DOMAIN-SUFFIX,smetrics.mopar.com,REJECT
 DOMAIN-SUFFIX,smetrics.msccruceros.com,REJECT
-DOMAIN-SUFFIX,smetrics.msccruises.co.uk,REJECT
 DOMAIN-SUFFIX,4000statistics.com,REJECT
+DOMAIN-SUFFIX,smetrics.msccruises.co.uk,REJECT
 DOMAIN-SUFFIX,smetrics.mycard.com.au,REJECT
 DOMAIN-SUFFIX,smetrics.myvue.com,REJECT
 DOMAIN-SUFFIX,smetrics.nasdaq.com,REJECT
@@ -12636,8 +12636,8 @@ DOMAIN-SUFFIX,analytics.nedis-shop.nl,REJECT
 DOMAIN-SUFFIX,analytics.pineca.de,REJECT
 DOMAIN-SUFFIX,analytics.pineca.it,REJECT
 DOMAIN-SUFFIX,analytics.popvakuutus.fi,REJECT
-DOMAIN-SUFFIX,analytics.quick-garden.co.uk,REJECT
 DOMAIN-SUFFIX,adotube.com,REJECT
+DOMAIN-SUFFIX,analytics.quick-garden.co.uk,REJECT
 DOMAIN-SUFFIX,analytics.tenson.com,REJECT
 DOMAIN-SUFFIX,analytics.tricorp.com,REJECT
 DOMAIN-SUFFIX,analytics.turbotheorie.nl,REJECT
@@ -13512,8 +13512,8 @@ DOMAIN-SUFFIX,log.pdfbookeditor.live,REJECT
 DOMAIN-SUFFIX,log.cleansweepplu.com,REJECT
 DOMAIN-SUFFIX,logrcv.adseyeservice.com,REJECT
 DOMAIN-SUFFIX,statistic.live.126.net,REJECT
-DOMAIN-SUFFIX,detaillog-global-dual.coolbcloud.com,REJECT
 DOMAIN-SUFFIX,blubberlog.com,REJECT
+DOMAIN-SUFFIX,detaillog-global-dual.coolbcloud.com,REJECT
 DOMAIN-SUFFIX,wslog-global-dual.coolccloud.com,REJECT
 DOMAIN-SUFFIX,logreport-global-dual.coolbcloud.com,REJECT
 DOMAIN-SUFFIX,dualstack-collection.rong-edge.com,REJECT
@@ -14306,8 +14306,8 @@ DOMAIN-SUFFIX,starseed.fr,REJECT
 DOMAIN-SUFFIX,static.subiz.com,REJECT
 DOMAIN-SUFFIX,stats.dev.zaloapp.com,REJECT
 DOMAIN-SUFFIX,stats.hara.vn,REJECT
-DOMAIN-SUFFIX,stats.hc.score.dmp.zalo.me,REJECT
 DOMAIN-SUFFIX,brightonclick.com,REJECT
+DOMAIN-SUFFIX,stats.hc.score.dmp.zalo.me,REJECT
 DOMAIN-SUFFIX,stc-support-app-brand.zdn.vn,REJECT
 DOMAIN-SUFFIX,surfcountor.com,REJECT
 DOMAIN-SUFFIX,tebrand.asia,REJECT
@@ -14958,8 +14958,8 @@ DOMAIN-SUFFIX,admanager.carsoup.com,REJECT
 DOMAIN-SUFFIX,admatchly.com,REJECT
 DOMAIN-SUFFIX,admeld.com,REJECT
 DOMAIN-SUFFIX,admex.com,REJECT
-DOMAIN-SUFFIX,admidadsp.com,REJECT
 DOMAIN-SUFFIX,facilewhiteruinous.com,REJECT
+DOMAIN-SUFFIX,admidadsp.com,REJECT
 DOMAIN-SUFFIX,adminder.com,REJECT
 DOMAIN-SUFFIX,adminshop.com,REJECT
 DOMAIN-SUFFIX,admized.com,REJECT

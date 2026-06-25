@@ -1,6 +1,6 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-25T14:54:01.737Z
+Generated: 2026-06-25T14:58:57.807Z
 
 ## Statistics
 
@@ -14,7 +14,7 @@ Generated: 2026-06-25T14:54:01.737Z
 
 ## Rule Type Distribution
 
-- network: 1,047,980
+- network: 1,047,981
 - generic-hide: 389
 - script: 2,815
 - image: 1,301
@@ -35,7 +35,7 @@ Generated: 2026-06-25T14:54:01.737Z
 - other: 1
 - object: 13
 - document: 653
-- css: 79,206
+- css: 79,205
 - rewrite: 20
 - css-extended: 817
 - replace: 2
@@ -45,10 +45,10 @@ Generated: 2026-06-25T14:54:01.737Z
 
 ## Category Distribution
 
-- ads: 265,159
+- ads: 265,160
 - annoyances: 54,389
 - social: 19,608
-- ads-regional: 19,649
+- ads-regional: 19,648
 - stylesheet: 122
 - regional-cn: 15,022
 - regional-ru: 19,866

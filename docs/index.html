@@ -63,11 +63,12 @@
 https://cdn.jsdelivr.net/gh/<span class="repo-path">USER/REPO</span>@main/output/filter-adguard.txt</code></pre>
     </div>
     <div class="usage">
-      <h3>Shadowrocket 广告拦截 (连接国外节点自动去广告)</h3>
+      <h3>Shadowrocket 广告拦截 (精选3万高危域名，确保可用性)</h3>
       <p>Shadowrocket > 配置 > 规则 > 更新规则列表 > 填入以下地址:</p>
       <pre><code>https://raw.githubusercontent.com/<span class="repo-path">USER/REPO</span>/main/output/filter-shadowrocket-rules.txt
 https://cdn.jsdelivr.net/gh/<span class="repo-path">USER/REPO</span>@main/output/filter-shadowrocket-rules.txt</code></pre>
-      <p>或直接导入完整配置: <a href="#" class="sr-link">filter-shadowrocket.conf</a></p>
+      <p>直接导入完整配置: <a href="#" class="sr-link">filter-shadowrocket.conf</a> (含代理设置模板)</p>
+      <p style="color:#8b949e;font-size:0.85rem;">Shadowrocket 规则上限建议 &lt; 5万条，此处精选广告/跟踪/恶意软件最高危域名。</p>
     </div>
     <div class="usage">
       <h3>AdGuard Home / Pi-hole / DNS 服务器</h3>
@@ -93,8 +94,8 @@ https://cdn.jsdelivr.net/gh/<span class="repo-path">USER/REPO</span>@main/output
       { name: 'filter-abp.txt',         format: 'Adblock Plus',   desc: 'Adblock Plus 浏览器插件' },
       { name: 'filter-hosts.txt',       format: 'Hosts',          desc: '标准 hosts 文件 (0.0.0.0)' },
       { name: 'filter-domains.txt',     format: 'Domain List',    desc: '纯域名列表 (一行一个)' },
-      { name: 'filter-shadowrocket.conf', format: 'Shadowrocket', desc: 'Shadowrocket 完整配置 (直接导入)' },
-      { name: 'filter-shadowrocket-rules.txt', format: 'SR Rules', desc: 'Shadowrocket 纯规则 (合并到现有配置)' },
+      { name: 'filter-shadowrocket.conf', format: 'Shadowrocket', desc: '完整配置 (精选3万高危域名)' },
+      { name: 'filter-shadowrocket-rules.txt', format: 'SR Rules', desc: '纯规则 (精选3万高危域名)' },
       { name: 'filter-dnsmasq.conf.gz', format: 'Dnsmasq (gz)',   desc: 'Dnsmasq DNS 服务器 (gzip压缩)' },
       { name: 'filter-unbound.conf',    format: 'Unbound',        desc: 'Unbound DNS 服务器配置' },
       { name: 'filter-bind-rpz.conf',   format: 'BIND RPZ',       desc: 'BIND RPZ 区域文件' },

@@ -1,13 +1,13 @@
 {
   "mode": "all",
-  "elapsed": "91.7s",
+  "elapsed": "220.2s",
   "fetchedCount": 24,
-  "totalParsed": 1390876,
-  "totalUnique": 1153535,
+  "totalParsed": 1390874,
+  "totalUnique": 1153533,
   "duplicatesRemoved": 237341,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1054949,
+    "network": 1054947,
     "generic-hide": 389,
     "script": 2815,
     "image": 1301,
@@ -37,7 +37,7 @@
     "important": 42
   },
   "categories": {
-    "ads": 265369,
+    "ads": 265367,
     "annoyances": 54394,
     "social": 19674,
     "ads-regional": 19648,

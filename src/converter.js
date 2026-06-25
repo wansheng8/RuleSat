@@ -171,60 +171,92 @@ class Converter {
     return chunks.join('');
   }
 
-  toShadowrocketConf(rules, repo) {
-    const chunks = [
-      '# Shadowrocket AdBlock Config',
-      `# Generated: ${new Date().toISOString()}`,
-      `# Rules: ${rules.length}`,
-      `# GitHub: https://github.com/${repo}`,
-      '',
-      '[General]',
-      'bypass-system = true',
-      'skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local',
-      'bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32',
-      'dns-server = system, 223.5.5.5, 119.29.29.29',
-      '',
-      '[Rule]',
-    ];
+  _priorityScore(categories) {
+    if (!categories || categories.length === 0) return 1;
+    let score = 0;
+    const high = ['ads', 'tracking', 'malware', 'phishing', 'mining', 'spam', 'popup', 'ads-malware-tracking', 'ads-malware'];
+    const med = ['annoyances', 'cookies', 'abuse', 'spyware', 'privacy', 'ads-regional'];
+    for (const c of categories) {
+      if (high.includes(c)) score += 10;
+      else if (med.includes(c)) score += 5;
+      else score += 1;
+    }
+    return score;
+  }
 
-    const seen = new Set();
+  _selectTopDomains(rules, limit) {
+    const domainMap = new Map();
     for (const rule of rules) {
-      const domain = rule.domain;
-      if (domain && !seen.has(domain)) {
-        seen.add(domain);
-        if (domain.startsWith('*.')) {
-          chunks.push(`DOMAIN-SUFFIX,${domain.slice(2)},REJECT`);
-        } else {
-          chunks.push(`DOMAIN-SUFFIX,${domain},REJECT`);
-        }
+      const d = rule.domain;
+      if (!d) continue;
+      const existing = domainMap.get(d);
+      if (existing) {
+        existing.count++;
+        existing.score += this._priorityScore(rule.categories);
+      } else {
+        domainMap.set(d, { domain: d, count: 1, score: this._priorityScore(rule.categories) });
       }
     }
+    const sorted = [...domainMap.values()].sort((a, b) => b.score - a.score || b.count - a.count);
+    return sorted.slice(0, limit).map(e => e.domain);
+  }
 
-    chunks.push('', '# Custom proxy rules - add your own below', '# DOMAIN-SUFFIX,google.com,PROXY', '# GEOIP,CN,DIRECT', 'FINAL,DIRECT', '', '[URL Rewrite]', '', '[MITM]', '');
-
-    return chunks.join('\n');
+  toShadowrocketConf(rules, repo) {
+    return this.toShadowrocketLite(rules, 30000, repo, true);
   }
 
   toShadowrocketRules(rules) {
+    return this.toShadowrocketLite(rules, 30000, null, false);
+  }
+
+  toShadowrocketLite(rules, limit, repo, isConf) {
+    limit = limit || 30000;
+    const topDomains = this._selectTopDomains(rules, limit);
+
     const chunks = [
       '# Shadowrocket AdBlock Rules',
       `# Generated: ${new Date().toISOString()}`,
-      `# Rules: ${rules.length}`,
-      '# Import via Shadowrocket > Config > Rule > Update Rule List',
+      `# Total source rules: ${rules.length.toLocaleString()}`,
+      `# Lite rules (top domains): ${topDomains.length.toLocaleString()}`,
+      `# GitHub: https://github.com/${repo || 'wansheng8/RuleSat'}`,
+      '#',
+      '# NOTE: Shadowrocket works best with < 50000 rules.',
+      '# This lite version includes only the most critical ad/tracking/malware domains.',
+      '# For DNS-level blocking use filter-hosts.txt or filter-domains.txt instead.',
       '',
     ];
 
-    const seen = new Set();
-    for (const rule of rules) {
-      const domain = rule.domain;
-      if (domain && !seen.has(domain)) {
-        seen.add(domain);
-        if (domain.startsWith('*.')) {
-          chunks.push(`DOMAIN-SUFFIX,${domain.slice(2)},REJECT`);
-        } else {
-          chunks.push(`DOMAIN-SUFFIX,${domain},REJECT`);
-        }
+    if (isConf) {
+      chunks.push('[General]');
+      chunks.push('bypass-system = true');
+      chunks.push('skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local');
+      chunks.push('bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32');
+      chunks.push('dns-server = system, 223.5.5.5, 119.29.29.29');
+      chunks.push('');
+      chunks.push('[Rule]');
+    } else {
+      chunks.push('# Import: Shadowrocket > Config > Rule > Update Rule List');
+      chunks.push('');
+    }
+
+    for (const domain of topDomains) {
+      if (domain.startsWith('*.')) {
+        chunks.push(`DOMAIN-SUFFIX,${domain.slice(2)},REJECT`);
+      } else {
+        chunks.push(`DOMAIN-SUFFIX,${domain},REJECT`);
       }
+    }
+
+    if (isConf) {
+      chunks.push('');
+      chunks.push('# --- Add your proxy rules below ---');
+      chunks.push('# DOMAIN-SUFFIX,google.com,PROXY');
+      chunks.push('# GEOIP,CN,DIRECT');
+      chunks.push('FINAL,DIRECT');
+      chunks.push('');
+      chunks.push('[URL Rewrite]');
+      chunks.push('');
+      chunks.push('[MITM]');
     }
 
     return chunks.join('\n');

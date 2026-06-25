@@ -1,13 +1,13 @@
 {
-  "mode": "build",
-  "elapsed": "214.5s",
+  "mode": "all",
+  "elapsed": "88.2s",
   "fetchedCount": 24,
-  "totalParsed": 1383905,
-  "totalUnique": 1146564,
+  "totalParsed": 1383906,
+  "totalUnique": 1146565,
   "duplicatesRemoved": 237341,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1047978,
+    "network": 1047979,
     "generic-hide": 389,
     "script": 2815,
     "image": 1301,
@@ -37,7 +37,7 @@
     "important": 42
   },
   "categories": {
-    "ads": 265155,
+    "ads": 265158,
     "annoyances": 54389,
     "social": 19608,
     "ads-regional": 19648,
@@ -50,7 +50,7 @@
     "popup": 3948,
     "malware": 22324,
     "phishing": 145427,
-    "ads-malware-tracking": 723519,
+    "ads-malware-tracking": 723517,
     "ads-malware": 82661,
     "abuse": 1383,
     "spam": 8140,

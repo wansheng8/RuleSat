@@ -2,6 +2,83 @@ class Converter {
 
   constructor() {
     this.domainRegex = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$/i;
+    this.platformSafelist = new Set([
+      'alicdn.com', 'alibaba.com', 'alipay.com', 'aliyuncs.com',
+      'amazon.com', 'amazonaws.com',
+      'apple.com', 'apple-dns.net', 'icloud.com',
+      'azure.com', 'azureedge.net', 'azurewebsites.net',
+      'baidu.com', 'baidustatic.com', 'bdstatic.com', 'bdimg.com',
+      'bilibili.com', 'bilivideo.com',
+      'bing.com',
+      'blogspot.com',
+      'cdnjs.cloudflare.com',
+      'cloudflare.com', 'cloudflare-dns.com',
+      'cloudfront.net',
+      'digitaloceanspaces.com',
+      'discord.com', 'discordapp.com', 'discord.gg',
+      'dropbox.com', 'dropboxusercontent.com',
+      'facebook.com', 'fb.com', 'fbcdn.net', 'facebook.net', 'fbsbx.com',
+      'fastly.net',
+      'firebaseio.com', 'firebasestorage.googleapis.com',
+      'github.com', 'github.io', 'githubassets.com', 'githubusercontent.com',
+      'gmail.com', 'googlemail.com',
+      'google.com', 'googleapis.com', 'googletagmanager.com', 'gstatic.com',
+      'google-analytics.com', 'googlesyndication.com', 'doubleclick.net',
+      'googleadservices.com',
+      'gtimg.com',
+      'herokuapp.com',
+      'icloud.com',
+      'ifeng.com', 'ifengimg.com',
+      'instagram.com', 'cdninstagram.com',
+      'jsdelivr.net',
+      'linkedin.com', 'licdn.com',
+      'live.com', 'microsoft.com', 'microsoftonline.com', 'msn.com',
+      'netflix.com', 'nflxvideo.net', 'nflximg.net',
+      'notion.so', 'notion-static.com',
+      'office.com', 'office.net', 'office365.com',
+      'onelink.me',
+      'pages.dev',
+      'paypal.com', 'paypalobjects.com',
+      'pinterest.com', 'pinimg.com',
+      'qq.com', 'qpic.cn', 'qlogo.cn',
+      'reddit.com', 'redd.it', 'redditmedia.com', 'redditstatic.com',
+      'r2.dev',
+      'sina.com.cn', 'sinaimg.cn', 'weibo.com',
+      'slack.com', 'slack-edge.com',
+      'sohu.com',
+      'spotify.com', 'scdn.co',
+      'stackoverflow.com', 'stackexchange.com',
+      'steampowered.com', 'steamcommunity.com',
+      'storage.googleapis.com',
+      'taobao.com',
+      'telegram.org', 't.me',
+      'tencent.com', 'tcdn.com',
+      'tiktok.com', 'tiktokcdn.com', 'byteoversea.com',
+      'twitch.tv', 'ttvnw.net',
+      'twitter.com', 'twimg.com', 'x.com',
+      'unpkg.com',
+      'vercel.app', 'vercel.com',
+      'vimeo.com', 'vimeocdn.com',
+      'weixin.com', 'wechat.com', 'wximg.com',
+      'whatsapp.com', 'whatsapp.net',
+      'wikipedia.org', 'wikimedia.org',
+      'windows.net',
+      'wordpress.com', 'wp.com',
+      'yahoo.com', 'yimg.com',
+      'youtube.com', 'youtu.be', 'ytimg.com', 'googlevideo.com',
+      'zoom.us',
+      'zhihu.com', 'zhimg.com',
+    ]);
+  }
+
+  _isSafelisted(domain) {
+    if (!domain) return false;
+    const parts = domain.split('.');
+    for (let i = 0; i < parts.length - 1; i++) {
+      const suffix = parts.slice(i).join('.');
+      if (this.platformSafelist.has(suffix)) return true;
+    }
+    return false;
   }
 
   _isValidDomain(domain) {
@@ -197,7 +274,7 @@ class Converter {
     const domainMap = new Map();
     for (const rule of rules) {
       const d = rule.domain;
-      if (!d || !this._isValidDomain(d)) continue;
+      if (!d || !this._isValidDomain(d) || this._isSafelisted(d)) continue;
       const existing = domainMap.get(d);
       if (existing) {
         existing.count++;
@@ -230,7 +307,8 @@ class Converter {
       `# GitHub: https://github.com/${repo || 'wansheng8/RuleSat'}`,
       '#',
       '# NOTE: Shadowrocket works best with < 15000 rules.',
-      '# This lite version includes only the most critical ad/tracking/malware domains.',
+      '# This lite version targets ad/tracking/malware domains only.',
+      '# Major platform domains (Google, YouTube, Facebook, etc.) are excluded.',
       '# For DNS-level blocking use filter-hosts.txt or filter-domains.txt instead.',
       '',
     ];

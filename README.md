@@ -12,7 +12,7 @@
 | 规则来源 | 24 |
 | 规则类别 | 23 |
 | 重复移除 | 237,341 |
-| 最后更新 | 2026-06-25 13:37:44 |
+| 最后更新 | 2026-06-25 14:05:03 |
 
 ## 浏览器插件订阅地址
 
@@ -48,8 +48,8 @@
 | [filter-abp.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-abp.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-abp.txt) | Adblock Plus | Adblock Plus 浏览器插件 |
 | [filter-hosts.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-hosts.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-hosts.txt) | Hosts | Pi-hole / 标准 hosts 文件 |
 | [filter-domains.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-domains.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-domains.txt) | 域名列表 | 纯域名列表 (一行一个) |
-| [filter-shadowrocket.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket.conf) | Shadowrocket | Shadowrocket 完整配置 (直连导入) |
-| [filter-shadowrocket-rules.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket-rules.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket-rules.txt) | Shadowrocket Rules | Shadowrocket 纯规则 (合并到现有配置) |
+| [filter-shadowrocket.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket.conf) | Shadowrocket | Shadowrocket 完整配置 (精选3万高危域名) |
+| [filter-shadowrocket-rules.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket-rules.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket-rules.txt) | Shadowrocket Rules | Shadowrocket 纯规则 (精选3万高危域名) |
 | [filter-dnsmasq.conf.gz](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-dnsmasq.conf.gz) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-dnsmasq.conf.gz) | Dnsmasq (gz) | Dnsmasq DNS 服务器 (gzip) |
 | [filter-unbound.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-unbound.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-unbound.conf) | Unbound | Unbound DNS 服务器 |
 | [filter-bind-rpz.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-bind-rpz.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-bind-rpz.conf) | BIND RPZ | BIND DNS RPZ 区域文件 |

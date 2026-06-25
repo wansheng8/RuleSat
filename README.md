@@ -11,8 +11,8 @@
 | 唯一规则总数 | **1,146,575** |
 | 规则来源 | 24 |
 | 规则类别 | 23 |
-| 重复移除 | 237,372 |
-| 最后更新 | 2026-06-25 15:26:01 |
+| 重复移除 | 237,373 |
+| 最后更新 | 2026-06-25 15:46:10 |
 
 ## 浏览器插件订阅地址
 
@@ -21,15 +21,6 @@
 | AdGuard | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-adguard.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-adguard.txt) |
 | uBlock Origin | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-ublock.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-ublock.txt) |
 | Adblock Plus | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-abp.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-abp.txt) |
-
-## Shadowrocket / Surge / Quantumult 订阅
-
-| 工具 | Raw | CDN |
-|---|---|---|
-| Shadowrocket 完整配置 | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket.conf) |
-| Shadowrocket 纯规则 | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket-rules.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket-rules.txt) |
-
-> Shadowrocket 使用方法: 配置 > 规则 > 更新规则列表，填入纯规则链接即可。连接国外节点时自动拦截广告域名。
 
 ## DNS / Hosts 订阅地址
 
@@ -48,8 +39,6 @@
 | [filter-abp.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-abp.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-abp.txt) | Adblock Plus | Adblock Plus 浏览器插件 |
 | [filter-hosts.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-hosts.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-hosts.txt) | Hosts | Pi-hole / 标准 hosts 文件 |
 | [filter-domains.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-domains.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-domains.txt) | 域名列表 | 纯域名列表 (一行一个) |
-| [filter-shadowrocket.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket.conf) | Shadowrocket | Shadowrocket 完整配置 (精选3万高危域名) |
-| [filter-shadowrocket-rules.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket-rules.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket-rules.txt) | Shadowrocket Rules | Shadowrocket 纯规则 (精选3万高危域名) |
 | [filter-dnsmasq.conf.gz](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-dnsmasq.conf.gz) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-dnsmasq.conf.gz) | Dnsmasq (gz) | Dnsmasq DNS 服务器 (gzip) |
 | [filter-unbound.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-unbound.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-unbound.conf) | Unbound | Unbound DNS 服务器 |
 | [filter-bind-rpz.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-bind-rpz.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-bind-rpz.conf) | BIND RPZ | BIND DNS RPZ 区域文件 |
@@ -70,7 +59,7 @@
 | annoyances | 54,389 |
 | malware | 22,324 |
 | regional-ru | 19,866 |
-| ads-regional | 19,649 |
+| ads-regional | 19,650 |
 | social | 19,608 |
 | cookies | 18,261 |
 | regional-cn | 15,022 |

@@ -1,14 +1,14 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-25T15:25:31.530Z
+Generated: 2026-06-25T15:45:39.939Z
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,383,947 |
+| Total rules parsed | 1,383,948 |
 | Unique rules after dedup | 1,146,575 |
-| Duplicates removed | 237,372 |
+| Duplicates removed | 237,373 |
 | Invalid rules | N/A |
 | Sources processed | 24 |
 
@@ -48,7 +48,7 @@ Generated: 2026-06-25T15:25:31.530Z
 - ads: 265,172
 - annoyances: 54,389
 - social: 19,608
-- ads-regional: 19,649
+- ads-regional: 19,650
 - stylesheet: 122
 - regional-cn: 15,022
 - regional-ru: 19,866
@@ -133,5 +133,3 @@ Generated: 2026-06-25T15:25:31.530Z
 - `filter-bind-rpz.conf`
 - `filter-domains.txt`
 - `filter-rules.json`
-- `filter-shadowrocket.conf`
-- `filter-shadowrocket-rules.txt`

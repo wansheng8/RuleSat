@@ -1,10 +1,10 @@
 {
   "mode": "all",
-  "elapsed": "95.3s",
+  "elapsed": "90.2s",
   "fetchedCount": 24,
-  "totalParsed": 1383947,
+  "totalParsed": 1383948,
   "totalUnique": 1146575,
-  "duplicatesRemoved": 237372,
+  "duplicatesRemoved": 237373,
   "sourceCount": 24,
   "ruleTypes": {
     "network": 1047988,
@@ -40,7 +40,7 @@
     "ads": 265172,
     "annoyances": 54389,
     "social": 19608,
-    "ads-regional": 19649,
+    "ads-regional": 19650,
     "stylesheet": 122,
     "regional-cn": 15022,
     "regional-ru": 19866,

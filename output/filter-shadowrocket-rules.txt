@@ -1,6 +1,6 @@
 # Shadowrocket AdBlock Rules
-# Generated: 2026-06-25T15:21:07.675Z
-# Total source rules: 1,146,566
+# Generated: 2026-06-25T15:25:31.498Z
+# Total source rules: 1,146,575
 # Lite rules (top domains): 15,000
 # GitHub: https://github.com/wansheng8/RuleSat
 #
@@ -2272,6 +2272,7 @@ DOMAIN-SUFFIX,mangadex.org,REJECT
 DOMAIN-SUFFIX,researchgate.net,REJECT
 DOMAIN-SUFFIX,xgroovy.com,REJECT
 DOMAIN-SUFFIX,affirm.com,REJECT
+DOMAIN-SUFFIX,zs.peachparadise.vip,REJECT
 DOMAIN-SUFFIX,ads.planetwin365affiliate.com,REJECT
 DOMAIN-SUFFIX,static.rapidglobalorbit.com,REJECT
 DOMAIN-SUFFIX,tradestrategy.substack.com,REJECT
@@ -3018,7 +3019,6 @@ DOMAIN-SUFFIX,chargeit.baby,REJECT
 DOMAIN-SUFFIX,world.ex-advantage.jp,REJECT
 DOMAIN-SUFFIX,amazing.mirage-road.com,REJECT
 DOMAIN-SUFFIX,chestgoingpunch.com,REJECT
-DOMAIN-SUFFIX,zs.peachparadise.vip,REJECT
 DOMAIN-SUFFIX,chicks4date.com,REJECT
 DOMAIN-SUFFIX,sabito.kamadonezuko.com,REJECT
 DOMAIN-SUFFIX,cdn.metricastats.com,REJECT
@@ -3188,8 +3188,8 @@ DOMAIN-SUFFIX,fastlnd.com,REJECT
 DOMAIN-SUFFIX,textlinks.com,REJECT
 DOMAIN-SUFFIX,crt.livejasmin.com,REJECT
 DOMAIN-SUFFIX,februaryinjectionproudly.com,REJECT
-DOMAIN-SUFFIX,feed-xml.com,REJECT
 DOMAIN-SUFFIX,crpop.livejasmin.com,REJECT
+DOMAIN-SUFFIX,feed-xml.com,REJECT
 DOMAIN-SUFFIX,feedyourheadmag.com,REJECT
 DOMAIN-SUFFIX,banquetunarmedgrater.com,REJECT
 DOMAIN-SUFFIX,crmt.livejasmin.com,REJECT
@@ -3209,8 +3209,8 @@ DOMAIN-SUFFIX,fodsoack.com,REJECT
 DOMAIN-SUFFIX,forflygonom.com,REJECT
 DOMAIN-SUFFIX,clkfeed.com,REJECT
 DOMAIN-SUFFIX,frtyb.com,REJECT
-DOMAIN-SUFFIX,forzubatr.com,REJECT
 DOMAIN-SUFFIX,letzonke.com,REJECT
+DOMAIN-SUFFIX,forzubatr.com,REJECT
 DOMAIN-SUFFIX,fpgedsewst.com,REJECT
 DOMAIN-SUFFIX,srv2trking.com,REJECT
 DOMAIN-SUFFIX,fractionfridgejudiciary.com,REJECT
@@ -6011,8 +6011,8 @@ DOMAIN-SUFFIX,secmetrics.schaefer-shop.at,REJECT
 DOMAIN-SUFFIX,secmetrics.schaefer-shop.ch,REJECT
 DOMAIN-SUFFIX,secmetrics.schaefer-shop.de,REJECT
 DOMAIN-SUFFIX,secureanalytics.avis.co.uk,REJECT
-DOMAIN-SUFFIX,secureanalytics.avis.lu,REJECT
 DOMAIN-SUFFIX,fraudlogix.com,REJECT
+DOMAIN-SUFFIX,secureanalytics.avis.lu,REJECT
 DOMAIN-SUFFIX,secureanalytics.budget.de,REJECT
 DOMAIN-SUFFIX,secureanalytics.budget.se,REJECT
 DOMAIN-SUFFIX,secureanalytics.nedbank.co.za,REJECT
@@ -6849,8 +6849,8 @@ DOMAIN-SUFFIX,fraud.adjoe.zone,REJECT
 DOMAIN-SUFFIX,3gl.net,REJECT
 DOMAIN-SUFFIX,admetrics.events,REJECT
 DOMAIN-SUFFIX,adspsp.com,REJECT
-DOMAIN-SUFFIX,agma-analytics.de,REJECT
 DOMAIN-SUFFIX,scambiobanner.aruba.it,REJECT
+DOMAIN-SUFFIX,agma-analytics.de,REJECT
 DOMAIN-SUFFIX,bfmio.com,REJECT
 DOMAIN-SUFFIX,bounceexchange.com,REJECT
 DOMAIN-SUFFIX,btloader.com,REJECT
@@ -8168,10 +8168,10 @@ DOMAIN-SUFFIX,metrics-a.wbx2.com,REJECT
 DOMAIN-SUFFIX,metrics.bangbros.com,REJECT
 DOMAIN-SUFFIX,metrics.camsoda.com,REJECT
 DOMAIN-SUFFIX,metrics.freemake.com,REJECT
+DOMAIN-SUFFIX,stat1.clickfraud.dev,REJECT
 DOMAIN-SUFFIX,metrics.imdb.com,REJECT
 DOMAIN-SUFFIX,metrics.onewegg.com,REJECT
 DOMAIN-SUFFIX,metrics.syf.com,REJECT
-DOMAIN-SUFFIX,stat1.clickfraud.dev,REJECT
 DOMAIN-SUFFIX,ophan.theguardian.com,REJECT
 DOMAIN-SUFFIX,pixel.clutter.com,REJECT
 DOMAIN-SUFFIX,pixel.ionos.com,REJECT
@@ -11475,11 +11475,11 @@ DOMAIN-SUFFIX,beacon-canada.com,REJECT
 DOMAIN-SUFFIX,bloggerads.net,REJECT
 DOMAIN-SUFFIX,bloglock.net,REJECT
 DOMAIN-SUFFIX,blogsopt.com,REJECT
-DOMAIN-SUFFIX,metrics.mibcookies.rbs.com,REJECT
 DOMAIN-SUFFIX,buscadorrdeestatus.com,REJECT
-DOMAIN-SUFFIX,metrics.newscorporatesubscriptions.com.au,REJECT
+DOMAIN-SUFFIX,metrics.mibcookies.rbs.com,REJECT
 DOMAIN-SUFFIX,c2a1e3fcaadc3b40.com,REJECT
 DOMAIN-SUFFIX,c2d84d226ad46bde.com,REJECT
+DOMAIN-SUFFIX,metrics.newscorporatesubscriptions.com.au,REJECT
 DOMAIN-SUFFIX,c3115e4f84a2647c5a834baeb62a7bd292a08dc2e7bfaadc9107d327e79de62.link,REJECT
 DOMAIN-SUFFIX,canadastatistics.info,REJECT
 DOMAIN-SUFFIX,comrademineralintegration.com,REJECT
@@ -12175,8 +12175,8 @@ DOMAIN-SUFFIX,analytics.appsbnet.com.br,REJECT
 DOMAIN-SUFFIX,logging.prefixbox.com,REJECT
 DOMAIN-SUFFIX,goo-access-analytics.appspot.com,REJECT
 DOMAIN-SUFFIX,tracking.affiliateclub.cz,REJECT
-DOMAIN-SUFFIX,analytics.cdn.live,REJECT
 DOMAIN-SUFFIX,00609c257b.com,REJECT
+DOMAIN-SUFFIX,analytics.cdn.live,REJECT
 DOMAIN-SUFFIX,b92.yahoo.co.jp,REJECT
 DOMAIN-SUFFIX,plugins.soclminer.com.br,REJECT
 DOMAIN-SUFFIX,beacon.digima.com,REJECT
@@ -12382,8 +12382,8 @@ DOMAIN-SUFFIX,4000statistics.com,REJECT
 DOMAIN-SUFFIX,smetrics.msccruises.co.uk,REJECT
 DOMAIN-SUFFIX,smetrics.mycard.com.au,REJECT
 DOMAIN-SUFFIX,smetrics.myvue.com,REJECT
-DOMAIN-SUFFIX,smetrics.nasdaq.com,REJECT
 DOMAIN-SUFFIX,4004outstatistics.net,REJECT
+DOMAIN-SUFFIX,smetrics.nasdaq.com,REJECT
 DOMAIN-SUFFIX,smetrics.neom.com,REJECT
 DOMAIN-SUFFIX,smetrics.oddspedia.com,REJECT
 DOMAIN-SUFFIX,smetrics.ralphlauren.pl,REJECT
@@ -12515,8 +12515,8 @@ DOMAIN-SUFFIX,webtrack.lotto-thueringen.de,REJECT
 DOMAIN-SUFFIX,stats.ekd.de,REJECT
 DOMAIN-SUFFIX,absorptlogia.qpon,REJECT
 DOMAIN-SUFFIX,stats.sebastianzehner.com,REJECT
-DOMAIN-SUFFIX,net.elogia.net,REJECT
 DOMAIN-SUFFIX,abuttalouthits.com,REJECT
+DOMAIN-SUFFIX,net.elogia.net,REJECT
 DOMAIN-SUFFIX,data-03dc2421cd.sup-mag.de,REJECT
 DOMAIN-SUFFIX,data-03dc2421cd.surf-magazin.de,REJECT
 DOMAIN-SUFFIX,data-073db1ac20.rationell-reinigen.de,REJECT
@@ -12554,14 +12554,14 @@ DOMAIN-SUFFIX,acreinterstatethe.com,REJECT
 DOMAIN-SUFFIX,data-f27acaf339.haustechnikdialog.de,REJECT
 DOMAIN-SUFFIX,data-fb37a1e7c3.cannstatter-zeitung.de,REJECT
 DOMAIN-SUFFIX,data-fc6e3104c2.finanztreff.de,REJECT
-DOMAIN-SUFFIX,activemetering.com,REJECT
 DOMAIN-SUFFIX,data-fdc5118d41.at-minerals.com,REJECT
+DOMAIN-SUFFIX,activemetering.com,REJECT
 DOMAIN-SUFFIX,acuityplatform.com,REJECT
 DOMAIN-SUFFIX,analytics.hello.axaxl.com,REJECT
 DOMAIN-SUFFIX,elqtracking.di.se,REJECT
 DOMAIN-SUFFIX,elqtracking.finance.si,REJECT
-DOMAIN-SUFFIX,ad-balancer.net,REJECT
 DOMAIN-SUFFIX,eq-tracking.d-marketing.ricoh.co.jp,REJECT
+DOMAIN-SUFFIX,ad-balancer.net,REJECT
 DOMAIN-SUFFIX,ad-delivery.net,REJECT
 DOMAIN-SUFFIX,ad-flow.com,REJECT
 DOMAIN-SUFFIX,ad-m.asia,REJECT
@@ -12569,8 +12569,8 @@ DOMAIN-SUFFIX,ad-score.com,REJECT
 DOMAIN-SUFFIX,ad-server.co.za,REJECT
 DOMAIN-SUFFIX,ad-serverparc.nl,REJECT
 DOMAIN-SUFFIX,ad-srv.net,REJECT
-DOMAIN-SUFFIX,ad-stir.com,REJECT
 DOMAIN-SUFFIX,track.e.batesville.com,REJECT
+DOMAIN-SUFFIX,ad-stir.com,REJECT
 DOMAIN-SUFFIX,track.littmann.com,REJECT
 DOMAIN-SUFFIX,ad.gt,REJECT
 DOMAIN-SUFFIX,tracking.connect.columbiabank.com,REJECT
@@ -12618,8 +12618,8 @@ DOMAIN-SUFFIX,track.gesundheits-welt.net,REJECT
 DOMAIN-SUFFIX,track.health-insider24.net,REJECT
 DOMAIN-SUFFIX,track.healthroutine.de,REJECT
 DOMAIN-SUFFIX,track.togetherprice.com,REJECT
-DOMAIN-SUFFIX,adnico.jp,REJECT
 DOMAIN-SUFFIX,track.waifuworld.shop,REJECT
+DOMAIN-SUFFIX,adnico.jp,REJECT
 DOMAIN-SUFFIX,tracking.wohlivia.de,REJECT
 DOMAIN-SUFFIX,adnxs.com,REJECT
 DOMAIN-SUFFIX,adocean.pl,REJECT
@@ -12631,13 +12631,13 @@ DOMAIN-SUFFIX,analytics.itabus.it,REJECT
 DOMAIN-SUFFIX,analytics.knottenwolle.de,REJECT
 DOMAIN-SUFFIX,analytics.komoder.ch,REJECT
 DOMAIN-SUFFIX,analytics.lenco.com,REJECT
-DOMAIN-SUFFIX,adotmob.com,REJECT
 DOMAIN-SUFFIX,analytics.nedis-shop.nl,REJECT
+DOMAIN-SUFFIX,adotmob.com,REJECT
 DOMAIN-SUFFIX,analytics.pineca.de,REJECT
 DOMAIN-SUFFIX,analytics.pineca.it,REJECT
 DOMAIN-SUFFIX,analytics.popvakuutus.fi,REJECT
-DOMAIN-SUFFIX,adotube.com,REJECT
 DOMAIN-SUFFIX,analytics.quick-garden.co.uk,REJECT
+DOMAIN-SUFFIX,adotube.com,REJECT
 DOMAIN-SUFFIX,analytics.tenson.com,REJECT
 DOMAIN-SUFFIX,analytics.tricorp.com,REJECT
 DOMAIN-SUFFIX,analytics.turbotheorie.nl,REJECT
@@ -12978,10 +12978,10 @@ DOMAIN-SUFFIX,clog.lghv.net,REJECT
 DOMAIN-SUFFIX,malog.byapps.co.kr,REJECT
 DOMAIN-SUFFIX,analytics.avcdn.net,REJECT
 DOMAIN-SUFFIX,tracking.api.shoppinggives.com,REJECT
-DOMAIN-SUFFIX,bizographics.com,REJECT
 DOMAIN-SUFFIX,analytics-ingestion-production.tubitv.com,REJECT
 DOMAIN-SUFFIX,pixel.web.roku.com,REJECT
 DOMAIN-SUFFIX,analytics.cloudevo.ai,REJECT
+DOMAIN-SUFFIX,bizographics.com,REJECT
 DOMAIN-SUFFIX,collector.abc.net.au,REJECT
 DOMAIN-SUFFIX,stat.pravdafrance.com,REJECT
 DOMAIN-SUFFIX,log.shortbread.aws.dev,REJECT
@@ -13130,8 +13130,8 @@ DOMAIN-SUFFIX,analytics.karakuri.ai,REJECT
 DOMAIN-SUFFIX,storelog.kode.co.kr,REJECT
 DOMAIN-SUFFIX,analytics.dugun.com,REJECT
 DOMAIN-SUFFIX,collector.reelevant.com,REJECT
-DOMAIN-SUFFIX,bkmmafrixfake.website,REJECT
 DOMAIN-SUFFIX,log.gomlab.com,REJECT
+DOMAIN-SUFFIX,bkmmafrixfake.website,REJECT
 DOMAIN-SUFFIX,tracking.ensonhaber.com,REJECT
 DOMAIN-SUFFIX,stat.arzamas.academy,REJECT
 DOMAIN-SUFFIX,analytics.ubports.com,REJECT
@@ -13512,13 +13512,13 @@ DOMAIN-SUFFIX,log.pdfbookeditor.live,REJECT
 DOMAIN-SUFFIX,log.cleansweepplu.com,REJECT
 DOMAIN-SUFFIX,logrcv.adseyeservice.com,REJECT
 DOMAIN-SUFFIX,statistic.live.126.net,REJECT
-DOMAIN-SUFFIX,blubberlog.com,REJECT
 DOMAIN-SUFFIX,detaillog-global-dual.coolbcloud.com,REJECT
 DOMAIN-SUFFIX,wslog-global-dual.coolccloud.com,REJECT
 DOMAIN-SUFFIX,logreport-global-dual.coolbcloud.com,REJECT
 DOMAIN-SUFFIX,dualstack-collection.rong-edge.com,REJECT
 DOMAIN-SUFFIX,logdata.hatspotlight.asia,REJECT
 DOMAIN-SUFFIX,stats.rong-edge.com,REJECT
+DOMAIN-SUFFIX,blubberlog.com,REJECT
 DOMAIN-SUFFIX,tracking.ksztone.com,REJECT
 DOMAIN-SUFFIX,log.stickflow.xyz,REJECT
 DOMAIN-SUFFIX,stats.us-light-edge.com,REJECT
@@ -13973,8 +13973,8 @@ DOMAIN-SUFFIX,analytics-wpt.smhi.se,REJECT
 DOMAIN-SUFFIX,analytics.ci-360.se,REJECT
 DOMAIN-SUFFIX,assets.zubitracker.io,REJECT
 DOMAIN-SUFFIX,booli-logger.prod.booli.se,REJECT
-DOMAIN-SUFFIX,brand-display.com,REJECT
 DOMAIN-SUFFIX,browser-http-intake.logs.datadoghq.com,REJECT
+DOMAIN-SUFFIX,brand-display.com,REJECT
 DOMAIN-SUFFIX,cdn.userreport.com,REJECT
 DOMAIN-SUFFIX,cdn-magiclinks.trackonomics.net,REJECT
 DOMAIN-SUFFIX,collect.breakit.se,REJECT
@@ -14306,12 +14306,12 @@ DOMAIN-SUFFIX,starseed.fr,REJECT
 DOMAIN-SUFFIX,static.subiz.com,REJECT
 DOMAIN-SUFFIX,stats.dev.zaloapp.com,REJECT
 DOMAIN-SUFFIX,stats.hara.vn,REJECT
-DOMAIN-SUFFIX,brightonclick.com,REJECT
 DOMAIN-SUFFIX,stats.hc.score.dmp.zalo.me,REJECT
 DOMAIN-SUFFIX,stc-support-app-brand.zdn.vn,REJECT
 DOMAIN-SUFFIX,surfcountor.com,REJECT
 DOMAIN-SUFFIX,tebrand.asia,REJECT
 DOMAIN-SUFFIX,tebrand.vn,REJECT
+DOMAIN-SUFFIX,brightonclick.com,REJECT
 DOMAIN-SUFFIX,tech.zapps.me,REJECT
 DOMAIN-SUFFIX,testcentre.vn,REJECT
 DOMAIN-SUFFIX,tjme.io,REJECT
@@ -14957,7 +14957,6 @@ DOMAIN-SUFFIX,admanager.btopenworld.com,REJECT
 DOMAIN-SUFFIX,admanager.carsoup.com,REJECT
 DOMAIN-SUFFIX,admatchly.com,REJECT
 DOMAIN-SUFFIX,admeld.com,REJECT
-DOMAIN-SUFFIX,facilewhiteruinous.com,REJECT
 DOMAIN-SUFFIX,admex.com,REJECT
 DOMAIN-SUFFIX,admidadsp.com,REJECT
 DOMAIN-SUFFIX,adminder.com,REJECT
@@ -14975,6 +14974,7 @@ DOMAIN-SUFFIX,adpepper.dk,REJECT
 DOMAIN-SUFFIX,adpepper.nl,REJECT
 DOMAIN-SUFFIX,adremedy.com,REJECT
 DOMAIN-SUFFIX,adreporting.com,REJECT
+DOMAIN-SUFFIX,facilewhiteruinous.com,REJECT
 DOMAIN-SUFFIX,adrotate.de,REJECT
 DOMAIN-SUFFIX,ads-bilek.com,REJECT
 DOMAIN-SUFFIX,ads-game-187f4.firebaseapp.com,REJECT

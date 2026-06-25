@@ -1,13 +1,13 @@
 {
-  "mode": "build",
-  "elapsed": "187.5s",
+  "mode": "all",
+  "elapsed": "95.3s",
   "fetchedCount": 24,
-  "totalParsed": 1383936,
-  "totalUnique": 1146566,
-  "duplicatesRemoved": 237370,
+  "totalParsed": 1383947,
+  "totalUnique": 1146575,
+  "duplicatesRemoved": 237372,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1047979,
+    "network": 1047988,
     "generic-hide": 389,
     "script": 2815,
     "image": 1301,
@@ -37,7 +37,7 @@
     "important": 42
   },
   "categories": {
-    "ads": 265161,
+    "ads": 265172,
     "annoyances": 54389,
     "social": 19608,
     "ads-regional": 19649,
@@ -100,7 +100,7 @@
     ],
     [
       "co.jp",
-      625
+      627
     ],
     [
       "co.kr",

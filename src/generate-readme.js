@@ -27,6 +27,8 @@ function generate(repo) {
     { name: 'filter-abp.txt',       fmt: 'Adblock Plus',   desc: 'Adblock Plus 浏览器插件' },
     { name: 'filter-hosts.txt',     fmt: 'Hosts',          desc: 'Pi-hole / 标准 hosts 文件' },
     { name: 'filter-domains.txt',   fmt: '域名列表',        desc: '纯域名列表 (一行一个)' },
+    { name: 'filter-shadowrocket.conf', fmt: 'Shadowrocket', desc: 'Shadowrocket 完整配置 (直连导入)' },
+    { name: 'filter-shadowrocket-rules.txt', fmt: 'Shadowrocket Rules', desc: 'Shadowrocket 纯规则 (合并到现有配置)' },
     { name: 'filter-dnsmasq.conf.gz', fmt: 'Dnsmasq (gz)',  desc: 'Dnsmasq DNS 服务器 (gzip)' },
     { name: 'filter-unbound.conf',  fmt: 'Unbound',        desc: 'Unbound DNS 服务器' },
     { name: 'filter-bind-rpz.conf', fmt: 'BIND RPZ',       desc: 'BIND DNS RPZ 区域文件' },
@@ -94,6 +96,15 @@ function generate(repo) {
 | AdGuard | [订阅](${rawBase}/filter-adguard.txt) | [CDN](${cdnBase}/filter-adguard.txt) |
 | uBlock Origin | [订阅](${rawBase}/filter-ublock.txt) | [CDN](${cdnBase}/filter-ublock.txt) |
 | Adblock Plus | [订阅](${rawBase}/filter-abp.txt) | [CDN](${cdnBase}/filter-abp.txt) |
+
+## Shadowrocket / Surge / Quantumult 订阅
+
+| 工具 | Raw | CDN |
+|---|---|---|
+| Shadowrocket 完整配置 | [订阅](${rawBase}/filter-shadowrocket.conf) | [CDN](${cdnBase}/filter-shadowrocket.conf) |
+| Shadowrocket 纯规则 | [订阅](${rawBase}/filter-shadowrocket-rules.txt) | [CDN](${cdnBase}/filter-shadowrocket-rules.txt) |
+
+> Shadowrocket 使用方法: 配置 > 规则 > 更新规则列表，填入纯规则链接即可。连接国外节点时自动拦截广告域名。
 
 ## DNS / Hosts 订阅地址
 

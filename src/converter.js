@@ -171,7 +171,66 @@ class Converter {
     return chunks.join('');
   }
 
-  convert(rules, format) {
+  toShadowrocketConf(rules, repo) {
+    const chunks = [
+      '# Shadowrocket AdBlock Config',
+      `# Generated: ${new Date().toISOString()}`,
+      `# Rules: ${rules.length}`,
+      `# GitHub: https://github.com/${repo}`,
+      '',
+      '[General]',
+      'bypass-system = true',
+      'skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local',
+      'bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32',
+      'dns-server = system, 223.5.5.5, 119.29.29.29',
+      '',
+      '[Rule]',
+    ];
+
+    const seen = new Set();
+    for (const rule of rules) {
+      const domain = rule.domain;
+      if (domain && !seen.has(domain)) {
+        seen.add(domain);
+        if (domain.startsWith('*.')) {
+          chunks.push(`DOMAIN-SUFFIX,${domain.slice(2)},REJECT`);
+        } else {
+          chunks.push(`DOMAIN-SUFFIX,${domain},REJECT`);
+        }
+      }
+    }
+
+    chunks.push('', '# Custom proxy rules - add your own below', '# DOMAIN-SUFFIX,google.com,PROXY', '# GEOIP,CN,DIRECT', 'FINAL,DIRECT', '', '[URL Rewrite]', '', '[MITM]', '');
+
+    return chunks.join('\n');
+  }
+
+  toShadowrocketRules(rules) {
+    const chunks = [
+      '# Shadowrocket AdBlock Rules',
+      `# Generated: ${new Date().toISOString()}`,
+      `# Rules: ${rules.length}`,
+      '# Import via Shadowrocket > Config > Rule > Update Rule List',
+      '',
+    ];
+
+    const seen = new Set();
+    for (const rule of rules) {
+      const domain = rule.domain;
+      if (domain && !seen.has(domain)) {
+        seen.add(domain);
+        if (domain.startsWith('*.')) {
+          chunks.push(`DOMAIN-SUFFIX,${domain.slice(2)},REJECT`);
+        } else {
+          chunks.push(`DOMAIN-SUFFIX,${domain},REJECT`);
+        }
+      }
+    }
+
+    return chunks.join('\n');
+  }
+
+  convert(rules, format, repo) {
     switch (format) {
       case 'adguard': return this.toAdguardFormat(rules);
       case 'ublock': return this.toUblockOriginFormat(rules);
@@ -182,6 +241,8 @@ class Converter {
       case 'bind': return this.toBindFormat(rules);
       case 'domain-list': return this.toDomainList(rules);
       case 'json': return this.toJson(rules);
+      case 'shadowrocket-conf': return this.toShadowrocketConf(rules, repo || 'wansheng8/RuleSat');
+      case 'shadowrocket-rules': return this.toShadowrocketRules(rules);
       default: return this.toAdguardFormat(rules);
     }
   }

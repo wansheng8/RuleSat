@@ -88,11 +88,15 @@ class AdblockFilterAggregator {
       'filter-bind-rpz.conf': 'bind',
       'filter-domains.txt': 'domain-list',
       'filter-rules.json': 'json',
+      'filter-shadowrocket.conf': 'shadowrocket-conf',
+      'filter-shadowrocket-rules.txt': 'shadowrocket-rules',
     };
+
+    const repo = process.env.GITHUB_REPOSITORY || 'wansheng8/RuleSat';
 
     for (const [filename, format] of Object.entries(formats)) {
       try {
-        const content = this.converter.convert(sorted, format);
+        const content = this.converter.convert(sorted, format, repo);
         const outPath = this.writer.write(filename, content);
         const size = Buffer.byteLength(content, 'utf-8');
 

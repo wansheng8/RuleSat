@@ -1,5 +1,14 @@
 class Converter {
 
+  constructor() {
+    this.domainRegex = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$/i;
+  }
+
+  _isValidDomain(domain) {
+    if (!domain) return false;
+    return this.domainRegex.test(domain) || this.domainRegex.test(domain.replace(/^\*\./, ''));
+  }
+
   toAdguardFormat(rules) {
     return this._toTextLines(rules, (rule) => {
       if (rule.categories && rule.categories.includes('whitelist') && !rule.rule.startsWith('@@')) {
@@ -188,7 +197,7 @@ class Converter {
     const domainMap = new Map();
     for (const rule of rules) {
       const d = rule.domain;
-      if (!d) continue;
+      if (!d || !this._isValidDomain(d)) continue;
       const existing = domainMap.get(d);
       if (existing) {
         existing.count++;
@@ -202,15 +211,15 @@ class Converter {
   }
 
   toShadowrocketConf(rules, repo) {
-    return this.toShadowrocketLite(rules, 30000, repo, true);
+    return this.toShadowrocketLite(rules, 15000, repo, true);
   }
 
   toShadowrocketRules(rules) {
-    return this.toShadowrocketLite(rules, 30000, null, false);
+    return this.toShadowrocketLite(rules, 15000, null, false);
   }
 
   toShadowrocketLite(rules, limit, repo, isConf) {
-    limit = limit || 30000;
+    limit = limit || 15000;
     const topDomains = this._selectTopDomains(rules, limit);
 
     const chunks = [
@@ -220,7 +229,7 @@ class Converter {
       `# Lite rules (top domains): ${topDomains.length.toLocaleString()}`,
       `# GitHub: https://github.com/${repo || 'wansheng8/RuleSat'}`,
       '#',
-      '# NOTE: Shadowrocket works best with < 50000 rules.',
+      '# NOTE: Shadowrocket works best with < 15000 rules.',
       '# This lite version includes only the most critical ad/tracking/malware domains.',
       '# For DNS-level blocking use filter-hosts.txt or filter-domains.txt instead.',
       '',
@@ -240,6 +249,7 @@ class Converter {
     }
 
     for (const domain of topDomains) {
+      if (!this._isValidDomain(domain) && !this._isValidDomain(domain.replace(/^\*\./, ''))) continue;
       if (domain.startsWith('*.')) {
         chunks.push(`DOMAIN-SUFFIX,${domain.slice(2)},REJECT`);
       } else {

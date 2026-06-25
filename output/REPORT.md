@@ -1,20 +1,20 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-25T14:04:28.330Z
+Generated: 2026-06-25T14:31:09.666Z
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,390,874 |
-| Unique rules after dedup | 1,153,533 |
+| Total rules parsed | 1,383,905 |
+| Unique rules after dedup | 1,146,564 |
 | Duplicates removed | 237,341 |
 | Invalid rules | N/A |
 | Sources processed | 24 |
 
 ## Rule Type Distribution
 
-- network: 1,054,947
+- network: 1,047,978
 - generic-hide: 389
 - script: 2,815
 - image: 1,301
@@ -45,25 +45,25 @@ Generated: 2026-06-25T14:04:28.330Z
 
 ## Category Distribution
 
-- ads: 265,367
-- annoyances: 54,394
-- social: 19,674
+- ads: 265,155
+- annoyances: 54,389
+- social: 19,608
 - ads-regional: 19,648
 - stylesheet: 122
-- regional-cn: 15,130
-- regional-ru: 19,930
-- tracking: 63,389
-- privacy: 63,791
+- regional-cn: 15,022
+- regional-ru: 19,866
+- tracking: 63,300
+- privacy: 63,787
 - spyware: 690
 - popup: 3,948
-- malware: 22,373
-- phishing: 145,429
-- ads-malware-tracking: 730,203
-- ads-malware: 82,663
-- abuse: 1,390
+- malware: 22,324
+- phishing: 145,427
+- ads-malware-tracking: 723,519
+- ads-malware: 82,661
+- abuse: 1,383
 - spam: 8,140
 - cookies: 18,261
-- mining: 885
+- mining: 593
 - redirect: 321
 - whitelist: 7,102
 - font: 6
@@ -71,56 +71,56 @@ Generated: 2026-06-25T14:04:28.330Z
 
 ## Top Domains
 
-- com.br: 6,546
+- com.br: 6,557
 - in.net: 6,352
 - actonservice.com: 2,974
 - co.uk: 2,137
-- omtrdc.net: 1,761
 - 2o7.net: 1,727
-- com.au: 1,418
-- optimizely.com: 1,109
-- wixstudio.com: 786
-- run.app: 782
-- intellitxt.com: 752
-- co.jp: 622
+- com.au: 1,419
+- wixstudio.com: 1,009
+- run.app: 778
+- intellitxt.com: 751
+- co.jp: 625
 - co.kr: 484
 - ero-advertising.com: 393
-- com.cn: 377
-- qq.com: 317
-- pages.dev: 309
+- com.cn: 375
+- qq.com: 316
 - px-cloud.net: 308
-- vercel.app: 300
+- framer.app: 303
 - hitbox.com: 291
-- com.tr: 283
-- tiktokv.com: 262
-- framer.app: 260
+- vercel.app: 287
+- com.tr: 281
+- tiktokv.com: 254
 - cloudfront.net: 237
 - iocnt.de: 225
-- amazonaws.com: 225
 - adobe.com: 222
-- co.nz: 218
+- co.nz: 220
 - xiaomi.com: 210
 - vivoglobal.com: 205
-- weebly.com: 205
+- amazonaws.com: 202
+- weebly.com: 198
 - co.il: 198
 - p2l.info: 198
-- co.za: 176
+- co.za: 178
 - com.bd: 173
-- netlify.app: 166
-- com.pl: 157
+- com.pl: 163
 - casalemedia.com: 154
-- baidu.com: 150
+- baidu.com: 148
 - iberostar.com: 147
 - com.vn: 141
 - com.tw: 137
-- doubleclick.net: 133
-- edgekey.net: 131
-- windows.net: 130
+- doubleclick.net: 132
+- edgekey.net: 130
+- windows.net: 129
 - marketo.com: 128
 - oewabox.at: 126
-- com.mx: 116
-- r2.dev: 114
-- workers.dev: 112
+- netlify.app: 120
+- com.mx: 118
+- criteo.com: 111
+- workers.dev: 110
+- pages.dev: 110
+- omtrdc.net: 109
+- googleapis.com: 107
 
 ## Output Files
 

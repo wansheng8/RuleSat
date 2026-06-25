@@ -1,13 +1,13 @@
 {
-  "mode": "all",
-  "elapsed": "220.8s",
+  "mode": "build",
+  "elapsed": "214.5s",
   "fetchedCount": 24,
-  "totalParsed": 1390874,
-  "totalUnique": 1153533,
+  "totalParsed": 1383905,
+  "totalUnique": 1146564,
   "duplicatesRemoved": 237341,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1054947,
+    "network": 1047978,
     "generic-hide": 389,
     "script": 2815,
     "image": 1301,
@@ -37,25 +37,25 @@
     "important": 42
   },
   "categories": {
-    "ads": 265367,
-    "annoyances": 54394,
-    "social": 19674,
+    "ads": 265155,
+    "annoyances": 54389,
+    "social": 19608,
     "ads-regional": 19648,
     "stylesheet": 122,
-    "regional-cn": 15130,
-    "regional-ru": 19930,
-    "tracking": 63389,
-    "privacy": 63791,
+    "regional-cn": 15022,
+    "regional-ru": 19866,
+    "tracking": 63300,
+    "privacy": 63787,
     "spyware": 690,
     "popup": 3948,
-    "malware": 22373,
-    "phishing": 145429,
-    "ads-malware-tracking": 730203,
-    "ads-malware": 82663,
-    "abuse": 1390,
+    "malware": 22324,
+    "phishing": 145427,
+    "ads-malware-tracking": 723519,
+    "ads-malware": 82661,
+    "abuse": 1383,
     "spam": 8140,
     "cookies": 18261,
-    "mining": 885,
+    "mining": 593,
     "redirect": 321,
     "whitelist": 7102,
     "font": 6,
@@ -64,7 +64,7 @@
   "topDomains": [
     [
       "com.br",
-      6546
+      6557
     ],
     [
       "in.net",
@@ -79,36 +79,28 @@
       2137
     ],
     [
-      "omtrdc.net",
-      1761
-    ],
-    [
       "2o7.net",
       1727
     ],
     [
       "com.au",
-      1418
-    ],
-    [
-      "optimizely.com",
-      1109
+      1419
     ],
     [
       "wixstudio.com",
-      786
+      1009
     ],
     [
       "run.app",
-      782
+      778
     ],
     [
       "intellitxt.com",
-      752
+      751
     ],
     [
       "co.jp",
-      622
+      625
     ],
     [
       "co.kr",
@@ -120,39 +112,35 @@
     ],
     [
       "com.cn",
-      377
+      375
     ],
     [
       "qq.com",
-      317
-    ],
-    [
-      "pages.dev",
-      309
+      316
     ],
     [
       "px-cloud.net",
       308
     ],
     [
-      "vercel.app",
-      300
+      "framer.app",
+      303
     ],
     [
       "hitbox.com",
       291
     ],
     [
+      "vercel.app",
+      287
+    ],
+    [
       "com.tr",
-      283
+      281
     ],
     [
       "tiktokv.com",
-      262
-    ],
-    [
-      "framer.app",
-      260
+      254
     ],
     [
       "cloudfront.net",
@@ -163,16 +151,12 @@
       225
     ],
     [
-      "amazonaws.com",
-      225
-    ],
-    [
       "adobe.com",
       222
     ],
     [
       "co.nz",
-      218
+      220
     ],
     [
       "xiaomi.com",
@@ -183,8 +167,12 @@
       205
     ],
     [
+      "amazonaws.com",
+      202
+    ],
+    [
       "weebly.com",
-      205
+      198
     ],
     [
       "co.il",
@@ -196,19 +184,15 @@
     ],
     [
       "co.za",
-      176
+      178
     ],
     [
       "com.bd",
       173
     ],
     [
-      "netlify.app",
-      166
-    ],
-    [
       "com.pl",
-      157
+      163
     ],
     [
       "casalemedia.com",
@@ -216,7 +200,7 @@
     ],
     [
       "baidu.com",
-      150
+      148
     ],
     [
       "iberostar.com",
@@ -232,15 +216,15 @@
     ],
     [
       "doubleclick.net",
-      133
+      132
     ],
     [
       "edgekey.net",
-      131
+      130
     ],
     [
       "windows.net",
-      130
+      129
     ],
     [
       "marketo.com",
@@ -251,16 +235,32 @@
       126
     ],
     [
-      "com.mx",
-      116
+      "netlify.app",
+      120
     ],
     [
-      "r2.dev",
-      114
+      "com.mx",
+      118
+    ],
+    [
+      "criteo.com",
+      111
     ],
     [
       "workers.dev",
-      112
+      110
+    ],
+    [
+      "pages.dev",
+      110
+    ],
+    [
+      "omtrdc.net",
+      109
+    ],
+    [
+      "googleapis.com",
+      107
     ]
   ]
 }

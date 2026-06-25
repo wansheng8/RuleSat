@@ -1,6 +1,11 @@
 class Parser {
   constructor() {
     this.stats = { total: 0, parsed: 0, skipped: 0, comments: 0, empty: 0 };
+    this.domainRegex = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$/i;
+  }
+
+  _isValidDomain(domain) {
+    return this.domainRegex.test(domain) || this.domainRegex.test(domain.replace(/^\*\./, ''));
   }
 
   parse(content, sourceFormat) {
@@ -46,7 +51,7 @@ class Parser {
       return null;
     }
     const domain = cleaned.split(/[#\s]/)[0].trim().toLowerCase();
-    if (!domain || !domain.includes('.')) return null;
+    if (!domain || !this._isValidDomain(domain)) return null;
 
     return {
       type: 'network',
@@ -64,7 +69,7 @@ class Parser {
     if (!cleaned || cleaned.startsWith('#') || cleaned.startsWith('!')) return null;
 
     const domain = cleaned.split(/[#\s]/)[0].trim().toLowerCase();
-    if (!domain || !domain.includes('.')) return null;
+    if (!domain || !this._isValidDomain(domain) && !this._isValidDomain(domain.replace(/^\*\./, ''))) return null;
 
     const suffix = format === 'domain-wild' ? '^' : '^';
     return {
@@ -112,12 +117,20 @@ class Parser {
 
     if (line.startsWith('||')) {
       const domainMatch = line.replace(/^\|\|/, '').match(/^([^/$^]+)/);
-      if (domainMatch) rule.domain = domainMatch[1].toLowerCase();
+      if (domainMatch) {
+        const extracted = domainMatch[1].toLowerCase();
+        if (this._isValidDomain(extracted)) {
+          rule.domain = extracted;
+        }
+      }
     } else if (line.includes('://')) {
       try {
         const cleaned = line.replace(/^[@@|]+/, '').replace(/\$.*$/, '');
         const url = new URL(cleaned);
-        rule.domain = url.hostname.toLowerCase();
+        const hostname = url.hostname.toLowerCase();
+        if (this._isValidDomain(hostname)) {
+          rule.domain = hostname;
+        }
       } catch {}
     }
 

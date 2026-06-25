@@ -316,9 +316,19 @@ class Converter {
     if (isConf) {
       chunks.push('[General]');
       chunks.push('bypass-system = true');
-      chunks.push('skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local');
-      chunks.push('bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32');
-      chunks.push('dns-server = system, 223.5.5.5, 119.29.29.29');
+      chunks.push('skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com');
+      chunks.push('tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32, 239.255.255.250/32');
+      chunks.push('dns-server = system');
+      chunks.push('fallback-dns-server = system');
+      chunks.push('ipv6 = true');
+      chunks.push('prefer-ipv6 = false');
+      chunks.push('dns-direct-system = false');
+      chunks.push('icmp-auto-reply = true');
+      chunks.push('always-reject-url-rewrite = false');
+      chunks.push('private-ip-answer = true');
+      chunks.push('dns-direct-fallback-proxy = false');
+      chunks.push('udp-policy-not-supported-behaviour = REJECT');
+      chunks.push('use-local-host-item-for-proxy = false');
       chunks.push('');
       chunks.push('[Rule]');
     } else {
@@ -337,10 +347,12 @@ class Converter {
 
     if (isConf) {
       chunks.push('');
-      chunks.push('# --- Add your proxy rules below ---');
-      chunks.push('# DOMAIN-SUFFIX,google.com,PROXY');
+      chunks.push('# --- Add your proxy/routing rules below ---');
       chunks.push('# GEOIP,CN,DIRECT');
-      chunks.push('FINAL,DIRECT');
+      chunks.push('# FINAL,PROXY');
+      chunks.push('');
+      chunks.push('[Host]');
+      chunks.push('localhost = 127.0.0.1');
       chunks.push('');
       chunks.push('[URL Rewrite]');
       chunks.push('');

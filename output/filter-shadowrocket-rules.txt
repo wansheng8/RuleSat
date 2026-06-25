@@ -1,6 +1,6 @@
 # Shadowrocket AdBlock Rules
-# Generated: 2026-06-25T14:58:57.771Z
-# Total source rules: 1,146,567
+# Generated: 2026-06-25T15:21:07.675Z
+# Total source rules: 1,146,566
 # Lite rules (top domains): 15,000
 # GitHub: https://github.com/wansheng8/RuleSat
 #
@@ -2272,7 +2272,6 @@ DOMAIN-SUFFIX,mangadex.org,REJECT
 DOMAIN-SUFFIX,researchgate.net,REJECT
 DOMAIN-SUFFIX,xgroovy.com,REJECT
 DOMAIN-SUFFIX,affirm.com,REJECT
-DOMAIN-SUFFIX,zs.peachparadise.vip,REJECT
 DOMAIN-SUFFIX,ads.planetwin365affiliate.com,REJECT
 DOMAIN-SUFFIX,static.rapidglobalorbit.com,REJECT
 DOMAIN-SUFFIX,tradestrategy.substack.com,REJECT
@@ -3019,6 +3018,7 @@ DOMAIN-SUFFIX,chargeit.baby,REJECT
 DOMAIN-SUFFIX,world.ex-advantage.jp,REJECT
 DOMAIN-SUFFIX,amazing.mirage-road.com,REJECT
 DOMAIN-SUFFIX,chestgoingpunch.com,REJECT
+DOMAIN-SUFFIX,zs.peachparadise.vip,REJECT
 DOMAIN-SUFFIX,chicks4date.com,REJECT
 DOMAIN-SUFFIX,sabito.kamadonezuko.com,REJECT
 DOMAIN-SUFFIX,cdn.metricastats.com,REJECT
@@ -14957,8 +14957,8 @@ DOMAIN-SUFFIX,admanager.btopenworld.com,REJECT
 DOMAIN-SUFFIX,admanager.carsoup.com,REJECT
 DOMAIN-SUFFIX,admatchly.com,REJECT
 DOMAIN-SUFFIX,admeld.com,REJECT
-DOMAIN-SUFFIX,admex.com,REJECT
 DOMAIN-SUFFIX,facilewhiteruinous.com,REJECT
+DOMAIN-SUFFIX,admex.com,REJECT
 DOMAIN-SUFFIX,admidadsp.com,REJECT
 DOMAIN-SUFFIX,adminder.com,REJECT
 DOMAIN-SUFFIX,adminshop.com,REJECT

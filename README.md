@@ -8,11 +8,11 @@
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **1,144,146** |
+| 唯一规则总数 | **1,153,533** |
 | 规则来源 | 24 |
 | 规则类别 | 23 |
-| 重复移除 | 236,700 |
-| 最后更新 | 2026-06-25 01:56:42 |
+| 重复移除 | 237,341 |
+| 最后更新 | 2026-06-25 13:37:44 |
 
 ## 浏览器插件订阅地址
 
@@ -21,6 +21,15 @@
 | AdGuard | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-adguard.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-adguard.txt) |
 | uBlock Origin | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-ublock.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-ublock.txt) |
 | Adblock Plus | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-abp.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-abp.txt) |
+
+## Shadowrocket / Surge / Quantumult 订阅
+
+| 工具 | Raw | CDN |
+|---|---|---|
+| Shadowrocket 完整配置 | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket.conf) |
+| Shadowrocket 纯规则 | [订阅](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket-rules.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket-rules.txt) |
+
+> Shadowrocket 使用方法: 配置 > 规则 > 更新规则列表，填入纯规则链接即可。连接国外节点时自动拦截广告域名。
 
 ## DNS / Hosts 订阅地址
 
@@ -39,6 +48,8 @@
 | [filter-abp.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-abp.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-abp.txt) | Adblock Plus | Adblock Plus 浏览器插件 |
 | [filter-hosts.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-hosts.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-hosts.txt) | Hosts | Pi-hole / 标准 hosts 文件 |
 | [filter-domains.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-domains.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-domains.txt) | 域名列表 | 纯域名列表 (一行一个) |
+| [filter-shadowrocket.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket.conf) | Shadowrocket | Shadowrocket 完整配置 (直连导入) |
+| [filter-shadowrocket-rules.txt](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-shadowrocket-rules.txt) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-shadowrocket-rules.txt) | Shadowrocket Rules | Shadowrocket 纯规则 (合并到现有配置) |
 | [filter-dnsmasq.conf.gz](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-dnsmasq.conf.gz) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-dnsmasq.conf.gz) | Dnsmasq (gz) | Dnsmasq DNS 服务器 (gzip) |
 | [filter-unbound.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-unbound.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-unbound.conf) | Unbound | Unbound DNS 服务器 |
 | [filter-bind-rpz.conf](https://raw.githubusercontent.com/wansheng8/RuleSat/main/output/filter-bind-rpz.conf) | [CDN](https://cdn.jsdelivr.net/gh/wansheng8/RuleSat@main/output/filter-bind-rpz.conf) | BIND RPZ | BIND DNS RPZ 区域文件 |
@@ -50,26 +61,26 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 720,583 |
-| ads | 264,993 |
-| phishing | 145,307 |
+| ads-malware-tracking | 730,203 |
+| ads | 265,367 |
+| phishing | 145,429 |
 | ads-malware | 82,663 |
-| privacy | 63,776 |
-| tracking | 63,200 |
-| annoyances | 54,385 |
-| malware | 22,418 |
-| ads-regional | 19,644 |
-| social | 19,543 |
-| regional-ru | 19,145 |
-| cookies | 18,257 |
-| regional-cn | 15,179 |
+| privacy | 63,791 |
+| tracking | 63,389 |
+| annoyances | 54,394 |
+| malware | 22,373 |
+| regional-ru | 19,930 |
+| social | 19,674 |
+| ads-regional | 19,648 |
+| cookies | 18,261 |
+| regional-cn | 15,130 |
 | spam | 8,140 |
 | whitelist | 7,102 |
-| popup | 3,949 |
-| abuse | 1,377 |
-| mining | 907 |
+| popup | 3,948 |
+| abuse | 1,390 |
+| mining | 885 |
 | spyware | 690 |
-| redirect | 319 |
+| redirect | 321 |
 | stylesheet | 122 |
 | mobile-ads | 41 |
 | font | 6 |
@@ -79,12 +90,12 @@
 
 | 类型 | 数量 |
 |---|---|
-| network | 1,045,533 |
-| css | 79,185 |
-| third-party | 7,201 |
-| popup | 3,194 |
-| script | 2,813 |
-| all | 1,433 |
+| network | 1,054,947 |
+| css | 79,205 |
+| third-party | 7,202 |
+| popup | 3,193 |
+| script | 2,815 |
+| all | 1,384 |
 | image | 1,301 |
 | css-extended | 817 |
 | document | 653 |

@@ -1,13 +1,13 @@
 {
   "mode": "all",
-  "elapsed": "91.4s",
+  "elapsed": "89.5s",
   "fetchedCount": 24,
-  "totalParsed": 1373413,
-  "totalUnique": 1137058,
-  "duplicatesRemoved": 236355,
+  "totalParsed": 1380846,
+  "totalUnique": 1144146,
+  "duplicatesRemoved": 236700,
   "sourceCount": 24,
   "ruleTypes": {
-    "network": 1038444,
+    "network": 1045533,
     "generic-hide": 389,
     "script": 2813,
     "image": 1301,
@@ -28,7 +28,7 @@
     "other": 1,
     "object": 13,
     "document": 653,
-    "css": 79186,
+    "css": 79185,
     "rewrite": 20,
     "css-extended": 817,
     "replace": 2,
@@ -37,25 +37,25 @@
     "important": 42
   },
   "categories": {
-    "ads": 264880,
-    "annoyances": 54381,
-    "social": 19400,
-    "ads-regional": 19641,
+    "ads": 264993,
+    "annoyances": 54385,
+    "social": 19543,
+    "ads-regional": 19644,
     "stylesheet": 122,
-    "regional-cn": 15038,
-    "regional-ru": 20038,
-    "tracking": 63012,
+    "regional-cn": 15179,
+    "regional-ru": 19145,
+    "tracking": 63200,
     "privacy": 63776,
     "spyware": 690,
     "popup": 3949,
-    "malware": 22552,
-    "phishing": 145028,
-    "ads-malware-tracking": 713587,
-    "ads-malware": 82660,
-    "abuse": 1367,
+    "malware": 22418,
+    "phishing": 145307,
+    "ads-malware-tracking": 720583,
+    "ads-malware": 82663,
+    "abuse": 1377,
     "spam": 8140,
-    "cookies": 18260,
-    "mining": 825,
+    "cookies": 18257,
+    "mining": 907,
     "redirect": 319,
     "whitelist": 7102,
     "font": 6,
@@ -63,12 +63,12 @@
   },
   "topDomains": [
     [
-      "in.net",
-      6575
+      "com.br",
+      6559
     ],
     [
-      "com.br",
-      6572
+      "in.net",
+      6455
     ],
     [
       "actonservice.com",
@@ -76,19 +76,23 @@
     ],
     [
       "co.uk",
-      2151
+      2142
     ],
     [
       "2o7.net",
       1727
     ],
     [
-      "wixstudio.com",
-      1433
+      "com.au",
+      1419
     ],
     [
-      "com.au",
-      1418
+      "wixstudio.com",
+      1116
+    ],
+    [
+      "run.app",
+      774
     ],
     [
       "intellitxt.com",
@@ -96,7 +100,7 @@
     ],
     [
       "co.jp",
-      590
+      605
     ],
     [
       "co.kr",
@@ -108,11 +112,11 @@
     ],
     [
       "com.cn",
-      382
+      379
     ],
     [
       "framer.app",
-      356
+      318
     ],
     [
       "vercel.app",
@@ -127,20 +131,24 @@
       284
     ],
     [
-      "cloudfront.net",
-      237
+      "tiktokv.com",
+      262
     ],
     [
-      "amazonaws.com",
-      226
+      "cloudfront.net",
+      237
     ],
     [
       "iocnt.de",
       225
     ],
     [
+      "amazonaws.com",
+      225
+    ],
+    [
       "co.nz",
-      223
+      222
     ],
     [
       "adobe.com",
@@ -160,7 +168,7 @@
     ],
     [
       "co.il",
-      199
+      198
     ],
     [
       "p2l.info",
@@ -168,15 +176,19 @@
     ],
     [
       "co.za",
-      180
+      178
     ],
     [
       "com.bd",
       173
     ],
     [
+      "qq.com",
+      167
+    ],
+    [
       "com.pl",
-      168
+      165
     ],
     [
       "casalemedia.com",
@@ -191,12 +203,8 @@
       147
     ],
     [
-      "qq.com",
-      145
-    ],
-    [
       "com.vn",
-      144
+      142
     ],
     [
       "com.tw",
@@ -223,11 +231,11 @@
       126
     ],
     [
-      "pages.dev",
-      122
+      "workers.dev",
+      121
     ],
     [
-      "workers.dev",
+      "pages.dev",
       121
     ],
     [
@@ -239,6 +247,10 @@
       118
     ],
     [
+      "r2.dev",
+      114
+    ],
+    [
       "criteo.com",
       111
     ],
@@ -247,20 +259,8 @@
       109
     ],
     [
-      "r2.dev",
-      107
-    ],
-    [
       "googleapis.com",
       107
-    ],
-    [
-      "liftmyresume.com",
-      106
-    ],
-    [
-      "checkm8.com",
-      104
     ]
   ]
 }

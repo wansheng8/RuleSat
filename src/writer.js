@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
+const { beijingISO } = require('./time');
 
 class Writer {
   constructor(outputDir) {
@@ -41,7 +42,7 @@ class Writer {
     const lines = [
       '# Adblock Filter Aggregator Report',
       '',
-      `Generated: ${new Date().toISOString()}`,
+      `Generated: ${beijingISO()}`,
       '',
       '## Statistics',
       '',

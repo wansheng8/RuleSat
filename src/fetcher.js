@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { beijingISO } = require('./time');
 
 class Fetcher {
   constructor(options = {}) {
@@ -15,7 +16,7 @@ class Fetcher {
       try {
         console.log(`[fetch] ${source.name}`);
         const content = await this.fetchSource(source);
-        results.push({ ...source, content, fetchedAt: new Date().toISOString() });
+        results.push({ ...source, content, fetchedAt: beijingISO() });
       } catch (err) {
         console.error(`[fetch] ${source.name} FAILED: ${err.message}`);
         const cached = this.loadCache(source.name);

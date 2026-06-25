@@ -1,3 +1,5 @@
+const { beijingISO } = require('./time');
+
 class Merger {
   constructor(options = {}) {
     this.stripComments = options.stripComments !== false;
@@ -9,7 +11,7 @@ class Merger {
       rules: [],
       metadata: {
         sourceCount: sourceResults.length,
-        mergedAt: new Date().toISOString(),
+        mergedAt: beijingISO(),
         sources: [],
       },
     };

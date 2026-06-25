@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { beijingISOShort } = require('./time');
 
 function fmt(n) {
   if (n == null) return 'N/A';
@@ -43,20 +44,27 @@ function generate(repo) {
 
   const sourceList = [
     'EasyList / EasyPrivacy',
-    'AdGuard Base / Tracking / Social / DNS / Spyware / Mobile / Cookies',
+    'AdGuard Base / Tracking / Social / DNS / Spyware / Mobile / Cookies / Popup / CNAME',
     'uBlock Origin Badware / Privacy / Resource Abuse / Unbreak',
     'Fanboy Annoyance / Social',
     "Peter Lowe's Hosts",
     'StevenBlack Hosts',
     'someonewhocares Hosts',
     'oisd full',
-    'HaGeZi DNS Pro',
+    'HaGeZi DNS Pro / Ultimate',
     'Phishing Army',
     'NoCoin Miners',
     'Anti-PopAds',
     'Spam404',
     'URLhaus Malware',
-    'EasyList China',
+    'EasyList China / Germany / Italy / Dutch',
+    'Dan Pollock Hosts',
+    'AdAway Hosts',
+    'Anti-AD (Chinese)',
+    'CJX Annoyance List',
+    'ABP Warning Removal',
+    'KADhosts',
+    'Ad-Wars / YHosts (Chinese)',
   ];
 
   const cats = stats.categories || {};
@@ -75,7 +83,7 @@ function generate(repo) {
 
 [![Update Filter Lists](https://github.com/${repo}/actions/workflows/update-filters.yml/badge.svg)](https://github.com/${repo}/actions/workflows/update-filters.yml)
 
-多源广告拦截过滤规则聚合引擎。从 **${stats.sourceCount || 30}** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
+多源广告拦截过滤规则聚合引擎。从 **${stats.sourceCount || 49}** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
 
 ## 实时统计
 
@@ -85,7 +93,7 @@ function generate(repo) {
 | 规则来源 | ${stats.sourceCount || 'N/A'} |
 | 规则类别 | ${Object.keys(cats).length} |
 | 重复移除 | ${fmt(stats.duplicatesRemoved)} |
-| 最后更新 | ${new Date().toISOString().replace('T', ' ').slice(0, 19)} |
+| 最后更新 | ${beijingISOShort()} |
 
 ## 浏览器插件订阅地址
 

@@ -1,2 +1,4 @@
 filter-rules.json
 filter-dnsmasq.conf
+filter-bind-rpz.conf
+filter-unbound.conf

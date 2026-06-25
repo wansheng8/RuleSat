@@ -31,12 +31,16 @@ jobs:
           node-version: '22'
 
       - name: Run filter aggregation
+        env:
+          NODE_OPTIONS: '--max-old-space-size=8192'
         run: |
           rm -rf output/
           mkdir -p output
           node src/cli.js all
           echo "filter-rules.json"  > output/.gitignore
           echo "filter-dnsmasq.conf" >> output/.gitignore
+          echo "filter-bind-rpz.conf" >> output/.gitignore
+          echo "filter-unbound.conf" >> output/.gitignore
 
       - name: Generate README
         run: node src/generate-readme.js

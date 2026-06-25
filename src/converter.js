@@ -1,3 +1,5 @@
+const { beijingISO } = require('./time');
+
 class Converter {
 
   constructor() {
@@ -110,7 +112,7 @@ class Converter {
 
     if (header) {
       chunks.push(header);
-      chunks.push(`! Generated: ${new Date().toISOString()}`);
+      chunks.push(`! Generated: ${beijingISO()}`);
       chunks.push(`! Rules: ${rules.length}`);
       chunks.push('');
     }
@@ -131,7 +133,7 @@ class Converter {
     const chunkSize = 50000;
     const chunks = [
       '# Hosts file',
-      `# Generated: ${new Date().toISOString()}`,
+      `# Generated: ${beijingISO()}`,
       `# Rules: ${rules.length}`,
       '0.0.0.0 localhost',
       '',
@@ -152,7 +154,7 @@ class Converter {
   toDnsmasqFormat(rules) {
     const chunks = [
       '# Dnsmasq',
-      `# Generated: ${new Date().toISOString()}`,
+      `# Generated: ${beijingISO()}`,
       `# Rules: ${rules.length}`,
       '',
     ];
@@ -174,7 +176,7 @@ class Converter {
   toUnboundFormat(rules) {
     const chunks = [
       '# Unbound',
-      `# Generated: ${new Date().toISOString()}`,
+      `# Generated: ${beijingISO()}`,
       `# Rules: ${rules.length}`,
       '',
     ];
@@ -194,7 +196,7 @@ class Converter {
   toBindFormat(rules) {
     const chunks = [
       '# BIND RPZ',
-      `; ${new Date().toISOString()}`,
+      `; ${beijingISO()}`,
       `; Rules: ${rules.length}`,
       '$TTL 1H',
       '@ SOA localhost. root.localhost. (1 1h 15m 30d 2h)',
@@ -218,7 +220,7 @@ class Converter {
   toDomainList(rules) {
     const chunks = [
       '# Domain blocklist',
-      `# Generated: ${new Date().toISOString()}`,
+      `# Generated: ${beijingISO()}`,
       `# Rules: ${rules.length}`,
       '',
     ];
@@ -301,7 +303,7 @@ class Converter {
 
     const chunks = [
       '# Shadowrocket AdBlock Rules',
-      `# Generated: ${new Date().toISOString()}`,
+      `# Generated: ${beijingISO()}`,
       `# Total source rules: ${rules.length.toLocaleString()}`,
       `# Lite rules (top domains): ${topDomains.length.toLocaleString()}`,
       `# GitHub: https://github.com/${repo || 'wansheng8/RuleSat'}`,

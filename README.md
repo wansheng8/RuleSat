@@ -2,17 +2,17 @@
 
 [![Update Filter Lists](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml/badge.svg)](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml)
 
-多源广告拦截过滤规则聚合引擎。从 **37** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
+多源广告拦截过滤规则聚合引擎。从 **36** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
 
 ## 实时统计
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **1,237,823** |
-| 规则来源 | 37 |
+| 唯一规则总数 | **761,727** |
+| 规则来源 | 36 |
 | 规则类别 | 24 |
-| 重复移除 | 712,333 |
-| 最后更新 | 2026-06-26 00:06:52 |
+| 重复移除 | 713,369 |
+| 最后更新 | 2026-06-26 09:57:39 |
 
 ## 浏览器插件订阅地址
 
@@ -50,27 +50,27 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 756,339 |
-| ads | 285,121 |
-| tracking | 161,708 |
-| phishing | 145,493 |
-| ads-regional | 126,649 |
-| ads-malware | 91,204 |
-| privacy | 63,857 |
-| annoyances | 57,558 |
-| malware | 22,686 |
-| regional-ru | 20,630 |
-| social | 20,031 |
-| regional-cn | 19,453 |
-| cookies | 18,326 |
+| ads-malware-tracking | 280,230 |
+| ads | 257,562 |
+| tracking | 147,867 |
+| phishing | 145,202 |
+| ads-regional | 127,234 |
+| ads-malware | 91,611 |
+| privacy | 63,712 |
+| annoyances | 56,889 |
+| malware | 20,749 |
+| cookies | 18,250 |
+| social | 17,846 |
+| regional-cn | 14,305 |
 | spam | 8,140 |
+| regional-ru | 7,828 |
 | whitelist | 7,563 |
 | popup | 4,049 |
 | annoyances-regional | 1,840 |
-| abuse | 1,496 |
+| abuse | 998 |
 | spyware | 690 |
-| mining | 641 |
 | redirect | 326 |
+| mining | 308 |
 | stylesheet | 127 |
 | mobile-ads | 41 |
 | font | 6 |
@@ -80,8 +80,8 @@
 
 | 类型 | 数量 |
 |---|---|
-| network | 1,129,106 |
-| css | 88,207 |
+| network | 653,006 |
+| css | 88,211 |
 | third-party | 7,724 |
 | popup | 3,294 |
 | script | 2,943 |
@@ -103,9 +103,9 @@
 | rewrite | 25 |
 | object | 13 |
 | websocket | 11 |
+| font | 4 |
 | element-hiding | 4 |
 | generic-block | 4 |
-| font | 4 |
 | replace | 2 |
 | other | 1 |
 

@@ -1,70 +1,70 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-26 00:06:52.590
+Generated: 2026-06-26 09:57:38.932
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,950,156 |
-| Unique rules after dedup | 1,237,823 |
-| Duplicates removed | 712,333 |
+| Total rules parsed | 1,475,096 |
+| Unique rules after dedup | 761,727 |
+| Duplicates removed | 713,369 |
 | Invalid rules | N/A |
-| Sources processed | 37 |
+| Sources processed | 36 |
 
 ## Rule Type Distribution
 
-- network: 1,129,106
-- generic-hide: 440
-- script: 2,943
-- image: 1,344
-- third-party: 7,724
-- media: 92
-- stylesheet: 78
-- element-hiding: 4
-- xhr: 646
 - subdocument: 267
-- generic-block: 4
-- popup: 3,294
-- ping: 60
+- xhr: 646
+- script: 2,943
+- third-party: 7,724
+- network: 653,006
+- image: 1,344
+- stylesheet: 78
 - websocket: 11
+- ping: 60
+- media: 92
 - font: 4
 - badfilter: 181
+- popup: 3,294
 - removeparam: 218
 - csp: 43
 - other: 1
+- generic-hide: 440
+- element-hiding: 4
+- generic-block: 4
 - object: 13
 - document: 653
-- css: 88,207
-- rewrite: 25
-- css-extended: 1,006
+- css: 88,211
 - replace: 2
 - all: 1,384
 - redirect: 31
 - important: 42
+- rewrite: 25
+- css-extended: 1,006
 
 ## Category Distribution
 
-- ads: 285,121
-- annoyances: 57,558
-- social: 20,031
-- ads-regional: 126,649
+- ads: 257,562
+- annoyances: 56,889
+- social: 17,846
+- ads-regional: 127,234
 - annoyances-regional: 1,840
 - stylesheet: 127
-- regional-cn: 19,453
-- regional-ru: 20,630
-- tracking: 161,708
-- privacy: 63,857
+- regional-cn: 14,305
+- regional-ru: 7,828
+- tracking: 147,867
+- privacy: 63,712
 - spyware: 690
 - popup: 4,049
-- malware: 22,686
-- phishing: 145,493
-- ads-malware-tracking: 756,339
-- ads-malware: 91,204
-- abuse: 1,496
+- malware: 20,749
+- phishing: 145,202
+- ads-malware-tracking: 280,230
+- ads-malware: 91,611
+- abuse: 998
 - spam: 8,140
-- cookies: 18,326
-- mining: 641
+- cookies: 18,250
+- mining: 308
 - redirect: 326
 - whitelist: 7,563
 - font: 6
@@ -72,56 +72,56 @@ Generated: 2026-06-26 00:06:52.590
 
 ## Top Domains
 
-- daraz.com: 18,307
-- com.br: 6,993
-- in.net: 6,352
-- actonservice.com: 3,819
-- co.uk: 2,323
-- com.au: 1,549
-- omtrdc.net: 1,541
-- 2o7.net: 1,448
-- com.cn: 826
-- run.app: 813
-- co.jp: 609
-- blogspot.com: 562
-- co.kr: 499
-- qq.com: 442
-- appspot.com: 435
-- amazonaws.com: 391
-- ero-advertising.com: 374
-- cloudfront.net: 369
-- vercel.app: 353
-- px-cloud.net: 309
-- baidu.com: 266
-- taskade.app: 265
-- tiktokv.com: 255
-- cnzz.com: 239
-- adobe.com: 234
-- co.nz: 233
-- xiaomi.com: 227
-- iocnt.de: 225
-- co.il: 215
+- com.br: 6,956
+- actonservice.com: 2,974
+- co.uk: 2,625
+- wixstudio.com: 2,501
+- com.cn: 2,225
+- omtrdc.net: 1,761
+- r2.dev: 1,730
+- 2o7.net: 1,727
+- com.au: 1,522
+- optimizely.com: 1,109
+- cloudfront.net: 797
+- run.app: 778
+- intellitxt.com: 751
+- co.jp: 748
+- adobedc.net: 709
+- framer.app: 623
+- amazonaws.com: 613
+- hl.cn: 579
+- co.kr: 577
+- fbcdn.net: 496
+- com.tr: 400
+- ero-advertising.com: 393
+- appspot.com: 316
+- px-cloud.net: 308
+- hitbox.com: 291
+- qq.com: 288
+- pages.dev: 280
+- co.za: 265
+- cpanel.site: 261
+- tiktokv.com: 254
+- co.nz: 247
+- edgekey.net: 246
+- adobe.com: 233
+- co.il: 229
+- vercel.app: 224
+- iocnt.de: 224
+- heytapmobile.com: 217
+- com.pl: 213
+- xiaomi.com: 210
 - vivoglobal.com: 205
-- iberostar.com: 199
-- weebly.com: 193
-- co.za: 192
-- com.bd: 191
-- com.tr: 190
-- googleapis.com: 165
-- edgekey.net: 155
-- com.tw: 153
-- netlify.app: 149
-- com.vn: 144
-- com.pl: 144
-- windows.net: 142
-- casalemedia.com: 141
-- marketo.com: 130
-- com.mx: 129
-- workers.dev: 126
-- bet.br: 122
-- windows.com: 121
-- webflow.io: 116
-- pages.dev: 116
+- amazon-adsystem.com: 199
+- weebly.com: 198
+- p2l.info: 198
+- webwave.dev: 192
+- baidu.com: 179
+- cloudflare.net: 178
+- com.ua: 177
+- com.bd: 177
+- com.vn: 174
+- aws-prd.net: 164
 
 ## Output Files
 

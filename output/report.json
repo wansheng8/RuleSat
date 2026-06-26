@@ -1,13 +1,13 @@
 {
-  "mode": "all",
-  "elapsed": "105.5s",
+  "mode": "build",
+  "elapsed": "238.4s",
   "fetchedCount": 37,
-  "totalParsed": 1946299,
-  "totalUnique": 1232861,
-  "duplicatesRemoved": 713438,
+  "totalParsed": 1946285,
+  "totalUnique": 1233012,
+  "duplicatesRemoved": 713273,
   "sourceCount": 37,
   "ruleTypes": {
-    "network": 1124130,
+    "network": 1124281,
     "generic-hide": 440,
     "script": 2933,
     "image": 1344,
@@ -37,14 +37,14 @@
     "important": 42
   },
   "categories": {
-    "ads": 284389,
+    "ads": 284397,
     "annoyances": 57571,
     "social": 19997,
     "ads-regional": 127229,
     "annoyances-regional": 1840,
     "stylesheet": 127,
     "regional-cn": 19694,
-    "regional-ru": 20791,
+    "regional-ru": 20793,
     "tracking": 161747,
     "privacy": 63906,
     "spyware": 690,
@@ -52,7 +52,7 @@
     "malware": 22598,
     "phishing": 145707,
     "ads-malware-tracking": 751253,
-    "ads-malware": 92297,
+    "ads-malware": 92447,
     "abuse": 1454,
     "spam": 8140,
     "cookies": 18327,
@@ -141,7 +141,7 @@
     ],
     [
       "vercel.app",
-      360
+      359
     ],
     [
       "px-cloud.net",

@@ -3,7 +3,6 @@ const { beijingISO } = require('./time');
 class Converter {
 
   constructor() {
-    this.domainRegex = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$/i;
     this.platformSafelist = new Set([
       'alicdn.com', 'alibaba.com', 'alipay.com', 'aliyuncs.com',
       'amazon.com', 'amazonaws.com',
@@ -18,23 +17,24 @@ class Converter {
       'cloudfront.net',
       'digitaloceanspaces.com',
       'discord.com', 'discordapp.com', 'discord.gg',
+      'douyin.com', 'douyinvod.com',
       'dropbox.com', 'dropboxusercontent.com',
       'facebook.com', 'fb.com', 'fbcdn.net', 'facebook.net', 'fbsbx.com',
       'fastly.net',
       'firebaseio.com', 'firebasestorage.googleapis.com',
       'github.com', 'github.io', 'githubassets.com', 'githubusercontent.com',
       'gmail.com', 'googlemail.com',
-      'google.com', 'googleapis.com', 'googletagmanager.com', 'gstatic.com',
-      'google-analytics.com', 'googlesyndication.com', 'doubleclick.net',
-      'googleadservices.com',
+      'google.com', 'googleapis.com', 'gstatic.com', 'googlevideo.com',
       'gtimg.com',
       'herokuapp.com',
       'icloud.com',
       'ifeng.com', 'ifengimg.com',
       'instagram.com', 'cdninstagram.com',
       'jsdelivr.net',
+      'jd.com', 'jdpay.com',
       'linkedin.com', 'licdn.com',
       'live.com', 'microsoft.com', 'microsoftonline.com', 'msn.com',
+      'meituan.com', 'meituan.net',
       'netflix.com', 'nflxvideo.net', 'nflximg.net',
       'notion.so', 'notion-static.com',
       'office.com', 'office.net', 'office365.com',
@@ -56,6 +56,7 @@ class Converter {
       'telegram.org', 't.me',
       'tencent.com', 'tcdn.com',
       'tiktok.com', 'tiktokcdn.com', 'byteoversea.com',
+      'toutiao.com', 'toutiaoimg.com',
       'twitch.tv', 'ttvnw.net',
       'twitter.com', 'twimg.com', 'x.com',
       'unpkg.com',
@@ -66,8 +67,9 @@ class Converter {
       'wikipedia.org', 'wikimedia.org',
       'windows.net',
       'wordpress.com', 'wp.com',
+      'xiaohongshu.com', 'xhscdn.com',
       'yahoo.com', 'yimg.com',
-      'youtube.com', 'youtu.be', 'ytimg.com', 'googlevideo.com',
+      'youtube.com', 'youtu.be', 'ytimg.com',
       'zoom.us',
       'zhihu.com', 'zhimg.com',
     ]);
@@ -84,8 +86,12 @@ class Converter {
   }
 
   _isValidDomain(domain) {
-    if (!domain) return false;
-    return this.domainRegex.test(domain) || this.domainRegex.test(domain.replace(/^\*\./, ''));
+    if (!domain || !domain.includes('.')) return false;
+    const parts = domain.replace(/^\*\./, '').split('.');
+    if (parts.length < 2 || parts[parts.length - 1].length < 2) return false;
+    if (/[\/\$\^\*!\s\(\)\|,]/.test(domain)) return false;
+    if (domain.startsWith('/') || domain.startsWith('^')) return false;
+    return true;
   }
 
   toAdguardFormat(rules) {
@@ -142,7 +148,7 @@ class Converter {
     const seen = new Set();
     for (let i = 0; i < rules.length; i++) {
       const domain = rules[i].domain;
-      if (domain && !seen.has(domain)) {
+      if (domain && !seen.has(domain) && !this._isSafelisted(domain)) {
         seen.add(domain);
         chunks.push(`0.0.0.0 ${domain}`);
       }
@@ -162,7 +168,7 @@ class Converter {
     const seen = new Set();
     for (const rule of rules) {
       const domain = rule.domain;
-      if (domain && !seen.has(domain)) {
+      if (domain && !seen.has(domain) && !this._isSafelisted(domain)) {
         seen.add(domain);
         chunks.push(`server=/${domain}/`);
         chunks.push(`address=/${domain}/0.0.0.0`);
@@ -184,7 +190,7 @@ class Converter {
     const seen = new Set();
     for (const rule of rules) {
       const domain = rule.domain;
-      if (domain && !seen.has(domain)) {
+      if (domain && !seen.has(domain) && !this._isSafelisted(domain)) {
         seen.add(domain);
         chunks.push(`local-zone: "${domain}" always_nxdomain`);
       }
@@ -207,7 +213,7 @@ class Converter {
     const seen = new Set();
     for (const rule of rules) {
       const domain = rule.domain;
-      if (domain && !seen.has(domain)) {
+      if (domain && !seen.has(domain) && !this._isSafelisted(domain)) {
         seen.add(domain);
         chunks.push(`${domain} CNAME .`);
         chunks.push(`*.${domain} CNAME .`);
@@ -228,7 +234,7 @@ class Converter {
     const seen = new Set();
     for (const rule of rules) {
       const domain = rule.domain;
-      if (domain && !seen.has(domain)) {
+      if (domain && !seen.has(domain) && !this._isSafelisted(domain)) {
         seen.add(domain);
         chunks.push(domain);
       }

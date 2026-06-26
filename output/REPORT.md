@@ -1,20 +1,20 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-26 21:54:29.849
+Generated: 2026-06-26 22:03:34.685
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,946,299 |
-| Unique rules after dedup | 1,232,861 |
-| Duplicates removed | 713,438 |
+| Total rules parsed | 1,946,285 |
+| Unique rules after dedup | 1,233,012 |
+| Duplicates removed | 713,273 |
 | Invalid rules | N/A |
 | Sources processed | 37 |
 
 ## Rule Type Distribution
 
-- network: 1,124,130
+- network: 1,124,281
 - generic-hide: 440
 - script: 2,933
 - image: 1,344
@@ -45,14 +45,14 @@ Generated: 2026-06-26 21:54:29.849
 
 ## Category Distribution
 
-- ads: 284,389
+- ads: 284,397
 - annoyances: 57,571
 - social: 19,997
 - ads-regional: 127,229
 - annoyances-regional: 1,840
 - stylesheet: 127
 - regional-cn: 19,694
-- regional-ru: 20,791
+- regional-ru: 20,793
 - tracking: 161,747
 - privacy: 63,906
 - spyware: 690
@@ -60,7 +60,7 @@ Generated: 2026-06-26 21:54:29.849
 - malware: 22,598
 - phishing: 145,707
 - ads-malware-tracking: 751,253
-- ads-malware: 92,297
+- ads-malware: 92,447
 - abuse: 1,454
 - spam: 8,140
 - cookies: 18,327
@@ -91,7 +91,7 @@ Generated: 2026-06-26 21:54:29.849
 - amazonaws.com: 398
 - ero-advertising.com: 374
 - cloudfront.net: 369
-- vercel.app: 360
+- vercel.app: 359
 - px-cloud.net: 309
 - pages.dev: 306
 - baidu.com: 266

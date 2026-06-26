@@ -2,17 +2,17 @@
 
 [![Update Filter Lists](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml/badge.svg)](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml)
 
-多源广告拦截过滤规则聚合引擎。从 **36** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
+多源广告拦截过滤规则聚合引擎。从 **37** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
 
 ## 实时统计
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **761,727** |
-| 规则来源 | 36 |
+| 唯一规则总数 | **1,232,858** |
+| 规则来源 | 37 |
 | 规则类别 | 24 |
-| 重复移除 | 713,369 |
-| 最后更新 | 2026-06-26 09:57:39 |
+| 重复移除 | 713,438 |
+| 最后更新 | 2026-06-26 21:40:53 |
 
 ## 浏览器插件订阅地址
 
@@ -50,27 +50,27 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 280,230 |
-| ads | 257,562 |
-| tracking | 147,867 |
-| phishing | 145,202 |
-| ads-regional | 127,234 |
-| ads-malware | 91,611 |
-| privacy | 63,712 |
-| annoyances | 56,889 |
-| malware | 20,749 |
-| cookies | 18,250 |
-| social | 17,846 |
-| regional-cn | 14,305 |
+| ads-malware-tracking | 751,253 |
+| ads | 284,389 |
+| tracking | 161,747 |
+| phishing | 145,707 |
+| ads-regional | 127,226 |
+| ads-malware | 92,297 |
+| privacy | 63,906 |
+| annoyances | 57,571 |
+| malware | 22,598 |
+| regional-ru | 20,791 |
+| social | 19,997 |
+| regional-cn | 19,694 |
+| cookies | 18,327 |
 | spam | 8,140 |
-| regional-ru | 7,828 |
 | whitelist | 7,563 |
-| popup | 4,049 |
+| popup | 4,050 |
 | annoyances-regional | 1,840 |
-| abuse | 998 |
+| abuse | 1,454 |
 | spyware | 690 |
+| mining | 653 |
 | redirect | 326 |
-| mining | 308 |
 | stylesheet | 127 |
 | mobile-ads | 41 |
 | font | 6 |
@@ -80,32 +80,32 @@
 
 | 类型 | 数量 |
 |---|---|
-| network | 653,006 |
-| css | 88,211 |
+| network | 1,124,128 |
+| css | 88,225 |
 | third-party | 7,724 |
-| popup | 3,294 |
-| script | 2,943 |
+| popup | 3,295 |
+| script | 2,933 |
 | all | 1,384 |
 | image | 1,344 |
-| css-extended | 1,006 |
+| css-extended | 1,008 |
 | document | 653 |
 | xhr | 646 |
 | generic-hide | 440 |
 | subdocument | 267 |
 | removeparam | 218 |
-| badfilter | 181 |
+| badfilter | 182 |
 | media | 92 |
 | stylesheet | 78 |
-| ping | 60 |
+| ping | 61 |
 | csp | 43 |
 | important | 42 |
 | redirect | 31 |
 | rewrite | 25 |
 | object | 13 |
 | websocket | 11 |
-| font | 4 |
 | element-hiding | 4 |
 | generic-block | 4 |
+| font | 4 |
 | replace | 2 |
 | other | 1 |
 

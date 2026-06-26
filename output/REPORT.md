@@ -1,20 +1,20 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-26 22:03:34.685
+Generated: 2026-06-26 22:17:03.256
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,946,285 |
-| Unique rules after dedup | 1,233,012 |
+| Total rules parsed | 1,946,333 |
+| Unique rules after dedup | 1,233,060 |
 | Duplicates removed | 713,273 |
 | Invalid rules | N/A |
 | Sources processed | 37 |
 
 ## Rule Type Distribution
 
-- network: 1,124,281
+- network: 1,124,329
 - generic-hide: 440
 - script: 2,933
 - image: 1,344
@@ -45,21 +45,21 @@ Generated: 2026-06-26 22:03:34.685
 
 ## Category Distribution
 
-- ads: 284,397
+- ads: 284,405
 - annoyances: 57,571
 - social: 19,997
 - ads-regional: 127,229
 - annoyances-regional: 1,840
 - stylesheet: 127
 - regional-cn: 19,694
-- regional-ru: 20,793
+- regional-ru: 20,794
 - tracking: 161,747
 - privacy: 63,906
 - spyware: 690
 - popup: 4,050
 - malware: 22,598
 - phishing: 145,707
-- ads-malware-tracking: 751,253
+- ads-malware-tracking: 751,296
 - ads-malware: 92,447
 - abuse: 1,454
 - spam: 8,140

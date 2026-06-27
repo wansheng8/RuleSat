@@ -1,13 +1,13 @@
 {
   "mode": "all",
-  "elapsed": "93.5s",
+  "elapsed": "88.5s",
   "fetchedCount": 37,
-  "totalParsed": 1802131,
-  "totalUnique": 1085169,
-  "duplicatesRemoved": 716962,
+  "totalParsed": 1811265,
+  "totalUnique": 1088940,
+  "duplicatesRemoved": 722325,
   "sourceCount": 37,
   "ruleTypes": {
-    "network": 976431,
+    "network": 980200,
     "generic-hide": 440,
     "script": 2933,
     "image": 1344,
@@ -28,37 +28,37 @@
     "other": 1,
     "object": 13,
     "document": 653,
-    "css": 88229,
-    "css-extended": 1009,
+    "css": 88230,
     "rewrite": 25,
+    "css-extended": 1009,
     "replace": 2,
     "all": 1386,
-    "redirect": 31,
+    "redirect": 32,
     "important": 42
   },
   "categories": {
-    "ads": 279890,
-    "annoyances": 57409,
-    "social": 19193,
-    "ads-regional": 127235,
+    "ads": 280197,
+    "annoyances": 57411,
+    "social": 19240,
+    "ads-regional": 127237,
     "annoyances-regional": 1840,
     "stylesheet": 127,
-    "regional-cn": 18086,
-    "regional-ru": 15875,
-    "tracking": 158825,
-    "privacy": 63845,
+    "regional-cn": 18099,
+    "regional-ru": 15951,
+    "tracking": 158881,
+    "privacy": 63852,
     "spyware": 690,
     "popup": 4051,
-    "malware": 21803,
-    "phishing": 145671,
-    "ads-malware-tracking": 605319,
-    "ads-malware": 88954,
-    "abuse": 1346,
+    "malware": 21738,
+    "phishing": 145664,
+    "ads-malware-tracking": 609105,
+    "ads-malware": 89372,
+    "abuse": 1362,
     "spam": 8140,
-    "cookies": 18316,
-    "mining": 433,
-    "redirect": 326,
-    "whitelist": 7564,
+    "cookies": 18315,
+    "mining": 436,
+    "redirect": 327,
+    "whitelist": 7565,
     "font": 6,
     "mobile-ads": 41
   },
@@ -69,7 +69,7 @@
     ],
     [
       "com.br",
-      7168
+      7155
     ],
     [
       "actonservice.com",
@@ -77,11 +77,11 @@
     ],
     [
       "co.uk",
-      2493
+      2491
     ],
     [
       "wixstudio.com",
-      2401
+      2179
     ],
     [
       "2o7.net",
@@ -89,15 +89,19 @@
     ],
     [
       "r2.dev",
-      1718
+      1720
     ],
     [
       "omtrdc.net",
-      1606
+      1615
     ],
     [
       "com.au",
       1574
+    ],
+    [
+      "com.cn",
+      825
     ],
     [
       "intellitxt.com",
@@ -105,31 +109,27 @@
     ],
     [
       "co.jp",
-      724
-    ],
-    [
-      "com.cn",
-      681
-    ],
-    [
-      "framer.app",
-      589
+      746
     ],
     [
       "blogspot.com",
-      576
+      578
+    ],
+    [
+      "framer.app",
+      568
     ],
     [
       "co.kr",
-      505
+      502
     ],
     [
       "appspot.com",
-      441
+      440
     ],
     [
       "amazonaws.com",
-      395
+      399
     ],
     [
       "ero-advertising.com",
@@ -137,23 +137,23 @@
     ],
     [
       "cloudfront.net",
-      384
+      385
+    ],
+    [
+      "qq.com",
+      297
     ],
     [
       "com.tr",
-      304
+      292
     ],
     [
       "hitbox.com",
       291
     ],
     [
-      "qq.com",
-      273
-    ],
-    [
-      "cpanel.site",
-      258
+      "baidu.com",
+      279
     ],
     [
       "taskade.app",
@@ -165,7 +165,7 @@
     ],
     [
       "co.za",
-      247
+      246
     ],
     [
       "adobe.com",
@@ -176,24 +176,20 @@
       239
     ],
     [
-      "co.il",
-      224
+      "cpanel.site",
+      228
     ],
     [
       "iocnt.de",
       224
     ],
     [
+      "co.il",
+      223
+    ],
+    [
       "vercel.app",
-      202
-    ],
-    [
-      "com.pl",
-      200
-    ],
-    [
-      "baidu.com",
-      200
+      203
     ],
     [
       "iberostar.com",
@@ -204,40 +200,48 @@
       198
     ],
     [
+      "com.pl",
+      196
+    ],
+    [
       "com.bd",
       191
     ],
     [
       "googleapis.com",
-      166
+      167
     ],
     [
       "edgekey.net",
       158
     ],
     [
-      "webwave.dev",
-      157
-    ],
-    [
-      "com.vn",
-      154
+      "com.tw",
+      156
     ],
     [
       "casalemedia.com",
       154
     ],
     [
-      "weebly.com",
-      151
+      "com.vn",
+      152
+    ],
+    [
+      "webwave.dev",
+      149
     ],
     [
       "netlify.app",
       146
     ],
     [
+      "weebly.com",
+      144
+    ],
+    [
       "com.mx",
-      140
+      141
     ],
     [
       "doubleclick.net",
@@ -258,10 +262,6 @@
     [
       "windows.com",
       119
-    ],
-    [
-      "zapier.app",
-      115
     ]
   ]
 }

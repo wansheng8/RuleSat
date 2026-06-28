@@ -1,17 +1,17 @@
 {
   "mode": "all",
-  "elapsed": "107.7s",
+  "elapsed": "95.6s",
   "fetchedCount": 37,
-  "totalParsed": 1966077,
-  "totalUnique": 1243781,
-  "duplicatesRemoved": 722296,
+  "totalParsed": 1986731,
+  "totalUnique": 1251344,
+  "duplicatesRemoved": 735387,
   "sourceCount": 37,
   "ruleTypes": {
-    "network": 1135033,
+    "network": 1142586,
     "generic-hide": 440,
     "script": 2934,
     "image": 1344,
-    "third-party": 7725,
+    "third-party": 7728,
     "media": 92,
     "stylesheet": 78,
     "element-hiding": 4,
@@ -28,37 +28,37 @@
     "other": 1,
     "object": 13,
     "document": 653,
-    "css": 88235,
+    "css": 88241,
     "rewrite": 25,
-    "css-extended": 1010,
+    "css-extended": 1011,
     "replace": 2,
     "all": 1386,
     "redirect": 32,
     "important": 42
   },
   "categories": {
-    "ads": 286476,
-    "annoyances": 57563,
-    "social": 20097,
-    "ads-regional": 127244,
+    "ads": 286834,
+    "annoyances": 57566,
+    "social": 20158,
+    "ads-regional": 127248,
     "annoyances-regional": 1840,
     "stylesheet": 127,
-    "regional-cn": 19787,
-    "regional-ru": 20860,
-    "tracking": 161901,
-    "privacy": 63915,
+    "regional-cn": 19452,
+    "regional-ru": 20932,
+    "tracking": 161893,
+    "privacy": 63963,
     "spyware": 690,
     "popup": 4051,
-    "malware": 22257,
-    "phishing": 145854,
-    "ads-malware-tracking": 763624,
-    "ads-malware": 90060,
-    "abuse": 1474,
+    "malware": 22134,
+    "phishing": 145798,
+    "ads-malware-tracking": 770927,
+    "ads-malware": 90354,
+    "abuse": 1485,
     "spam": 8140,
-    "cookies": 18326,
-    "mining": 636,
+    "cookies": 18329,
+    "mining": 645,
     "redirect": 328,
-    "whitelist": 7568,
+    "whitelist": 7569,
     "font": 6,
     "mobile-ads": 41
   },
@@ -69,11 +69,11 @@
     ],
     [
       "com.br",
-      6972
+      6969
     ],
     [
       "in.net",
-      5773
+      5659
     ],
     [
       "actonservice.com",
@@ -81,11 +81,11 @@
     ],
     [
       "omtrdc.net",
-      3191
+      3123
     ],
     [
       "co.uk",
-      2297
+      2295
     ],
     [
       "com.au",
@@ -97,23 +97,19 @@
     ],
     [
       "optimizely.com",
-      1104
+      1093
     ],
     [
       "run.app",
-      823
+      816
     ],
     [
       "com.cn",
-      811
+      814
     ],
     [
       "co.jp",
-      703
-    ],
-    [
-      "hl.cn",
-      576
+      722
     ],
     [
       "blogspot.com",
@@ -129,11 +125,11 @@
     ],
     [
       "appspot.com",
-      436
+      435
     ],
     [
       "amazonaws.com",
-      383
+      379
     ],
     [
       "ero-advertising.com",
@@ -141,26 +137,26 @@
     ],
     [
       "cloudfront.net",
-      369
+      367
     ],
     [
       "vercel.app",
-      330
+      315
     ],
     [
       "px-cloud.net",
-      308
+      306
     ],
     [
       "pages.dev",
-      304
-    ],
-    [
-      "baidu.com",
-      266
+      300
     ],
     [
       "taskade.app",
+      265
+    ],
+    [
+      "baidu.com",
       265
     ],
     [
@@ -188,16 +184,12 @@
       225
     ],
     [
-      "heytapmobile.com",
-      217
-    ],
-    [
       "co.il",
-      214
+      213
     ],
     [
       "vivoglobal.com",
-      206
+      207
     ],
     [
       "iberostar.com",
@@ -213,19 +205,15 @@
     ],
     [
       "co.za",
-      187
+      185
     ],
     [
       "weebly.com",
-      184
+      182
     ],
     [
       "googleapis.com",
       166
-    ],
-    [
-      "netlify.app",
-      161
     ],
     [
       "lgsmartad.com",
@@ -241,19 +229,19 @@
     ],
     [
       "com.vn",
-      144
+      145
     ],
     [
       "casalemedia.com",
       141
     ],
     [
-      "windows.net",
-      136
+      "netlify.app",
+      139
     ],
     [
-      "com.pl",
-      134
+      "windows.net",
+      136
     ],
     [
       "microsoft.com",
@@ -262,6 +250,18 @@
     [
       "marketo.com",
       130
+    ],
+    [
+      "com.mx",
+      127
+    ],
+    [
+      "com.pl",
+      125
+    ],
+    [
+      "bet.br",
+      124
     ]
   ]
 }

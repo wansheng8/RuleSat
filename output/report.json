@@ -1,17 +1,17 @@
 {
   "mode": "all",
-  "elapsed": "88.5s",
+  "elapsed": "107.7s",
   "fetchedCount": 37,
-  "totalParsed": 1811265,
-  "totalUnique": 1088940,
-  "duplicatesRemoved": 722325,
+  "totalParsed": 1966077,
+  "totalUnique": 1243781,
+  "duplicatesRemoved": 722296,
   "sourceCount": 37,
   "ruleTypes": {
-    "network": 980200,
+    "network": 1135033,
     "generic-hide": 440,
-    "script": 2933,
+    "script": 2934,
     "image": 1344,
-    "third-party": 7724,
+    "third-party": 7725,
     "media": 92,
     "stylesheet": 78,
     "element-hiding": 4,
@@ -28,37 +28,37 @@
     "other": 1,
     "object": 13,
     "document": 653,
-    "css": 88230,
+    "css": 88235,
     "rewrite": 25,
-    "css-extended": 1009,
+    "css-extended": 1010,
     "replace": 2,
     "all": 1386,
     "redirect": 32,
     "important": 42
   },
   "categories": {
-    "ads": 280197,
-    "annoyances": 57411,
-    "social": 19240,
-    "ads-regional": 127237,
+    "ads": 286476,
+    "annoyances": 57563,
+    "social": 20097,
+    "ads-regional": 127244,
     "annoyances-regional": 1840,
     "stylesheet": 127,
-    "regional-cn": 18099,
-    "regional-ru": 15951,
-    "tracking": 158881,
-    "privacy": 63852,
+    "regional-cn": 19787,
+    "regional-ru": 20860,
+    "tracking": 161901,
+    "privacy": 63915,
     "spyware": 690,
     "popup": 4051,
-    "malware": 21738,
-    "phishing": 145664,
-    "ads-malware-tracking": 609105,
-    "ads-malware": 89372,
-    "abuse": 1362,
+    "malware": 22257,
+    "phishing": 145854,
+    "ads-malware-tracking": 763624,
+    "ads-malware": 90060,
+    "abuse": 1474,
     "spam": 8140,
-    "cookies": 18315,
-    "mining": 436,
-    "redirect": 327,
-    "whitelist": 7565,
+    "cookies": 18326,
+    "mining": 636,
+    "redirect": 328,
+    "whitelist": 7568,
     "font": 6,
     "mobile-ads": 41
   },
@@ -69,199 +69,199 @@
     ],
     [
       "com.br",
-      7155
+      6972
+    ],
+    [
+      "in.net",
+      5773
     ],
     [
       "actonservice.com",
       3819
     ],
     [
-      "co.uk",
-      2491
-    ],
-    [
-      "wixstudio.com",
-      2179
-    ],
-    [
-      "2o7.net",
-      1727
-    ],
-    [
-      "r2.dev",
-      1720
-    ],
-    [
       "omtrdc.net",
-      1615
+      3191
+    ],
+    [
+      "co.uk",
+      2297
     ],
     [
       "com.au",
-      1574
+      1542
+    ],
+    [
+      "2o7.net",
+      1448
+    ],
+    [
+      "optimizely.com",
+      1104
+    ],
+    [
+      "run.app",
+      823
     ],
     [
       "com.cn",
-      825
-    ],
-    [
-      "intellitxt.com",
-      751
+      811
     ],
     [
       "co.jp",
-      746
+      703
+    ],
+    [
+      "hl.cn",
+      576
     ],
     [
       "blogspot.com",
-      578
-    ],
-    [
-      "framer.app",
-      568
+      564
     ],
     [
       "co.kr",
-      502
-    ],
-    [
-      "appspot.com",
-      440
-    ],
-    [
-      "amazonaws.com",
-      399
-    ],
-    [
-      "ero-advertising.com",
-      393
-    ],
-    [
-      "cloudfront.net",
-      385
+      496
     ],
     [
       "qq.com",
-      297
+      442
     ],
     [
-      "com.tr",
-      292
+      "appspot.com",
+      436
     ],
     [
-      "hitbox.com",
-      291
+      "amazonaws.com",
+      383
+    ],
+    [
+      "ero-advertising.com",
+      374
+    ],
+    [
+      "cloudfront.net",
+      369
+    ],
+    [
+      "vercel.app",
+      330
+    ],
+    [
+      "px-cloud.net",
+      308
+    ],
+    [
+      "pages.dev",
+      304
     ],
     [
       "baidu.com",
-      279
+      266
     ],
     [
       "taskade.app",
-      249
+      265
     ],
     [
-      "co.nz",
-      248
-    ],
-    [
-      "co.za",
-      246
-    ],
-    [
-      "adobe.com",
-      241
+      "tiktokv.com",
+      255
     ],
     [
       "cnzz.com",
       239
     ],
     [
-      "cpanel.site",
-      228
+      "co.nz",
+      234
+    ],
+    [
+      "adobe.com",
+      234
+    ],
+    [
+      "xiaomi.com",
+      227
     ],
     [
       "iocnt.de",
-      224
+      225
+    ],
+    [
+      "heytapmobile.com",
+      217
     ],
     [
       "co.il",
-      223
+      214
     ],
     [
-      "vercel.app",
-      203
+      "vivoglobal.com",
+      206
     ],
     [
       "iberostar.com",
       199
     ],
     [
-      "p2l.info",
-      198
-    ],
-    [
-      "com.pl",
-      196
-    ],
-    [
       "com.bd",
-      191
+      190
     ],
     [
-      "googleapis.com",
-      167
+      "com.tr",
+      188
     ],
     [
-      "edgekey.net",
-      158
-    ],
-    [
-      "com.tw",
-      156
-    ],
-    [
-      "casalemedia.com",
-      154
-    ],
-    [
-      "com.vn",
-      152
-    ],
-    [
-      "webwave.dev",
-      149
-    ],
-    [
-      "netlify.app",
-      146
+      "co.za",
+      187
     ],
     [
       "weebly.com",
+      184
+    ],
+    [
+      "googleapis.com",
+      166
+    ],
+    [
+      "netlify.app",
+      161
+    ],
+    [
+      "lgsmartad.com",
+      160
+    ],
+    [
+      "edgekey.net",
+      155
+    ],
+    [
+      "com.tw",
+      152
+    ],
+    [
+      "com.vn",
       144
     ],
     [
-      "com.mx",
+      "casalemedia.com",
       141
     ],
     [
-      "doubleclick.net",
-      137
+      "windows.net",
+      136
+    ],
+    [
+      "com.pl",
+      134
+    ],
+    [
+      "microsoft.com",
+      130
     ],
     [
       "marketo.com",
       130
-    ],
-    [
-      "oewabox.at",
-      126
-    ],
-    [
-      "bet.br",
-      123
-    ],
-    [
-      "windows.com",
-      119
     ]
   ]
 }

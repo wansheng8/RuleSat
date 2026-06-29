@@ -1,22 +1,22 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-28 21:07:46.684
+Generated: 2026-06-29 10:03:03.996
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,986,731 |
-| Unique rules after dedup | 1,251,344 |
-| Duplicates removed | 735,387 |
+| Total rules parsed | 1,960,894 |
+| Unique rules after dedup | 1,238,390 |
+| Duplicates removed | 722,504 |
 | Invalid rules | N/A |
 | Sources processed | 37 |
 
 ## Rule Type Distribution
 
-- network: 1,142,586
-- generic-hide: 440
-- script: 2,934
+- network: 1,129,655
+- generic-hide: 441
+- script: 2,922
 - image: 1,344
 - third-party: 7,728
 - media: 92
@@ -35,7 +35,7 @@ Generated: 2026-06-28 21:07:46.684
 - other: 1
 - object: 13
 - document: 653
-- css: 88,241
+- css: 88,229
 - rewrite: 25
 - css-extended: 1,011
 - replace: 2
@@ -45,55 +45,55 @@ Generated: 2026-06-28 21:07:46.684
 
 ## Category Distribution
 
-- ads: 286,834
-- annoyances: 57,566
-- social: 20,158
-- ads-regional: 127,248
+- ads: 286,622
+- annoyances: 57,548
+- social: 20,095
+- ads-regional: 127,554
 - annoyances-regional: 1,840
 - stylesheet: 127
-- regional-cn: 19,452
-- regional-ru: 20,932
-- tracking: 161,893
-- privacy: 63,963
+- regional-cn: 19,432
+- regional-ru: 20,037
+- tracking: 161,700
+- privacy: 63,932
 - spyware: 690
 - popup: 4,051
-- malware: 22,134
-- phishing: 145,798
-- ads-malware-tracking: 770,927
-- ads-malware: 90,354
-- abuse: 1,485
+- malware: 22,016
+- phishing: 145,554
+- ads-malware-tracking: 758,302
+- ads-malware: 90,606
+- abuse: 1,462
 - spam: 8,140
 - cookies: 18,329
-- mining: 645
-- redirect: 328
-- whitelist: 7,569
+- mining: 630
+- redirect: 330
+- whitelist: 7,571
 - font: 6
 - mobile-ads: 41
 
 ## Top Domains
 
 - daraz.com: 18,307
-- com.br: 6,969
-- in.net: 5,659
+- com.br: 6,975
+- in.net: 5,533
 - actonservice.com: 3,819
 - omtrdc.net: 3,123
-- co.uk: 2,295
+- co.uk: 2,299
 - com.au: 1,542
 - 2o7.net: 1,448
 - optimizely.com: 1,093
 - run.app: 816
 - com.cn: 814
-- co.jp: 722
+- co.jp: 736
 - blogspot.com: 564
 - co.kr: 496
 - qq.com: 442
 - appspot.com: 435
-- amazonaws.com: 379
+- amazonaws.com: 384
 - ero-advertising.com: 374
-- cloudfront.net: 367
-- vercel.app: 315
+- cloudfront.net: 368
+- vercel.app: 340
 - px-cloud.net: 306
-- pages.dev: 300
+- pages.dev: 304
 - taskade.app: 265
 - baidu.com: 265
 - tiktokv.com: 255
@@ -102,26 +102,26 @@ Generated: 2026-06-28 21:07:46.684
 - adobe.com: 234
 - xiaomi.com: 227
 - iocnt.de: 225
-- co.il: 213
+- co.il: 214
 - vivoglobal.com: 207
 - iberostar.com: 199
 - com.bd: 190
 - com.tr: 188
-- co.za: 185
-- weebly.com: 182
+- weebly.com: 187
+- co.za: 186
+- netlify.app: 174
 - googleapis.com: 166
 - lgsmartad.com: 160
 - edgekey.net: 155
 - com.tw: 152
 - com.vn: 145
 - casalemedia.com: 141
-- netlify.app: 139
-- windows.net: 136
+- com.pl: 139
+- windows.net: 138
 - microsoft.com: 130
 - marketo.com: 130
 - com.mx: 127
-- com.pl: 125
-- bet.br: 124
+- workers.dev: 125
 
 ## Output Files
 

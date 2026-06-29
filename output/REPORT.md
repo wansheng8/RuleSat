@@ -1,29 +1,29 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-29 10:03:03.996
+Generated: 2026-06-29 23:24:14.837
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,960,894 |
-| Unique rules after dedup | 1,238,390 |
-| Duplicates removed | 722,504 |
+| Total rules parsed | 1,983,635 |
+| Unique rules after dedup | 1,259,119 |
+| Duplicates removed | 724,516 |
 | Invalid rules | N/A |
 | Sources processed | 37 |
 
 ## Rule Type Distribution
 
-- network: 1,129,655
+- network: 1,150,438
 - generic-hide: 441
-- script: 2,922
+- script: 2,921
 - image: 1,344
-- third-party: 7,728
+- third-party: 7,716
 - media: 92
 - stylesheet: 78
 - element-hiding: 4
 - xhr: 646
-- subdocument: 267
+- subdocument: 266
 - generic-block: 4
 - popup: 3,296
 - ping: 61
@@ -34,8 +34,8 @@ Generated: 2026-06-29 10:03:03.996
 - csp: 43
 - other: 1
 - object: 13
-- document: 653
-- css: 88,229
+- document: 616
+- css: 88,226
 - rewrite: 25
 - css-extended: 1,011
 - replace: 2
@@ -45,83 +45,83 @@ Generated: 2026-06-29 10:03:03.996
 
 ## Category Distribution
 
-- ads: 286,622
-- annoyances: 57,548
-- social: 20,095
-- ads-regional: 127,554
+- ads: 280,910
+- annoyances: 57,577
+- social: 20,212
+- ads-regional: 127,542
 - annoyances-regional: 1,840
 - stylesheet: 127
-- regional-cn: 19,432
-- regional-ru: 20,037
-- tracking: 161,700
-- privacy: 63,932
+- regional-cn: 19,839
+- regional-ru: 20,977
+- tracking: 162,187
+- privacy: 63,995
 - spyware: 690
 - popup: 4,051
-- malware: 22,016
-- phishing: 145,554
-- ads-malware-tracking: 758,302
-- ads-malware: 90,606
-- abuse: 1,462
+- malware: 21,970
+- phishing: 145,898
+- ads-malware-tracking: 778,287
+- ads-malware: 91,330
+- abuse: 1,486
 - spam: 8,140
-- cookies: 18,329
-- mining: 630
+- cookies: 18,337
+- mining: 589
 - redirect: 330
-- whitelist: 7,571
+- whitelist: 7,569
 - font: 6
 - mobile-ads: 41
 
 ## Top Domains
 
 - daraz.com: 18,307
-- com.br: 6,975
-- in.net: 5,533
+- com.br: 6,943
+- in.net: 5,408
 - actonservice.com: 3,819
-- omtrdc.net: 3,123
-- co.uk: 2,299
-- com.au: 1,542
+- omtrdc.net: 3,126
+- co.uk: 2,155
 - 2o7.net: 1,448
-- optimizely.com: 1,093
-- run.app: 816
-- com.cn: 814
-- co.jp: 736
+- com.au: 1,381
+- optimizely.com: 1,095
+- run.app: 818
+- com.cn: 809
 - blogspot.com: 564
-- co.kr: 496
+- co.jp: 548
+- co.kr: 491
 - qq.com: 442
-- appspot.com: 435
-- amazonaws.com: 384
+- appspot.com: 437
+- amazonaws.com: 382
 - ero-advertising.com: 374
-- cloudfront.net: 368
-- vercel.app: 340
+- cloudfront.net: 370
+- vercel.app: 317
 - px-cloud.net: 306
-- pages.dev: 304
+- pages.dev: 300
 - taskade.app: 265
-- baidu.com: 265
+- baidu.com: 264
 - tiktokv.com: 255
 - cnzz.com: 239
-- co.nz: 234
-- adobe.com: 234
 - xiaomi.com: 227
 - iocnt.de: 225
-- co.il: 214
+- co.il: 212
+- co.nz: 211
 - vivoglobal.com: 207
 - iberostar.com: 199
 - com.bd: 190
-- com.tr: 188
-- weebly.com: 187
-- co.za: 186
-- netlify.app: 174
+- weebly.com: 182
+- co.za: 176
+- com.tr: 175
 - googleapis.com: 166
-- lgsmartad.com: 160
-- edgekey.net: 155
-- com.tw: 152
-- com.vn: 145
+- adobe.com: 161
+- edgekey.net: 149
+- com.tw: 148
+- com.vn: 143
 - casalemedia.com: 141
-- com.pl: 139
-- windows.net: 138
+- netlify.app: 139
+- windows.net: 136
 - microsoft.com: 130
 - marketo.com: 130
-- com.mx: 127
-- workers.dev: 125
+- com.pl: 125
+- bet.br: 124
+- com.mx: 123
+- miui.com: 122
 
 ## Output Files
 

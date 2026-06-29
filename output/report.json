@@ -1,22 +1,22 @@
 {
   "mode": "all",
-  "elapsed": "110.1s",
+  "elapsed": "108.2s",
   "fetchedCount": 37,
-  "totalParsed": 1960894,
-  "totalUnique": 1238390,
-  "duplicatesRemoved": 722504,
+  "totalParsed": 1983635,
+  "totalUnique": 1259119,
+  "duplicatesRemoved": 724516,
   "sourceCount": 37,
   "ruleTypes": {
-    "network": 1129655,
+    "network": 1150438,
     "generic-hide": 441,
-    "script": 2922,
+    "script": 2921,
     "image": 1344,
-    "third-party": 7728,
+    "third-party": 7716,
     "media": 92,
     "stylesheet": 78,
     "element-hiding": 4,
     "xhr": 646,
-    "subdocument": 267,
+    "subdocument": 266,
     "generic-block": 4,
     "popup": 3296,
     "ping": 61,
@@ -27,8 +27,8 @@
     "csp": 43,
     "other": 1,
     "object": 13,
-    "document": 653,
-    "css": 88229,
+    "document": 616,
+    "css": 88226,
     "rewrite": 25,
     "css-extended": 1011,
     "replace": 2,
@@ -37,28 +37,28 @@
     "important": 42
   },
   "categories": {
-    "ads": 286622,
-    "annoyances": 57548,
-    "social": 20095,
-    "ads-regional": 127554,
+    "ads": 280910,
+    "annoyances": 57577,
+    "social": 20212,
+    "ads-regional": 127542,
     "annoyances-regional": 1840,
     "stylesheet": 127,
-    "regional-cn": 19432,
-    "regional-ru": 20037,
-    "tracking": 161700,
-    "privacy": 63932,
+    "regional-cn": 19839,
+    "regional-ru": 20977,
+    "tracking": 162187,
+    "privacy": 63995,
     "spyware": 690,
     "popup": 4051,
-    "malware": 22016,
-    "phishing": 145554,
-    "ads-malware-tracking": 758302,
-    "ads-malware": 90606,
-    "abuse": 1462,
+    "malware": 21970,
+    "phishing": 145898,
+    "ads-malware-tracking": 778287,
+    "ads-malware": 91330,
+    "abuse": 1486,
     "spam": 8140,
-    "cookies": 18329,
-    "mining": 630,
+    "cookies": 18337,
+    "mining": 589,
     "redirect": 330,
-    "whitelist": 7571,
+    "whitelist": 7569,
     "font": 6,
     "mobile-ads": 41
   },
@@ -69,11 +69,11 @@
     ],
     [
       "com.br",
-      6975
+      6943
     ],
     [
       "in.net",
-      5533
+      5408
     ],
     [
       "actonservice.com",
@@ -81,43 +81,43 @@
     ],
     [
       "omtrdc.net",
-      3123
+      3126
     ],
     [
       "co.uk",
-      2299
-    ],
-    [
-      "com.au",
-      1542
+      2155
     ],
     [
       "2o7.net",
       1448
     ],
     [
+      "com.au",
+      1381
+    ],
+    [
       "optimizely.com",
-      1093
+      1095
     ],
     [
       "run.app",
-      816
+      818
     ],
     [
       "com.cn",
-      814
-    ],
-    [
-      "co.jp",
-      736
+      809
     ],
     [
       "blogspot.com",
       564
     ],
     [
+      "co.jp",
+      548
+    ],
+    [
       "co.kr",
-      496
+      491
     ],
     [
       "qq.com",
@@ -125,11 +125,11 @@
     ],
     [
       "appspot.com",
-      435
+      437
     ],
     [
       "amazonaws.com",
-      384
+      382
     ],
     [
       "ero-advertising.com",
@@ -137,11 +137,11 @@
     ],
     [
       "cloudfront.net",
-      368
+      370
     ],
     [
       "vercel.app",
-      340
+      317
     ],
     [
       "px-cloud.net",
@@ -149,7 +149,7 @@
     ],
     [
       "pages.dev",
-      304
+      300
     ],
     [
       "taskade.app",
@@ -157,7 +157,7 @@
     ],
     [
       "baidu.com",
-      265
+      264
     ],
     [
       "tiktokv.com",
@@ -166,14 +166,6 @@
     [
       "cnzz.com",
       239
-    ],
-    [
-      "co.nz",
-      234
-    ],
-    [
-      "adobe.com",
-      234
     ],
     [
       "xiaomi.com",
@@ -185,7 +177,11 @@
     ],
     [
       "co.il",
-      214
+      212
+    ],
+    [
+      "co.nz",
+      211
     ],
     [
       "vivoglobal.com",
@@ -200,52 +196,48 @@
       190
     ],
     [
-      "com.tr",
-      188
-    ],
-    [
       "weebly.com",
-      187
+      182
     ],
     [
       "co.za",
-      186
+      176
     ],
     [
-      "netlify.app",
-      174
+      "com.tr",
+      175
     ],
     [
       "googleapis.com",
       166
     ],
     [
-      "lgsmartad.com",
-      160
+      "adobe.com",
+      161
     ],
     [
       "edgekey.net",
-      155
+      149
     ],
     [
       "com.tw",
-      152
+      148
     ],
     [
       "com.vn",
-      145
+      143
     ],
     [
       "casalemedia.com",
       141
     ],
     [
-      "com.pl",
+      "netlify.app",
       139
     ],
     [
       "windows.net",
-      138
+      136
     ],
     [
       "microsoft.com",
@@ -256,12 +248,20 @@
       130
     ],
     [
-      "com.mx",
-      127
+      "com.pl",
+      125
     ],
     [
-      "workers.dev",
-      125
+      "bet.br",
+      124
+    ],
+    [
+      "com.mx",
+      123
+    ],
+    [
+      "miui.com",
+      122
     ]
   ]
 }

@@ -2,17 +2,17 @@
 
 [![Update Filter Lists](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml/badge.svg)](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml)
 
-多源广告拦截过滤规则聚合引擎。从 **30** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
+多源广告拦截过滤规则聚合引擎。从 **26** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
 
 ## 实时统计
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **1,089,171** |
-| 规则来源 | 30 |
-| 规则类别 | 24 |
-| 重复移除 | 704,079 |
-| 最后更新 | 2026-06-30 22:05:25 |
+| 唯一规则总数 | **636,681** |
+| 规则来源 | 26 |
+| 规则类别 | 22 |
+| 重复移除 | 578,165 |
+| 最后更新 | 2026-06-30 22:23:34 |
 
 ## 浏览器插件订阅地址
 
@@ -51,64 +51,61 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 605,560 |
-| ads | 274,459 |
-| tracking | 159,048 |
-| phishing | 145,704 |
+| ads-malware-tracking | 272,522 |
+| ads | 229,203 |
+| phishing | 145,403 |
+| tracking | 141,597 |
 | ads-regional | 127,552 |
-| ads-malware | 89,070 |
-| privacy | 63,884 |
-| annoyances | 57,406 |
-| malware | 21,161 |
-| social | 19,302 |
-| cookies | 18,318 |
-| regional-cn | 18,115 |
-| regional-ru | 15,952 |
-| spam | 8,140 |
-| whitelist | 7,569 |
-| popup | 4,051 |
+| privacy | 57,459 |
+| malware | 19,618 |
+| regional-cn | 13,942 |
+| regional-ru | 6,183 |
+| annoyances | 4,298 |
+| popup | 4,022 |
+| social | 3,452 |
+| whitelist | 3,235 |
 | annoyances-regional | 1,840 |
-| abuse | 1,357 |
 | spyware | 690 |
-| mining | 440 |
-| redirect | 330 |
-| stylesheet | 127 |
+| abuse | 649 |
+| cookies | 476 |
+| mining | 240 |
+| redirect | 92 |
+| stylesheet | 86 |
 | mobile-ads | 41 |
-| font | 6 |
+| font | 2 |
 
 
 ## 规则类型分布
 
 | 类型 | 数量 |
 |---|---|
-| network | 980,480 |
-| css | 88,235 |
-| third-party | 7,716 |
-| popup | 3,296 |
-| script | 2,921 |
+| network | 579,886 |
+| css | 39,728 |
+| third-party | 6,821 |
+| popup | 3,266 |
+| script | 1,590 |
 | all | 1,387 |
-| image | 1,344 |
-| css-extended | 1,011 |
-| xhr | 646 |
+| image | 1,208 |
+| css-extended | 617 |
 | document | 616 |
-| generic-hide | 441 |
-| subdocument | 266 |
-| removeparam | 218 |
-| badfilter | 182 |
-| media | 92 |
-| stylesheet | 78 |
+| generic-hide | 430 |
+| xhr | 405 |
+| subdocument | 235 |
+| removeparam | 214 |
 | ping | 61 |
-| csp | 43 |
-| important | 42 |
-| redirect | 32 |
-| rewrite | 25 |
+| stylesheet | 49 |
+| csp | 38 |
+| media | 37 |
+| rewrite | 23 |
+| important | 17 |
 | object | 13 |
-| websocket | 11 |
+| badfilter | 11 |
+| redirect | 10 |
+| websocket | 7 |
 | element-hiding | 4 |
 | generic-block | 4 |
-| font | 4 |
+| font | 2 |
 | replace | 2 |
-| other | 1 |
 
 
 ## 规则来源

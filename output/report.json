@@ -1,152 +1,157 @@
 {
   "mode": "all",
-  "elapsed": "92.8s",
-  "fetchedCount": 37,
-  "totalParsed": 1793250,
-  "totalUnique": 1089171,
-  "duplicatesRemoved": 704079,
-  "invalidRules": 7614,
-  "sourceCount": 37,
+  "elapsed": "41.2s",
+  "fetchedCount": 26,
+  "totalParsed": 1214846,
+  "totalUnique": 636681,
+  "duplicatesRemoved": 578165,
+  "invalidRules": 3189,
+  "sourceCount": 26,
   "ruleTypes": {
-    "network": 980480,
-    "generic-hide": 441,
-    "script": 2921,
-    "image": 1344,
-    "third-party": 7716,
-    "media": 92,
-    "stylesheet": 78,
-    "element-hiding": 4,
-    "xhr": 646,
-    "subdocument": 266,
-    "generic-block": 4,
-    "popup": 3296,
+    "subdocument": 235,
+    "xhr": 405,
+    "script": 1590,
+    "third-party": 6821,
+    "network": 579886,
+    "image": 1208,
+    "stylesheet": 49,
+    "websocket": 7,
     "ping": 61,
-    "websocket": 11,
-    "font": 4,
-    "badfilter": 182,
-    "removeparam": 218,
-    "csp": 43,
-    "other": 1,
+    "media": 37,
+    "font": 2,
+    "badfilter": 11,
+    "popup": 3266,
+    "removeparam": 214,
+    "generic-hide": 430,
+    "element-hiding": 4,
+    "generic-block": 4,
     "object": 13,
     "document": 616,
-    "css": 88235,
-    "css-extended": 1011,
-    "rewrite": 25,
+    "css": 39728,
     "replace": 2,
     "all": 1387,
-    "redirect": 32,
-    "important": 42
+    "redirect": 10,
+    "important": 17,
+    "csp": 38,
+    "rewrite": 23,
+    "css-extended": 617
   },
   "categories": {
-    "ads": 274459,
-    "annoyances": 57406,
-    "social": 19302,
+    "ads": 229203,
     "ads-regional": 127552,
     "annoyances-regional": 1840,
-    "stylesheet": 127,
-    "regional-cn": 18115,
-    "regional-ru": 15952,
-    "tracking": 159048,
-    "privacy": 63884,
+    "annoyances": 4298,
+    "stylesheet": 86,
+    "regional-cn": 13942,
+    "regional-ru": 6183,
+    "tracking": 141597,
+    "privacy": 57459,
+    "social": 3452,
     "spyware": 690,
-    "popup": 4051,
-    "malware": 21161,
-    "phishing": 145704,
-    "ads-malware-tracking": 605560,
-    "ads-malware": 89070,
-    "abuse": 1357,
-    "spam": 8140,
-    "cookies": 18318,
-    "mining": 440,
-    "redirect": 330,
-    "whitelist": 7569,
-    "font": 6,
+    "popup": 4022,
+    "malware": 19618,
+    "phishing": 145403,
+    "ads-malware-tracking": 272522,
+    "abuse": 649,
+    "cookies": 476,
+    "mining": 240,
+    "redirect": 92,
+    "whitelist": 3235,
+    "font": 2,
     "mobile-ads": 41
   },
   "topDomains": [
     [
-      "daraz.com",
-      18307
+      "com.br",
+      6884
     ],
     [
-      "com.br",
-      7139
+      "in.net",
+      5164
     ],
     [
       "actonservice.com",
-      3819
-    ],
-    [
-      "co.uk",
-      2361
-    ],
-    [
-      "wixstudio.com",
-      2326
-    ],
-    [
-      "2o7.net",
-      1727
-    ],
-    [
-      "r2.dev",
-      1716
-    ],
-    [
-      "omtrdc.net",
-      1599
-    ],
-    [
-      "com.au",
-      1421
-    ],
-    [
-      "intellitxt.com",
-      751
+      2974
     ],
     [
       "com.cn",
-      677
+      2387
     ],
     [
-      "co.jp",
-      615
+      "wixstudio.com",
+      2379
     ],
     [
-      "framer.app",
-      586
+      "co.uk",
+      2238
     ],
     [
-      "blogspot.com",
-      576
+      "r2.dev",
+      1762
     ],
     [
-      "co.kr",
-      499
+      "omtrdc.net",
+      1720
     ],
     [
-      "appspot.com",
-      440
+      "com.au",
+      1343
     ],
     [
-      "amazonaws.com",
-      406
+      "optimizely.com",
+      1099
     ],
     [
-      "ero-advertising.com",
-      393
+      "run.app",
+      787
     ],
     [
       "cloudfront.net",
-      385
+      767
     ],
     [
-      "hitbox.com",
-      291
+      "adobedc.net",
+      715
+    ],
+    [
+      "framer.app",
+      612
+    ],
+    [
+      "co.jp",
+      607
+    ],
+    [
+      "hl.cn",
+      590
+    ],
+    [
+      "co.kr",
+      562
+    ],
+    [
+      "amazonaws.com",
+      507
+    ],
+    [
+      "fbcdn.net",
+      496
+    ],
+    [
+      "px-cloud.net",
+      308
     ],
     [
       "com.tr",
-      281
+      301
+    ],
+    [
+      "pages.dev",
+      287
+    ],
+    [
+      "appspot.com",
+      278
     ],
     [
       "qq.com",
@@ -157,112 +162,104 @@
       260
     ],
     [
-      "vercel.app",
+      "tiktokv.com",
       254
     ],
     [
-      "taskade.app",
+      "baidu.com",
       249
     ],
     [
-      "cnzz.com",
-      239
-    ],
-    [
       "co.za",
-      236
-    ],
-    [
-      "co.nz",
-      230
+      243
     ],
     [
       "iocnt.de",
-      224
+      225
     ],
     [
-      "co.il",
+      "co.nz",
       220
     ],
     [
-      "iberostar.com",
-      199
+      "co.il",
+      213
     ],
     [
-      "com.pl",
-      199
+      "vivoglobal.com",
+      204
     ],
     [
-      "baidu.com",
-      199
-    ],
-    [
-      "p2l.info",
-      198
-    ],
-    [
-      "com.bd",
+      "vercel.app",
       191
     ],
     [
-      "adobe.com",
-      168
+      "amazon-adsystem.com",
+      191
     ],
     [
-      "googleapis.com",
-      167
+      "xiaomi.com",
+      190
     ],
     [
       "webwave.dev",
-      167
+      188
     ],
     [
-      "casalemedia.com",
-      154
+      "cloudflare.net",
+      185
     ],
     [
-      "edgekey.net",
-      152
+      "heytapmobile.com",
+      184
+    ],
+    [
+      "com.bd",
+      177
     ],
     [
       "com.vn",
-      151
+      171
+    ],
+    [
+      "com.tw",
+      169
+    ],
+    [
+      "com.ua",
+      169
     ],
     [
       "weebly.com",
-      148
+      169
+    ],
+    [
+      "aws-prd.net",
+      164
+    ],
+    [
+      "lgsmartad.com",
+      159
+    ],
+    [
+      "edgekey.net",
+      155
     ],
     [
       "com.mx",
-      137
+      150
     ],
     [
-      "doubleclick.net",
-      137
+      "iberostar.com",
+      147
     ],
     [
-      "netlify.app",
-      130
+      "adobe.com",
+      146
     ],
     [
-      "marketo.com",
-      130
-    ],
-    [
-      "oewabox.at",
-      126
-    ],
-    [
-      "bet.br",
-      122
-    ],
-    [
-      "windows.com",
-      119
-    ],
-    [
-      "criteo.com",
-      113
+      "com.ar",
+      140
     ]
   ]
 }

@@ -23,16 +23,17 @@ function generate(repo) {
   const cdnBase = `https://cdn.jsdelivr.net/gh/${repo}@main/output`;
 
   const files = [
-    { name: 'filter-adguard.txt',   fmt: 'AdGuard',        desc: 'AdGuard 浏览器插件 / AdGuard Home' },
-    { name: 'filter-ublock.txt',    fmt: 'uBlock Origin',  desc: 'uBlock Origin 浏览器插件' },
-    { name: 'filter-abp.txt',       fmt: 'Adblock Plus',   desc: 'Adblock Plus 浏览器插件' },
-    { name: 'filter-hosts.txt',     fmt: 'Hosts',          desc: 'Pi-hole / 标准 hosts 文件' },
-    { name: 'filter-domains.txt',   fmt: '域名列表',        desc: '纯域名列表 (一行一个)' },
-    { name: 'filter-dnsmasq.conf.gz', fmt: 'Dnsmasq (gz)',  desc: 'Dnsmasq DNS 服务器 (gzip)' },
-    { name: 'filter-unbound.conf',  fmt: 'Unbound',        desc: 'Unbound DNS 服务器' },
-    { name: 'filter-bind-rpz.conf', fmt: 'BIND RPZ',       desc: 'BIND DNS RPZ 区域文件' },
-    { name: 'filter-rules.json.gz', fmt: 'JSON (gz)',       desc: '完整规则数据 (gzip)' },
-    { name: 'REPORT.md',            fmt: '报告',            desc: '统计报告' },
+    { name: 'filter-adguard.txt',      fmt: 'AdGuard',           desc: 'AdGuard 浏览器插件' },
+    { name: 'filter-adguard-home.txt', fmt: 'AdGuard Home',      desc: 'AdGuard Home DNS 过滤 (纯网络规则)' },
+    { name: 'filter-ublock.txt',       fmt: 'uBlock Origin',     desc: 'uBlock Origin 浏览器插件' },
+    { name: 'filter-abp.txt',          fmt: 'Adblock Plus',      desc: 'Adblock Plus 浏览器插件' },
+    { name: 'filter-hosts.txt',        fmt: 'Hosts',             desc: 'Pi-hole / 标准 hosts 文件' },
+    { name: 'filter-domains.txt',      fmt: '域名列表',           desc: '纯域名列表 (一行一个)' },
+    { name: 'filter-dnsmasq.conf.gz',  fmt: 'Dnsmasq (gz)',      desc: 'Dnsmasq DNS 服务器 (gzip)' },
+    { name: 'filter-unbound.conf',     fmt: 'Unbound',           desc: 'Unbound DNS 服务器' },
+    { name: 'filter-bind-rpz.conf',    fmt: 'BIND RPZ',          desc: 'BIND DNS RPZ 区域文件' },
+    { name: 'filter-rules.json.gz',    fmt: 'JSON (gz)',          desc: '完整规则数据 (gzip)' },
+    { name: 'REPORT.md',               fmt: '报告',               desc: '统计报告' },
   ];
 
   let rows = '';
@@ -107,7 +108,7 @@ function generate(repo) {
 
 | 工具 | Raw | CDN |
 |---|---|---|
-| AdGuard Home | [订阅](${rawBase}/filter-adguard.txt) | [CDN](${cdnBase}/filter-adguard.txt) |
+| AdGuard Home | [订阅](${rawBase}/filter-adguard-home.txt) | [CDN](${cdnBase}/filter-adguard-home.txt) |
 | Pi-hole / Hosts | [订阅](${rawBase}/filter-hosts.txt) | [CDN](${cdnBase}/filter-hosts.txt) |
 | 域名列表 | [订阅](${rawBase}/filter-domains.txt) | [CDN](${cdnBase}/filter-domains.txt) |
 

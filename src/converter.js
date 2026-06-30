@@ -103,6 +103,20 @@ class Converter {
     }, '! AdGuard filter list');
   }
 
+  toAdguardHomeFormat(rules) {
+    const dnsRules = rules.filter(r => {
+      if (!r.domain) return false;
+      if (r.type === 'css' || r.type === 'css-extended' ||
+          r.type === 'script-injection' || r.type === 'html-filter' ||
+          r.type === 'element-hiding') return false;
+      return true;
+    });
+
+    return this._toTextLines(dnsRules, (rule) => {
+      return rule.rule;
+    }, `! AdGuard Home DNS filter list`);
+  }
+
   toUblockOriginFormat(rules) {
     return this._toTextLines(rules, (rule) => rule.rule, '! uBlock Origin filter list');
   }
@@ -373,6 +387,7 @@ class Converter {
   convert(rules, format, repo) {
     switch (format) {
       case 'adguard': return this.toAdguardFormat(rules);
+      case 'adguard-home': return this.toAdguardHomeFormat(rules);
       case 'ublock': return this.toUblockOriginFormat(rules);
       case 'abp': return this.toAdblockPlusFormat(rules);
       case 'hosts': return this.toHostsFormat(rules);

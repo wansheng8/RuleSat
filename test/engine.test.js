@@ -159,6 +159,33 @@ describe('Converter', () => {
     assert.strictEqual(parsed.length, 2);
     assert.strictEqual(parsed[0].d, 'example.com');
   });
+
+  it('converts to AdGuard Home format (DNS-only)', () => {
+    const conv = new Converter();
+    const rules = [
+      { rule: '||ad.com^', domain: 'ad.com', type: 'network', categories: ['ads'] },
+      { rule: '||tracker.io^$script', domain: 'tracker.io', type: 'script', categories: ['tracking'] },
+      { rule: 'example.com##.banner', domain: null, type: 'css', categories: ['ads'] },
+      { rule: 'example.com#%#//scriptlet("test")', domain: null, type: 'script-injection', categories: ['ads'] },
+      { rule: '||phish.net^', domain: 'phish.net', type: 'network', categories: ['phishing'] },
+    ];
+    const output = conv.toAdguardHomeFormat(rules);
+    assert.ok(output.includes('AdGuard Home DNS'));
+    assert.ok(output.includes('||ad.com^'));
+    assert.ok(output.includes('||tracker.io^$script'));
+    assert.ok(output.includes('||phish.net^'));
+    assert.ok(!output.includes('.banner'), 'should exclude CSS rules');
+    assert.ok(!output.includes('scriptlet'), 'should exclude scriptlet rules');
+  });
+
+  it('convert() dispatches to adguard-home format', () => {
+    const conv = new Converter();
+    const rules = [
+      { rule: '||ad.com^', domain: 'ad.com', type: 'network', categories: ['ads'] },
+    ];
+    const output = conv.convert(rules, 'adguard-home');
+    assert.ok(output.includes('AdGuard Home DNS'));
+  });
 });
 
 describe('Validator', () => {

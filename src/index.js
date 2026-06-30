@@ -82,6 +82,7 @@ class AdblockFilterAggregator {
 
     const formats = {
       'filter-adguard.txt': 'adguard',
+      'filter-adguard-home.txt': 'adguard-home',
       'filter-ublock.txt': 'ublock',
       'filter-abp.txt': 'abp',
       'filter-hosts.txt': 'hosts',

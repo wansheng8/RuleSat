@@ -52,7 +52,8 @@ class Fetcher {
     return body;
   }
 
-  async httpGet(url) {
+  async httpGet(url, redirectCount = 0) {
+    const MAX_REDIRECTS = 10;
     return new Promise((resolve, reject) => {
       const proto = url.startsWith('https') ? require('https') : require('http');
       const req = proto.get(url, {
@@ -60,7 +61,11 @@ class Fetcher {
         timeout: this.timeout,
       }, (res) => {
         if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-          this.httpGet(new URL(res.headers.location, url).href)
+          if (redirectCount >= MAX_REDIRECTS) {
+            reject(new Error(`Too many redirects (max ${MAX_REDIRECTS})`));
+            return;
+          }
+          this.httpGet(new URL(res.headers.location, url).href, redirectCount + 1)
             .then(resolve).catch(reject);
           return;
         }

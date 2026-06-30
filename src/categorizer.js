@@ -2,7 +2,7 @@ class Categorizer {
   constructor() {
     this.categoryMap = {
       'ads': ['ad', 'advert', 'banner', 'doubleclick', 'adsense', 'adservice', 'adserver',
-        'adsystem', 'popup', 'popunder', 'popunder', 'promoted', 'sponsored', 'taboola', 'outbrain'],
+        'adsystem', 'popup', 'popunder', 'promoted', 'sponsored', 'taboola', 'outbrain'],
       'tracking': ['track', 'analytics', 'pixel', 'beacon', 'telemetry', 'collect', 'metrics',
         'stat', 'log', 'hit', 'pageview', 'impression', 'visitor', 'session', 'heatmap',
         'hotjar', 'mouseflow', 'fullstory', 'clicktale', 'crazyegg'],

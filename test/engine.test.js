@@ -1,5 +1,8 @@
-const { describe, it } = require('node:test');
+const { describe, it, before, after } = require('node:test');
 const assert = require('node:assert');
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
 
 const Parser = require('../src/parser');
 const Deduplicator = require('../src/deduplicator');
@@ -7,6 +10,8 @@ const Categorizer = require('../src/categorizer');
 const Converter = require('../src/converter');
 const Validator = require('../src/validator');
 const Merger = require('../src/merger');
+const Fetcher = require('../src/fetcher');
+const Writer = require('../src/writer');
 
 const sampleAdblockRules = `! Title: Test filter
 ! Comment line
@@ -210,5 +215,241 @@ describe('Merger', () => {
     assert.ok(cats['ads']);
     assert.ok(cats['tracking']);
     assert.strictEqual(cats['ads'].length, 2);
+  });
+
+  it('sorts by domain in reverse TLD order', () => {
+    const merger = new Merger();
+    const rules = [
+      { rule: '||sub.example.com^', domain: 'sub.example.com' },
+      { rule: '||test.org^', domain: 'test.org' },
+      { rule: '||a.example.com^', domain: 'a.example.com' },
+    ];
+    const sorted = merger.sortByDomain(rules);
+    assert.strictEqual(sorted[0].domain, 'a.example.com');
+    assert.strictEqual(sorted[2].domain, 'test.org');
+  });
+
+  it('handles empty rules array', () => {
+    const merger = new Merger();
+    const sorted = merger.sortByDomain([]);
+    assert.strictEqual(sorted.length, 0);
+  });
+
+  it('handles rules without domains in sortByDomain', () => {
+    const merger = new Merger();
+    const rules = [
+      { rule: '||test.com^', domain: 'test.com' },
+      { rule: 'generic-rule', domain: '' },
+    ];
+    const sorted = merger.sortByDomain(rules);
+    assert.strictEqual(sorted.length, 2);
+  });
+});
+
+describe('Fetcher', () => {
+  it('loads sources from registry.json', () => {
+    const fetcher = new Fetcher();
+    const sources = fetcher.loadSources();
+    assert.ok(Array.isArray(sources));
+    assert.ok(sources.length > 0);
+    assert.ok(sources[0].name);
+    assert.ok(sources[0].url);
+    assert.strictEqual(typeof sources[0].enabled, 'boolean');
+  });
+
+  it('sets default options', () => {
+    const fetcher = new Fetcher();
+    assert.ok(fetcher.cacheDir.includes('cache'));
+    assert.strictEqual(fetcher.timeout, 30000);
+    assert.ok(fetcher.userAgent.includes('AdblockFilterAggregator'));
+  });
+
+  it('accepts custom options', () => {
+    const fetcher = new Fetcher({ cacheDir: '/tmp/test-cache', timeout: 5000 });
+    assert.strictEqual(fetcher.cacheDir, '/tmp/test-cache');
+    assert.strictEqual(fetcher.timeout, 5000);
+  });
+
+  it('loadCache returns null for non-existent cache', () => {
+    const fetcher = new Fetcher({ cacheDir: '/tmp/nonexistent-cache-dir' });
+    const result = fetcher.loadCache('nonexistent-source');
+    assert.strictEqual(result, null);
+  });
+
+  it('loadCache returns content for existing cache', () => {
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'agg-test-'));
+    const cacheDir = path.join(tmpDir, 'cache');
+    fs.mkdirSync(cacheDir, { recursive: true });
+    fs.writeFileSync(path.join(cacheDir, 'test-source.txt'), 'test content', 'utf-8');
+
+    const fetcher = new Fetcher({ cacheDir });
+    const result = fetcher.loadCache('test-source');
+    assert.strictEqual(result, 'test content');
+
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  });
+});
+
+describe('Writer', () => {
+  let tmpDir;
+  let writer;
+
+  before(() => {
+    tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'agg-writer-'));
+    writer = new Writer(tmpDir);
+  });
+
+  after(() => {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  });
+
+  it('writes text file', () => {
+    const filePath = writer.write('test.txt', 'hello world');
+    assert.ok(fs.existsSync(filePath));
+    assert.strictEqual(fs.readFileSync(filePath, 'utf-8'), 'hello world');
+  });
+
+  it('writes gzip file', () => {
+    const result = writer.writeGzip('test-gzip.txt', 'compressed content');
+    assert.ok(result.size > 0);
+    assert.ok(fs.existsSync(result.path));
+  });
+
+  it('writes JSON report', () => {
+    const stats = { totalUnique: 100, duplicatesRemoved: 50 };
+    const filePath = writer.writeReport(stats);
+    assert.ok(fs.existsSync(filePath));
+    const parsed = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    assert.strictEqual(parsed.totalUnique, 100);
+  });
+
+  it('writes Markdown report', () => {
+    const stats = {
+      totalParsed: 1000,
+      totalUnique: 500,
+      duplicatesRemoved: 500,
+      invalidRules: 10,
+      sourceCount: 5,
+      ruleTypes: { network: 400, css: 100 },
+      categories: { ads: 300, tracking: 200 },
+      topDomains: [['example.com', 100], ['test.com', 50]],
+    };
+    const filePath = writer.writeMarkdownReport(stats, ['filter-adguard.txt', 'filter-hosts.txt']);
+    assert.ok(fs.existsSync(filePath));
+    const content = fs.readFileSync(filePath, 'utf-8');
+    assert.ok(content.includes('Total rules parsed'));
+    assert.ok(content.includes('1,000'));
+    assert.ok(content.includes('Invalid rules'));
+    assert.ok(content.includes('10'));
+    assert.ok(content.includes('filter-adguard.txt'));
+    assert.ok(content.includes('filter-hosts.txt'));
+  });
+
+  it('creates output directory if not exists', () => {
+    const newDir = path.join(tmpDir, 'sub', 'output');
+    const w = new Writer(newDir);
+    w.write('nested.txt', 'nested');
+    assert.ok(fs.existsSync(path.join(newDir, 'nested.txt')));
+  });
+});
+
+describe('Parser edge cases', () => {
+  it('handles empty content', () => {
+    const parser = new Parser();
+    const rules = parser.parse('', 'abp');
+    assert.strictEqual(rules.length, 0);
+  });
+
+  it('handles whitespace-only lines', () => {
+    const parser = new Parser();
+    const rules = parser.parse('   \n\n  \t  \n', 'abp');
+    assert.strictEqual(rules.length, 0);
+  });
+
+  it('parses rules with multiple options', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$script,third-party,domain=test.com', 'abp');
+    assert.strictEqual(rules.length, 1);
+    assert.strictEqual(rules[0].type, 'script');
+    assert.strictEqual(rules[0].options.script, true);
+    assert.strictEqual(rules[0].options['third-party'], true);
+    assert.strictEqual(rules[0].options.domain, 'test.com');
+  });
+
+  it('skips malformed lines', () => {
+    const parser = new Parser();
+    const rules = parser.parse('not a rule\njust some text', 'abp');
+    assert.ok(rules.length >= 0);
+  });
+});
+
+describe('Deduplicator edge cases', () => {
+  it('handles empty array', () => {
+    const dedup = new Deduplicator();
+    const result = dedup.deduplicate([]);
+    assert.strictEqual(result.length, 0);
+    assert.strictEqual(dedup.getStats().total, 0);
+  });
+
+  it('deduplicates rules with different option ordering', () => {
+    const dedup = new Deduplicator();
+    const rules = [
+      { rule: '||a.com^$script,third-party', categories: ['ads'] },
+      { rule: '||a.com^$third-party,script', categories: ['tracking'] },
+    ];
+    const result = dedup.deduplicate(rules);
+    assert.strictEqual(result.length, 1);
+    assert.ok(result[0].categories.includes('ads'));
+    assert.ok(result[0].categories.includes('tracking'));
+  });
+
+  it('resets stats correctly', () => {
+    const dedup = new Deduplicator();
+    dedup.deduplicate([{ rule: '||a.com^' }]);
+    dedup.reset();
+    assert.strictEqual(dedup.getStats().total, 0);
+    assert.strictEqual(dedup.getStats().unique, 0);
+  });
+});
+
+describe('Validator edge cases', () => {
+  it('validates domain names', () => {
+    const val = new Validator();
+    assert.ok(val.validateDomain('example.com'));
+    assert.ok(val.validateDomain('sub.example.co.uk'));
+    assert.ok(!val.validateDomain(''));
+    assert.ok(!val.validateDomain(null));
+    assert.ok(!val.validateDomain('invalid'));
+  });
+
+  it('handles empty rules array', () => {
+    const val = new Validator();
+    const result = val.validateRules([]);
+    assert.strictEqual(result.stats.total, 0);
+    assert.strictEqual(result.stats.valid, 0);
+  });
+});
+
+describe('Categorizer edge cases', () => {
+  it('preserves source category', () => {
+    const cat = new Categorizer();
+    const rules = [{ rule: '||unknown-site.com^', categories: [] }];
+    cat.categorize(rules, 'malware');
+    assert.ok(rules[0].categories.includes('malware'));
+  });
+
+  it('does not duplicate categories', () => {
+    const cat = new Categorizer();
+    const rules = [{ rule: '||doubleclick.net^', categories: ['ads'] }];
+    cat.categorize(rules, 'ads');
+    const count = rules[0].categories.filter(c => c === 'ads').length;
+    assert.strictEqual(count, 1);
+  });
+
+  it('categorizes whitelist rules', () => {
+    const cat = new Categorizer();
+    const rules = [{ rule: '@@||example.com^', categories: [], subtype: 'whitelist' }];
+    cat.categorize(rules, null);
+    assert.ok(rules[0].categories.includes('whitelist'));
   });
 });

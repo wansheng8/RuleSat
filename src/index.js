@@ -6,6 +6,7 @@ const Categorizer = require('./categorizer');
 const Converter = require('./converter');
 const Validator = require('./validator');
 const Writer = require('./writer');
+const fs = require('fs');
 
 class AdblockFilterAggregator {
   constructor(options = {}) {
@@ -69,10 +70,11 @@ class AdblockFilterAggregator {
 
     const categorized = this.merger.mergeByCategory(merged);
     const sorted = this.merger.sortByPriority(uniqueRules);
+    const sortedByDomain = this.merger.sortByDomain([...uniqueRules]);
     const domainStats = this.merger.getDomainStats(uniqueRules);
     const typeStats = this.merger.getRuleTypeStats(uniqueRules);
 
-    return { merged, categorized, sorted, domainStats, typeStats };
+    return { merged, categorized, sorted, sortedByDomain, domainStats, typeStats };
   }
 
   async generateOutputs(uniqueRules, sorted) {
@@ -105,7 +107,6 @@ class AdblockFilterAggregator {
         outputs.push({ path: outPath, filename, format, size, gzipSize });
       } catch (err) {
         console.error(`[output] ${filename} FAILED: ${err.message}`);
-        const fs = require('fs');
         const outPath = this.writer.write(filename, `# Error: ${err.message}`);
         outputs.push({ path: outPath, filename, format, size: 0, gzipSize: 0 });
       }
@@ -116,13 +117,13 @@ class AdblockFilterAggregator {
 
   async run(options = {}) {
     const mode = options.mode || 'all';
-    const steps = options.steps || 100;
 
     const startTime = Date.now();
 
     let fetchedSources = null;
     let parsedResult = null;
     let dedupResult = null;
+    let validateResult = null;
     let organized = null;
     let outputs = null;
 
@@ -131,34 +132,29 @@ class AdblockFilterAggregator {
     }
 
     if (['all', 'parse', 'process', 'build'].includes(mode)) {
-      if (!fetchedSources && ['parse', 'process', 'build'].includes(mode)) {
-        fetchedSources = await this.fetch();
-      }
+      if (!fetchedSources) fetchedSources = await this.fetch();
       parsedResult = this.parse(fetchedSources);
     }
 
     if (['all', 'process', 'build'].includes(mode)) {
-      if (!parsedResult) {
-        fetchedSources = fetchedSources || await this.fetch();
-        parsedResult = this.parse(fetchedSources);
-      }
+      if (!fetchedSources) fetchedSources = await this.fetch();
+      if (!parsedResult) parsedResult = this.parse(fetchedSources);
       dedupResult = this.deduplicate(parsedResult.parsedSources);
+      validateResult = this.validate(dedupResult.unique);
       organized = this.mergeAndOrganize(dedupResult.unique, parsedResult.parsedSources);
     }
 
     if (['all', 'build'].includes(mode)) {
-      if (!organized) {
-        if (!dedupResult) {
-          if (!parsedResult) {
-            fetchedSources = fetchedSources || await this.fetch();
-            parsedResult = this.parse(fetchedSources);
-          }
-          dedupResult = this.deduplicate(parsedResult.parsedSources);
-          organized = this.mergeAndOrganize(dedupResult.unique, parsedResult.parsedSources);
-        } else {
-          organized = this.mergeAndOrganize(dedupResult.unique, parsedResult ? parsedResult.parsedSources : []);
-        }
+      if (!fetchedSources) fetchedSources = await this.fetch();
+      if (!parsedResult) parsedResult = this.parse(fetchedSources);
+      if (!dedupResult) {
+        dedupResult = this.deduplicate(parsedResult.parsedSources);
+        validateResult = this.validate(dedupResult.unique);
+        organized = this.mergeAndOrganize(dedupResult.unique, parsedResult.parsedSources);
+      } else if (!organized) {
+        organized = this.mergeAndOrganize(dedupResult.unique, parsedResult.parsedSources);
       }
+      if (!validateResult) validateResult = this.validate(dedupResult.unique);
       outputs = await this.generateOutputs(dedupResult.unique, organized.sorted);
     }
 
@@ -171,6 +167,7 @@ class AdblockFilterAggregator {
       totalParsed: parsedResult ? parsedResult.totalParsed : 0,
       totalUnique: dedupResult ? dedupResult.unique.length : 0,
       duplicatesRemoved: dedupResult ? dedupResult.stats.duplicates : 0,
+      invalidRules: validateResult ? validateResult.stats.invalid : 0,
       sourceCount: fetchedSources ? fetchedSources.length : 0,
       ruleTypes: organized ? organized.typeStats : {},
       categories: organized ? Object.fromEntries(

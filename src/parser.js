@@ -22,7 +22,7 @@ class Parser {
         continue;
       }
 
-      if (line.startsWith('!') || line.startsWith('#') && !this.isAbpRule(line)) {
+      if (line.startsWith('!') || (line.startsWith('#') && !this.isAbpRule(line))) {
         this.stats.comments++;
         continue;
       }

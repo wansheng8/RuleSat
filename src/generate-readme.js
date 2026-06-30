@@ -147,11 +147,16 @@ MIT
 }
 
 function main() {
-  const repo = process.env.GITHUB_REPOSITORY || process.argv[2] || 'wansheng8/RuleSat';
-  const readme = generate(repo);
-  const outPath = path.join(__dirname, '..', 'README.md');
-  fs.writeFileSync(outPath, readme, 'utf-8');
-  console.log(`[readme] generated README.md for ${repo}`);
+  try {
+    const repo = process.env.GITHUB_REPOSITORY || process.argv[2] || 'wansheng8/RuleSat';
+    const readme = generate(repo);
+    const outPath = path.join(__dirname, '..', 'README.md');
+    fs.writeFileSync(outPath, readme, 'utf-8');
+    console.log(`[readme] generated README.md for ${repo}`);
+  } catch (err) {
+    console.error(`[readme] FAILED: ${err.message}`);
+    process.exit(1);
+  }
 }
 
 if (require.main === module) {

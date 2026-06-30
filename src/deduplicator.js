@@ -3,7 +3,7 @@ const crypto = require('crypto');
 class Deduplicator {
   constructor() {
     this.seen = new Map();
-    this.hashSeen = new Set();
+    this.hashSeen = new Map();
     this.stats = { total: 0, unique: 0, duplicates: 0 };
   }
 
@@ -24,11 +24,15 @@ class Deduplicator {
       const hash = crypto.createHash('md5').update(rule.rule).digest('hex');
       if (this.hashSeen.has(hash)) {
         this.stats.duplicates++;
+        const hashExisting = this.hashSeen.get(hash);
+        if (hashExisting) {
+          hashExisting.categories = [...new Set([...(hashExisting.categories || []), ...(rule.categories || [])])];
+        }
         continue;
       }
 
       this.seen.set(key, rule);
-      this.hashSeen.add(hash);
+      this.hashSeen.set(hash, rule);
       unique.push(rule);
       this.stats.unique++;
     }

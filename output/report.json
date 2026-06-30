@@ -1,13 +1,14 @@
 {
   "mode": "all",
-  "elapsed": "104.0s",
+  "elapsed": "101.2s",
   "fetchedCount": 37,
-  "totalParsed": 1833821,
-  "totalUnique": 1106251,
-  "duplicatesRemoved": 727570,
+  "totalParsed": 1793247,
+  "totalUnique": 1089168,
+  "duplicatesRemoved": 704079,
+  "invalidRules": 7614,
   "sourceCount": 37,
   "ruleTypes": {
-    "network": 997567,
+    "network": 980477,
     "generic-hide": 441,
     "script": 2921,
     "image": 1344,
@@ -28,35 +29,35 @@
     "other": 1,
     "object": 13,
     "document": 616,
-    "css": 88228,
-    "rewrite": 25,
+    "css": 88235,
     "css-extended": 1011,
+    "rewrite": 25,
     "replace": 2,
     "all": 1387,
     "redirect": 32,
     "important": 42
   },
   "categories": {
-    "ads": 274895,
-    "annoyances": 57410,
-    "social": 19355,
-    "ads-regional": 127546,
+    "ads": 274458,
+    "annoyances": 57406,
+    "social": 19302,
+    "ads-regional": 127551,
     "annoyances-regional": 1840,
     "stylesheet": 127,
-    "regional-cn": 18151,
-    "regional-ru": 16103,
-    "tracking": 159141,
-    "privacy": 63934,
+    "regional-cn": 18115,
+    "regional-ru": 15952,
+    "tracking": 159048,
+    "privacy": 63884,
     "spyware": 690,
     "popup": 4051,
-    "malware": 21264,
-    "phishing": 145652,
-    "ads-malware-tracking": 627351,
-    "ads-malware": 88464,
-    "abuse": 1380,
+    "malware": 21160,
+    "phishing": 145704,
+    "ads-malware-tracking": 605560,
+    "ads-malware": 89070,
+    "abuse": 1357,
     "spam": 8140,
-    "cookies": 18319,
-    "mining": 451,
+    "cookies": 18318,
+    "mining": 440,
     "redirect": 330,
     "whitelist": 7569,
     "font": 6,
@@ -69,11 +70,7 @@
     ],
     [
       "com.br",
-      7132
-    ],
-    [
-      "in.net",
-      5282
+      7139
     ],
     [
       "actonservice.com",
@@ -81,59 +78,59 @@
     ],
     [
       "co.uk",
-      2354
+      2361
     ],
     [
-      "r2.dev",
-      1768
+      "wixstudio.com",
+      2326
     ],
     [
       "2o7.net",
       1727
     ],
     [
-      "wixstudio.com",
-      1673
+      "r2.dev",
+      1716
     ],
     [
       "omtrdc.net",
-      1656
+      1599
     ],
     [
       "com.au",
-      1420
-    ],
-    [
-      "com.cn",
-      836
+      1421
     ],
     [
       "intellitxt.com",
       751
     ],
     [
+      "com.cn",
+      677
+    ],
+    [
       "co.jp",
-      614
-    ],
-    [
-      "blogspot.com",
-      588
-    ],
-    [
-      "co.kr",
-      501
+      615
     ],
     [
       "framer.app",
-      495
+      586
+    ],
+    [
+      "blogspot.com",
+      576
+    ],
+    [
+      "co.kr",
+      499
     ],
     [
       "appspot.com",
-      441
+      440
     ],
     [
       "amazonaws.com",
-      405
+      406
     ],
     [
       "ero-advertising.com",
@@ -144,28 +141,28 @@
       385
     ],
     [
-      "qq.com",
-      300
-    ],
-    [
       "hitbox.com",
       291
     ],
     [
       "com.tr",
-      284
+      281
     ],
     [
-      "baidu.com",
-      281
+      "qq.com",
+      272
+    ],
+    [
+      "cpanel.site",
+      260
+    ],
+    [
+      "vercel.app",
+      254
     ],
     [
       "taskade.app",
       249
-    ],
-    [
-      "vercel.app",
-      242
     ],
     [
       "cnzz.com",
@@ -173,15 +170,11 @@
     ],
     [
       "co.za",
-      232
+      236
     ],
     [
       "co.nz",
-      228
-    ],
-    [
-      "cpanel.site",
-      225
+      230
     ],
     [
       "iocnt.de",
@@ -189,10 +182,18 @@
     ],
     [
       "co.il",
-      221
+      220
     ],
     [
       "iberostar.com",
+      199
+    ],
+    [
+      "com.pl",
+      199
+    ],
+    [
+      "baidu.com",
       199
     ],
     [
@@ -204,10 +205,6 @@
       191
     ],
     [
-      "com.pl",
-      190
-    ],
-    [
       "adobe.com",
       168
     ],
@@ -216,8 +213,8 @@
       167
     ],
     [
-      "com.tw",
-      161
+      "webwave.dev",
+      167
     ],
     [
       "casalemedia.com",
@@ -233,11 +230,7 @@
     ],
     [
       "weebly.com",
-      146
-    ],
-    [
-      "webwave.dev",
-      140
+      148
     ],
     [
       "com.mx",
@@ -249,7 +242,7 @@
     ],
     [
       "netlify.app",
-      135
+      130
     ],
     [
       "marketo.com",
@@ -261,7 +254,15 @@
     ],
     [
       "bet.br",
-      124
+      122
+    ],
+    [
+      "windows.com",
+      119
+    ],
+    [
+      "criteo.com",
+      113
     ]
   ]
 }

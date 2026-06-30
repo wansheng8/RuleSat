@@ -1,20 +1,20 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-30 09:57:04.114
+Generated: 2026-06-30 21:56:37.144
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,833,821 |
-| Unique rules after dedup | 1,106,251 |
-| Duplicates removed | 727,570 |
-| Invalid rules | N/A |
+| Total rules parsed | 1,793,247 |
+| Unique rules after dedup | 1,089,168 |
+| Duplicates removed | 704,079 |
+| Invalid rules | 7,614 |
 | Sources processed | 37 |
 
 ## Rule Type Distribution
 
-- network: 997,567
+- network: 980,477
 - generic-hide: 441
 - script: 2,921
 - image: 1,344
@@ -35,9 +35,9 @@ Generated: 2026-06-30 09:57:04.114
 - other: 1
 - object: 13
 - document: 616
-- css: 88,228
-- rewrite: 25
+- css: 88,235
 - css-extended: 1,011
+- rewrite: 25
 - replace: 2
 - all: 1,387
 - redirect: 32
@@ -45,26 +45,26 @@ Generated: 2026-06-30 09:57:04.114
 
 ## Category Distribution
 
-- ads: 274,895
-- annoyances: 57,410
-- social: 19,355
-- ads-regional: 127,546
+- ads: 274,458
+- annoyances: 57,406
+- social: 19,302
+- ads-regional: 127,551
 - annoyances-regional: 1,840
 - stylesheet: 127
-- regional-cn: 18,151
-- regional-ru: 16,103
-- tracking: 159,141
-- privacy: 63,934
+- regional-cn: 18,115
+- regional-ru: 15,952
+- tracking: 159,048
+- privacy: 63,884
 - spyware: 690
 - popup: 4,051
-- malware: 21,264
-- phishing: 145,652
-- ads-malware-tracking: 627,351
-- ads-malware: 88,464
-- abuse: 1,380
+- malware: 21,160
+- phishing: 145,704
+- ads-malware-tracking: 605,560
+- ads-malware: 89,070
+- abuse: 1,357
 - spam: 8,140
-- cookies: 18,319
-- mining: 451
+- cookies: 18,318
+- mining: 440
 - redirect: 330
 - whitelist: 7,569
 - font: 6
@@ -73,55 +73,55 @@ Generated: 2026-06-30 09:57:04.114
 ## Top Domains
 
 - daraz.com: 18,307
-- com.br: 7,132
-- in.net: 5,282
+- com.br: 7,139
 - actonservice.com: 3,819
-- co.uk: 2,354
-- r2.dev: 1,768
+- co.uk: 2,361
+- wixstudio.com: 2,326
 - 2o7.net: 1,727
-- wixstudio.com: 1,673
-- omtrdc.net: 1,656
-- com.au: 1,420
-- com.cn: 836
+- r2.dev: 1,716
+- omtrdc.net: 1,599
+- com.au: 1,421
 - intellitxt.com: 751
-- co.jp: 614
-- blogspot.com: 588
-- co.kr: 501
-- framer.app: 495
-- appspot.com: 441
-- amazonaws.com: 405
+- com.cn: 677
+- co.jp: 615
+- framer.app: 586
+- blogspot.com: 576
+- co.kr: 499
+- appspot.com: 440
+- amazonaws.com: 406
 - ero-advertising.com: 393
 - cloudfront.net: 385
-- qq.com: 300
 - hitbox.com: 291
-- com.tr: 284
-- baidu.com: 281
+- com.tr: 281
+- qq.com: 272
+- cpanel.site: 260
+- vercel.app: 254
 - taskade.app: 249
-- vercel.app: 242
 - cnzz.com: 239
-- co.za: 232
-- co.nz: 228
-- cpanel.site: 225
+- co.za: 236
+- co.nz: 230
 - iocnt.de: 224
-- co.il: 221
+- co.il: 220
 - iberostar.com: 199
+- com.pl: 199
+- baidu.com: 199
 - p2l.info: 198
 - com.bd: 191
-- com.pl: 190
 - adobe.com: 168
 - googleapis.com: 167
-- com.tw: 161
+- webwave.dev: 167
 - casalemedia.com: 154
 - edgekey.net: 152
 - com.vn: 151
-- weebly.com: 146
-- webwave.dev: 140
+- weebly.com: 148
 - com.mx: 137
 - doubleclick.net: 137
-- netlify.app: 135
+- netlify.app: 130
 - marketo.com: 130
 - oewabox.at: 126
-- bet.br: 124
+- bet.br: 122
+- windows.com: 119
+- criteo.com: 113
 
 ## Output Files
 

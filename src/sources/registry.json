@@ -100,7 +100,7 @@
     "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
     "type": "adblock",
     "category": "whitelist",
-    "enabled": true,
+    "enabled": false,
     "format": "ublock"
   },
   {
@@ -108,7 +108,7 @@
     "url": "https://secure.fanboy.co.nz/fanboy-annoyance.txt",
     "type": "adblock",
     "category": "annoyances",
-    "enabled": true,
+    "enabled": false,
     "format": "abp"
   },
   {
@@ -116,7 +116,7 @@
     "url": "https://easylist.to/easylist/fanboy-social.txt",
     "type": "adblock",
     "category": "social",
-    "enabled": true,
+    "enabled": false,
     "format": "abp"
   },
   {
@@ -124,7 +124,7 @@
     "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
     "type": "hosts",
     "category": "ads",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -132,7 +132,7 @@
     "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
     "type": "hosts",
     "category": "ads-malware",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -140,7 +140,7 @@
     "url": "https://someonewhocares.org/hosts/zero/hosts",
     "type": "hosts",
     "category": "ads-malware",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -148,7 +148,7 @@
     "url": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
     "type": "hosts",
     "category": "malware",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -180,7 +180,7 @@
     "url": "https://big.oisd.nl/domainswild",
     "type": "domain-list",
     "category": "ads-malware-tracking",
-    "enabled": true,
+    "enabled": false,
     "format": "domain-wild"
   },
   {
@@ -196,7 +196,7 @@
     "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/hosts.txt",
     "type": "hosts",
     "category": "ads-malware-tracking",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -204,7 +204,7 @@
     "url": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt",
     "type": "domain-list",
     "category": "spam",
-    "enabled": true,
+    "enabled": false,
     "format": "domain"
   },
   {
@@ -212,7 +212,7 @@
     "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DandelionSproutAntiMalwareHosts.txt",
     "type": "hosts",
     "category": "malware",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -276,7 +276,7 @@
     "url": "https://someonewhocares.org/hosts/hosts",
     "type": "hosts",
     "category": "ads-malware",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -284,7 +284,7 @@
     "url": "https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt",
     "type": "hosts",
     "category": "ads",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {
@@ -340,7 +340,7 @@
     "url": "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADhosts.txt",
     "type": "hosts",
     "category": "ads-malware",
-    "enabled": true,
+    "enabled": false,
     "format": "hosts"
   },
   {

@@ -2,14 +2,14 @@
 
 [![Update Filter Lists](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml/badge.svg)](https://github.com/wansheng8/RuleSat/actions/workflows/update-filters.yml)
 
-多源广告拦截过滤规则聚合引擎。从 **37** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
+多源广告拦截过滤规则聚合引擎。从 **30** 个公开规则源抓取、解析、去重、合并、分类，生成适用于 AdGuard、uBlock Origin、Adblock Plus 及各类 DNS 服务器的过滤规则文件。
 
 ## 实时统计
 
 | 指标 | 数值 |
 |---|---|
 | 唯一规则总数 | **1,089,171** |
-| 规则来源 | 37 |
+| 规则来源 | 30 |
 | 规则类别 | 24 |
 | 重复移除 | 704,079 |
 | 最后更新 | 2026-06-30 22:05:25 |
@@ -115,25 +115,16 @@
 
 - EasyList / EasyPrivacy
 - AdGuard Base / Tracking / Social / DNS / Spyware / Mobile / Cookies / Popup / CNAME
-- uBlock Origin Badware / Privacy / Resource Abuse / Unbreak
-- Fanboy Annoyance / Social
-- Peter Lowe's Hosts
-- StevenBlack Hosts
-- someonewhocares Hosts
-- oisd full
+- uBlock Origin Badware / Privacy / Resource Abuse
 - HaGeZi DNS Pro / Ultimate
 - Phishing Army
 - NoCoin Miners
 - Anti-PopAds
-- Spam404
 - URLhaus Malware
 - EasyList China / Germany / Italy / Dutch
-- Dan Pollock Hosts
-- AdAway Hosts
 - Anti-AD (Chinese)
 - CJX Annoyance List
 - ABP Warning Removal
-- KADhosts
 - Ad-Wars / YHosts (Chinese)
 
 ## 自动更新

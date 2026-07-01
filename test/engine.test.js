@@ -480,3 +480,141 @@ describe('Categorizer edge cases', () => {
     assert.ok(rules[0].categories.includes('whitelist'));
   });
 });
+
+describe('Parser syntax coverage', () => {
+  it('parses redirect-rule option', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$redirect-rule=noop.txt', 'adguard');
+    assert.strictEqual(rules.length, 1);
+    assert.strictEqual(rules[0].type, 'redirect');
+    assert.strictEqual(rules[0].options['redirect-rule'], 'noop.txt');
+  });
+
+  it('parses inline-script option', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$inline-script', 'adguard');
+    assert.strictEqual(rules[0].type, 'script');
+    assert.ok(rules[0].options['inline-script']);
+  });
+
+  it('parses match-case option', () => {
+    const parser = new Parser();
+    const rules = parser.parse('/ads.js^$script,match-case', 'abp');
+    assert.strictEqual(rules.length, 1);
+    assert.ok(rules[0].options['match-case']);
+  });
+
+  it('parses denyallow option', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$denyallow=good.com|bad.com', 'adguard');
+    assert.strictEqual(rules.length, 1);
+    assert.strictEqual(rules[0].options['denyallow'], 'good.com|bad.com');
+  });
+
+  it('parses content option', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$content-type=json', 'ublock');
+    assert.strictEqual(rules.length, 1);
+    assert.strictEqual(rules[0].options['content-type'], 'json');
+  });
+
+  it('parses uBlock #^# response filter', () => {
+    const parser = new Parser();
+    const rules = parser.parse('example.com#^#html { display:none }', 'ublock');
+    assert.strictEqual(rules.length, 1);
+    assert.strictEqual(rules[0].type, 'html-filter');
+    assert.strictEqual(rules[0].subtype, 'response-filter');
+  });
+
+  it('skips metadata headers like [Adblock Plus 2.0]', () => {
+    const parser = new Parser();
+    const rules = parser.parse('[Adblock Plus 2.0]\n! Comment\n||example.com^', 'abp');
+    assert.strictEqual(rules.length, 1);
+    assert.ok(rules[0].rule.includes('example.com'));
+  });
+
+  it('skips preprocessor directives like !#include', () => {
+    const parser = new Parser();
+    const rules = parser.parse('!#include other.txt\n!#if condition\n||example.com^\n!#endif', 'adguard');
+    assert.strictEqual(rules.length, 1);
+  });
+
+  it('parses sub_frame option as subdocument', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$sub_frame', 'abp');
+    assert.strictEqual(rules[0].type, 'subdocument');
+  });
+
+  it('parses beacon option as ping', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$beacon', 'abp');
+    assert.strictEqual(rules[0].type, 'ping');
+  });
+
+  it('parses specifichide option', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$specifichide', 'abp');
+    assert.strictEqual(rules[0].type, 'element-hiding');
+  });
+
+  it('parses inline-font option as font', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$inline-font', 'adguard');
+    assert.strictEqual(rules[0].type, 'font');
+  });
+
+  it('parses frame option as subdocument', () => {
+    const parser = new Parser();
+    const rules = parser.parse('||example.com^$frame', 'abp');
+    assert.strictEqual(rules[0].type, 'subdocument');
+  });
+});
+
+describe('Validator enhanced', () => {
+  it('tracks bad domain rules', () => {
+    const val = new Validator();
+    const results = val.validateRules([
+      { rule: '||example.com^', domain: 'example.com' },
+      { rule: '||bad^', domain: 'bad' },
+    ]);
+    assert.strictEqual(results.stats.valid, 2);
+    assert.strictEqual(results.stats.badDomain, 1);
+  });
+
+  it('validates wildcard domains', () => {
+    const val = new Validator();
+    assert.ok(val.validateDomain('*.example.com'));
+    assert.ok(val.validateDomain('example.co.uk'));
+    assert.ok(!val.validateDomain('not-a-domain'));
+  });
+});
+
+describe('Categorizer enhanced', () => {
+  it('categorizes redirect-rule option', () => {
+    const cat = new Categorizer();
+    const rules = [{ rule: '||example.com^$redirect-rule=noop.txt', categories: [], options: { 'redirect-rule': 'noop.txt' } }];
+    cat.categorize(rules, null);
+    assert.ok(rules[0].categories.includes('redirect'));
+  });
+
+  it('categorizes csp option', () => {
+    const cat = new Categorizer();
+    const rules = [{ rule: '||example.com^$csp=script-src', categories: [], options: { csp: 'script-src' } }];
+    cat.categorize(rules, null);
+    assert.ok(rules[0].categories.includes('csp'));
+  });
+
+  it('categorizes document option', () => {
+    const cat = new Categorizer();
+    const rules = [{ rule: '||example.com^$document', categories: [], options: { document: true } }];
+    cat.categorize(rules, null);
+    assert.ok(rules[0].categories.includes('document'));
+  });
+
+  it('categorizes removeparam option', () => {
+    const cat = new Categorizer();
+    const rules = [{ rule: '||example.com^$removeparam', categories: [], options: { removeparam: true } }];
+    cat.categorize(rules, null);
+    assert.ok(rules[0].categories.includes('removeparam'));
+  });
+});

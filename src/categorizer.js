@@ -50,11 +50,16 @@ class Categorizer {
 
       if (rule.options) {
         if (rule.options.cookie) rule.categories.push('cookies');
-        if (rule.options.redirect || rule.options.rewrite) rule.categories.push('redirect');
+        if (rule.options.redirect || rule.options['redirect-rule'] || rule.options.rewrite) rule.categories.push('redirect');
         if (rule.options.webrtc) rule.categories.push('webrtc');
         if (rule.options.popup) rule.categories.push('popup');
         if (rule.options.font) rule.categories.push('font');
         if (rule.options.stylesheet) rule.categories.push('stylesheet');
+        if (rule.options.csp) rule.categories.push('csp');
+        if (rule.options.script || rule.options['inline-script']) rule.categories.push('script');
+        if (rule.options.document) rule.categories.push('document');
+        if (rule.options.removeparam) rule.categories.push('removeparam');
+        if (rule.options['match-case']) rule.categories.push('match-case');
       }
 
       if (rule.subtype === 'whitelist') rule.categories.push('whitelist');

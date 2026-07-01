@@ -27,6 +27,12 @@ class Parser {
         continue;
       }
 
+      // Skip metadata headers and preprocessor directives
+      if (line.startsWith('[') || line.startsWith('!#include') || line.startsWith('!#if') || line.startsWith('!#endif')) {
+        this.stats.comments++;
+        continue;
+      }
+
       const rule = this.parseLine(line, sourceFormat);
       if (rule) {
         rules.push(rule);
@@ -95,7 +101,7 @@ class Parser {
       rule.subtype = 'url-anchored';
     } else if (line.startsWith('|')) {
       rule.subtype = 'left-anchored';
-    } else if (line.includes('##') || line.includes('#@#') || line.includes('#%#') || line.includes('#?#') || line.includes('#$#')) {
+    } else if (line.includes('##') || line.includes('#@#') || line.includes('#%#') || line.includes('#?#') || line.includes('#$#') || line.includes('#^#')) {
       rule.type = 'element-hiding';
       return this.parseElementHidingRule(line, rule);
     } else {
@@ -141,6 +147,9 @@ class Parser {
     if (line.includes('#%#')) {
       rule.subtype = 'scriptlet';
       rule.type = 'script-injection';
+    } else if (line.includes('#^#')) {
+      rule.subtype = 'response-filter';
+      rule.type = 'html-filter';
     } else if (line.includes('#$#')) {
       rule.subtype = 'html-filter';
       rule.type = 'html-filter';
@@ -187,11 +196,13 @@ class Parser {
       'object': 'object',
       'object-subrequest': 'object',
       'subdocument': 'subdocument',
+      'sub_frame': 'subdocument',
       'xmlhttprequest': 'xhr',
       'xhr': 'xhr',
       'websocket': 'websocket',
       'webrtc': 'webrtc',
       'ping': 'ping',
+      'beacon': 'ping',
       'other': 'other',
       'cookie': 'cookie',
       'popup': 'popup',
@@ -201,7 +212,9 @@ class Parser {
       'elemhide': 'element-hiding',
       'generichide': 'generic-hide',
       'genericblock': 'generic-block',
+      'specifichide': 'element-hiding',
       'redirect': 'redirect',
+      'redirect-rule': 'redirect',
       'rewrite': 'rewrite',
       'replace': 'replace',
       'removeparam': 'removeparam',
@@ -210,6 +223,10 @@ class Parser {
       'all': 'all',
       'third-party': 'third-party',
       'first-party': 'first-party',
+      'inline-script': 'script',
+      'inline-font': 'font',
+      'content': 'other',
+      'frame': 'subdocument',
     };
 
     for (const [key, type] of Object.entries(typeMap)) {
@@ -220,7 +237,7 @@ class Parser {
   }
 
   isAbpRule(line) {
-    return /^\|\||^@@|\$\w|##|#@#|#%#|#\?#/.test(line);
+    return /^\|\||^@@|\$\w|##|#@#|#%#|#\?#|#\$#|#\^#/.test(line);
   }
 }
 

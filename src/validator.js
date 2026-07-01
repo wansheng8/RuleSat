@@ -16,11 +16,17 @@ class Validator {
     const valid = [];
     const invalid = [];
     let domainOnlyRules = 0;
+    let badDomainRules = 0;
 
     for (const rule of rules) {
       if (this.validateRule(rule)) {
         valid.push(rule);
-        if (rule.domain) domainOnlyRules++;
+        if (rule.domain) {
+          domainOnlyRules++;
+          if (!this.validateDomain(rule.domain)) {
+            badDomainRules++;
+          }
+        }
       } else {
         invalid.push(rule);
       }
@@ -35,6 +41,7 @@ class Validator {
         invalid: invalid.length,
         withDomain: domainOnlyRules,
         withoutDomain: valid.length - domainOnlyRules,
+        badDomain: badDomainRules,
       },
     };
   }

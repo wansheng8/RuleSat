@@ -8,11 +8,11 @@
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **637,585** |
+| 唯一规则总数 | **637,582** |
 | 规则来源 | 26 |
-| 规则类别 | 22 |
-| 重复移除 | 576,943 |
-| 最后更新 | 2026-07-01 22:02:26 |
+| 规则类别 | 27 |
+| 重复移除 | 576,936 |
+| 最后更新 | 2026-07-01 22:04:30 |
 
 ## 浏览器插件订阅地址
 
@@ -51,27 +51,32 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 273,877 |
-| ads | 229,549 |
+| ads-malware-tracking | 273,876 |
+| ads | 229,546 |
 | phishing | 144,975 |
 | tracking | 141,735 |
-| ads-regional | 127,560 |
-| privacy | 57,466 |
+| ads-regional | 127,558 |
+| privacy | 57,465 |
 | malware | 19,588 |
 | regional-cn | 13,986 |
 | regional-ru | 6,175 |
-| annoyances | 4,294 |
+| annoyances | 4,293 |
 | popup | 4,026 |
 | social | 3,488 |
 | whitelist | 3,235 |
-| annoyances-regional | 1,840 |
+| annoyances-regional | 1,839 |
+| script | 1,591 |
 | spyware | 690 |
 | abuse | 649 |
+| document | 641 |
 | cookies | 476 |
 | mining | 240 |
-| redirect | 92 |
+| removeparam | 215 |
+| redirect | 96 |
+| match-case | 93 |
 | stylesheet | 86 |
 | mobile-ads | 41 |
+| csp | 39 |
 | font | 2 |
 
 
@@ -79,7 +84,7 @@
 
 | 类型 | 数量 |
 |---|---|
-| network | 580,785 |
+| network | 580,770 |
 | css | 39,717 |
 | third-party | 6,821 |
 | popup | 3,270 |
@@ -90,7 +95,7 @@
 | css-extended | 618 |
 | generic-hide | 430 |
 | xhr | 410 |
-| subdocument | 235 |
+| subdocument | 247 |
 | removeparam | 214 |
 | ping | 61 |
 | stylesheet | 49 |

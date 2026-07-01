@@ -1,24 +1,24 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-07-01 22:02:26.303
+Generated: 2026-07-01 22:04:30.626
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,214,528 |
-| Unique rules after dedup | 637,585 |
-| Duplicates removed | 576,943 |
-| Invalid rules | 3,187 |
+| Total rules parsed | 1,214,518 |
+| Unique rules after dedup | 637,582 |
+| Duplicates removed | 576,936 |
+| Invalid rules | 3,184 |
 | Sources processed | 26 |
 
 ## Rule Type Distribution
 
-- subdocument: 235
+- subdocument: 247
 - xhr: 410
 - script: 1,590
 - third-party: 6,821
-- network: 580,785
+- network: 580,770
 - image: 1,208
 - stylesheet: 49
 - websocket: 7
@@ -44,27 +44,32 @@ Generated: 2026-07-01 22:02:26.303
 
 ## Category Distribution
 
-- ads: 229,549
-- ads-regional: 127,560
-- annoyances-regional: 1,840
-- annoyances: 4,294
+- ads: 229,546
 - stylesheet: 86
+- script: 1,591
 - regional-cn: 13,986
 - regional-ru: 6,175
 - tracking: 141,735
-- privacy: 57,466
+- privacy: 57,465
+- annoyances: 4,293
 - social: 3,488
+- document: 641
 - spyware: 690
 - popup: 4,026
+- ads-regional: 127,558
 - malware: 19,588
 - phishing: 144,975
-- ads-malware-tracking: 273,877
+- ads-malware-tracking: 273,876
 - abuse: 649
 - cookies: 476
 - mining: 240
-- redirect: 92
+- redirect: 96
 - whitelist: 3,235
+- csp: 39
+- annoyances-regional: 1,839
+- match-case: 93
 - font: 2
+- removeparam: 215
 - mobile-ads: 41
 
 ## Top Domains

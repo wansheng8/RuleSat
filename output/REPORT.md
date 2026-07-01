@@ -1,14 +1,14 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-06-30 22:23:34.479
+Generated: 2026-07-01 10:01:29.377
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,214,846 |
-| Unique rules after dedup | 636,681 |
-| Duplicates removed | 578,165 |
+| Total rules parsed | 1,212,172 |
+| Unique rules after dedup | 636,626 |
+| Duplicates removed | 575,546 |
 | Invalid rules | 3,189 |
 | Sources processed | 26 |
 
@@ -18,7 +18,7 @@ Generated: 2026-06-30 22:23:34.479
 - xhr: 405
 - script: 1,590
 - third-party: 6,821
-- network: 579,886
+- network: 579,830
 - image: 1,208
 - stylesheet: 49
 - websocket: 7
@@ -33,7 +33,7 @@ Generated: 2026-06-30 22:23:34.479
 - generic-block: 4
 - object: 13
 - document: 616
-- css: 39,728
+- css: 39,729
 - replace: 2
 - all: 1,387
 - redirect: 10
@@ -44,21 +44,21 @@ Generated: 2026-06-30 22:23:34.479
 
 ## Category Distribution
 
-- ads: 229,203
-- ads-regional: 127,552
+- ads: 229,300
+- ads-regional: 127,556
 - annoyances-regional: 1,840
-- annoyances: 4,298
+- annoyances: 4,296
 - stylesheet: 86
-- regional-cn: 13,942
-- regional-ru: 6,183
-- tracking: 141,597
+- regional-cn: 13,939
+- regional-ru: 6,176
+- tracking: 141,606
 - privacy: 57,459
-- social: 3,452
+- social: 3,458
 - spyware: 690
 - popup: 4,022
-- malware: 19,618
-- phishing: 145,403
-- ads-malware-tracking: 272,522
+- malware: 19,536
+- phishing: 145,331
+- ads-malware-tracking: 272,589
 - abuse: 649
 - cookies: 476
 - mining: 240
@@ -69,56 +69,56 @@ Generated: 2026-06-30 22:23:34.479
 
 ## Top Domains
 
-- com.br: 6,884
-- in.net: 5,164
+- com.br: 6,881
+- in.net: 5,085
 - actonservice.com: 2,974
-- com.cn: 2,387
-- wixstudio.com: 2,379
+- com.cn: 2,388
+- wixstudio.com: 2,362
 - co.uk: 2,238
-- r2.dev: 1,762
+- r2.dev: 1,760
 - omtrdc.net: 1,720
-- com.au: 1,343
+- com.au: 1,341
 - optimizely.com: 1,099
 - run.app: 787
 - cloudfront.net: 767
 - adobedc.net: 715
-- framer.app: 612
+- framer.app: 609
 - co.jp: 607
-- hl.cn: 590
+- hl.cn: 589
 - co.kr: 562
 - amazonaws.com: 507
 - fbcdn.net: 496
 - px-cloud.net: 308
 - com.tr: 301
-- pages.dev: 287
-- appspot.com: 278
+- pages.dev: 286
+- appspot.com: 277
 - qq.com: 272
-- cpanel.site: 260
+- cpanel.site: 263
 - tiktokv.com: 254
 - baidu.com: 249
 - co.za: 243
 - iocnt.de: 225
-- co.nz: 220
+- co.nz: 222
 - co.il: 213
 - vivoglobal.com: 204
 - vercel.app: 191
 - amazon-adsystem.com: 191
 - xiaomi.com: 190
-- webwave.dev: 188
-- cloudflare.net: 185
+- webwave.dev: 189
 - heytapmobile.com: 184
 - com.bd: 177
+- cloudflare.net: 176
 - com.vn: 171
 - com.tw: 169
-- com.ua: 169
 - weebly.com: 169
+- com.ua: 168
 - aws-prd.net: 164
 - lgsmartad.com: 159
-- edgekey.net: 155
 - com.mx: 150
+- edgekey.net: 149
 - iberostar.com: 147
 - adobe.com: 146
-- com.ar: 140
+- gemius.pl: 139
 
 ## Output Files
 

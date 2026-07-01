@@ -1,10 +1,10 @@
 {
   "mode": "all",
-  "elapsed": "41.2s",
+  "elapsed": "48.9s",
   "fetchedCount": 26,
-  "totalParsed": 1214846,
-  "totalUnique": 636681,
-  "duplicatesRemoved": 578165,
+  "totalParsed": 1212172,
+  "totalUnique": 636626,
+  "duplicatesRemoved": 575546,
   "invalidRules": 3189,
   "sourceCount": 26,
   "ruleTypes": {
@@ -12,7 +12,7 @@
     "xhr": 405,
     "script": 1590,
     "third-party": 6821,
-    "network": 579886,
+    "network": 579830,
     "image": 1208,
     "stylesheet": 49,
     "websocket": 7,
@@ -27,7 +27,7 @@
     "generic-block": 4,
     "object": 13,
     "document": 616,
-    "css": 39728,
+    "css": 39729,
     "replace": 2,
     "all": 1387,
     "redirect": 10,
@@ -37,21 +37,21 @@
     "css-extended": 617
   },
   "categories": {
-    "ads": 229203,
-    "ads-regional": 127552,
+    "ads": 229300,
+    "ads-regional": 127556,
     "annoyances-regional": 1840,
-    "annoyances": 4298,
+    "annoyances": 4296,
     "stylesheet": 86,
-    "regional-cn": 13942,
-    "regional-ru": 6183,
-    "tracking": 141597,
+    "regional-cn": 13939,
+    "regional-ru": 6176,
+    "tracking": 141606,
     "privacy": 57459,
-    "social": 3452,
+    "social": 3458,
     "spyware": 690,
     "popup": 4022,
-    "malware": 19618,
-    "phishing": 145403,
-    "ads-malware-tracking": 272522,
+    "malware": 19536,
+    "phishing": 145331,
+    "ads-malware-tracking": 272589,
     "abuse": 649,
     "cookies": 476,
     "mining": 240,
@@ -63,11 +63,11 @@
   "topDomains": [
     [
       "com.br",
-      6884
+      6881
     ],
     [
       "in.net",
-      5164
+      5085
     ],
     [
       "actonservice.com",
@@ -75,11 +75,11 @@
     ],
     [
       "com.cn",
-      2387
+      2388
     ],
     [
       "wixstudio.com",
-      2379
+      2362
     ],
     [
       "co.uk",
@@ -87,7 +87,7 @@
     ],
     [
       "r2.dev",
-      1762
+      1760
     ],
     [
       "omtrdc.net",
@@ -95,7 +95,7 @@
     ],
     [
       "com.au",
-      1343
+      1341
     ],
     [
       "optimizely.com",
@@ -115,7 +115,7 @@
     ],
     [
       "framer.app",
-      612
+      609
     ],
     [
       "co.jp",
@@ -123,7 +123,7 @@
     ],
     [
       "hl.cn",
-      590
+      589
     ],
     [
       "co.kr",
@@ -147,11 +147,11 @@
     ],
     [
       "pages.dev",
-      287
+      286
     ],
     [
       "appspot.com",
-      278
+      277
     ],
     [
       "qq.com",
@@ -159,7 +159,7 @@
     ],
     [
       "cpanel.site",
-      260
+      263
     ],
     [
       "tiktokv.com",
@@ -179,7 +179,7 @@
     ],
     [
       "co.nz",
-      220
+      222
     ],
     [
       "co.il",
@@ -203,11 +203,7 @@
     ],
     [
       "webwave.dev",
-      188
-    ],
-    [
-      "cloudflare.net",
-      185
+      189
     ],
     [
       "heytapmobile.com",
@@ -218,6 +214,10 @@
       177
     ],
     [
+      "cloudflare.net",
+      176
+    ],
+    [
       "com.vn",
       171
     ],
@@ -226,12 +226,12 @@
       169
     ],
     [
-      "com.ua",
+      "weebly.com",
       169
     ],
     [
-      "weebly.com",
-      169
+      "com.ua",
+      168
     ],
     [
       "aws-prd.net",
@@ -242,12 +242,12 @@
       159
     ],
     [
-      "edgekey.net",
-      155
-    ],
-    [
       "com.mx",
       150
+    ],
+    [
+      "edgekey.net",
+      149
     ],
     [
       "iberostar.com",
@@ -258,8 +258,8 @@
       146
     ],
     [
-      "com.ar",
-      140
+      "gemius.pl",
+      139
     ]
   ]
 }

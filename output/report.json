@@ -1,18 +1,18 @@
 {
   "mode": "all",
-  "elapsed": "48.9s",
+  "elapsed": "39.2s",
   "fetchedCount": 26,
-  "totalParsed": 1212172,
-  "totalUnique": 636626,
-  "duplicatesRemoved": 575546,
-  "invalidRules": 3189,
+  "totalParsed": 1214528,
+  "totalUnique": 637585,
+  "duplicatesRemoved": 576943,
+  "invalidRules": 3187,
   "sourceCount": 26,
   "ruleTypes": {
     "subdocument": 235,
-    "xhr": 405,
+    "xhr": 410,
     "script": 1590,
     "third-party": 6821,
-    "network": 579830,
+    "network": 580785,
     "image": 1208,
     "stylesheet": 49,
     "websocket": 7,
@@ -20,38 +20,38 @@
     "media": 37,
     "font": 2,
     "badfilter": 11,
-    "popup": 3266,
+    "popup": 3270,
     "removeparam": 214,
     "generic-hide": 430,
     "element-hiding": 4,
     "generic-block": 4,
     "object": 13,
-    "document": 616,
-    "css": 39729,
+    "document": 621,
+    "css": 39717,
     "replace": 2,
-    "all": 1387,
+    "all": 1388,
     "redirect": 10,
     "important": 17,
     "csp": 38,
     "rewrite": 23,
-    "css-extended": 617
+    "css-extended": 618
   },
   "categories": {
-    "ads": 229300,
-    "ads-regional": 127556,
+    "ads": 229549,
+    "ads-regional": 127560,
     "annoyances-regional": 1840,
-    "annoyances": 4296,
+    "annoyances": 4294,
     "stylesheet": 86,
-    "regional-cn": 13939,
-    "regional-ru": 6176,
-    "tracking": 141606,
-    "privacy": 57459,
-    "social": 3458,
+    "regional-cn": 13986,
+    "regional-ru": 6175,
+    "tracking": 141735,
+    "privacy": 57466,
+    "social": 3488,
     "spyware": 690,
-    "popup": 4022,
-    "malware": 19536,
-    "phishing": 145331,
-    "ads-malware-tracking": 272589,
+    "popup": 4026,
+    "malware": 19588,
+    "phishing": 144975,
+    "ads-malware-tracking": 273877,
     "abuse": 649,
     "cookies": 476,
     "mining": 240,
@@ -63,7 +63,7 @@
   "topDomains": [
     [
       "com.br",
-      6881
+      6889
     ],
     [
       "in.net",
@@ -75,35 +75,35 @@
     ],
     [
       "com.cn",
-      2388
+      2423
     ],
     [
       "wixstudio.com",
-      2362
+      2344
     ],
     [
       "co.uk",
-      2238
+      2247
     ],
     [
       "r2.dev",
-      1760
+      1758
     ],
     [
       "omtrdc.net",
-      1720
+      1727
     ],
     [
       "com.au",
-      1341
+      1342
     ],
     [
       "optimizely.com",
-      1099
+      1105
     ],
     [
       "run.app",
-      787
+      789
     ],
     [
       "cloudfront.net",
@@ -111,27 +111,27 @@
     ],
     [
       "adobedc.net",
-      715
-    ],
-    [
-      "framer.app",
-      609
+      718
     ],
     [
       "co.jp",
       607
     ],
     [
+      "framer.app",
+      605
+    ],
+    [
       "hl.cn",
-      589
+      594
     ],
     [
       "co.kr",
-      562
+      563
     ],
     [
       "amazonaws.com",
-      507
+      511
     ],
     [
       "fbcdn.net",
@@ -147,11 +147,11 @@
     ],
     [
       "pages.dev",
-      286
+      287
     ],
     [
       "appspot.com",
-      277
+      278
     ],
     [
       "qq.com",
@@ -159,7 +159,7 @@
     ],
     [
       "cpanel.site",
-      263
+      260
     ],
     [
       "tiktokv.com",
@@ -171,7 +171,7 @@
     ],
     [
       "co.za",
-      243
+      242
     ],
     [
       "iocnt.de",
@@ -179,11 +179,11 @@
     ],
     [
       "co.nz",
-      222
+      223
     ],
     [
       "co.il",
-      213
+      214
     ],
     [
       "vivoglobal.com",
@@ -203,7 +203,7 @@
     ],
     [
       "webwave.dev",
-      189
+      190
     ],
     [
       "heytapmobile.com",
@@ -215,15 +215,15 @@
     ],
     [
       "cloudflare.net",
-      176
+      177
     ],
     [
       "com.vn",
-      171
+      172
     ],
     [
       "com.tw",
-      169
+      170
     ],
     [
       "weebly.com",
@@ -243,22 +243,22 @@
     ],
     [
       "com.mx",
-      150
+      151
     ],
     [
       "edgekey.net",
-      149
+      150
+    ],
+    [
+      "adobe.com",
+      147
     ],
     [
       "iberostar.com",
       147
     ],
     [
-      "adobe.com",
-      146
-    ],
-    [
-      "gemius.pl",
+      "com.ar",
       139
     ]
   ]

@@ -8,11 +8,11 @@
 
 | 指标 | 数值 |
 |---|---|
-| 唯一规则总数 | **636,626** |
+| 唯一规则总数 | **637,585** |
 | 规则来源 | 26 |
 | 规则类别 | 22 |
-| 重复移除 | 575,546 |
-| 最后更新 | 2026-07-01 10:01:29 |
+| 重复移除 | 576,943 |
+| 最后更新 | 2026-07-01 22:02:26 |
 
 ## 浏览器插件订阅地址
 
@@ -51,18 +51,18 @@
 
 | 类别 | 规则数 |
 |---|---|
-| ads-malware-tracking | 272,589 |
-| ads | 229,300 |
-| phishing | 145,331 |
-| tracking | 141,606 |
-| ads-regional | 127,556 |
-| privacy | 57,459 |
-| malware | 19,536 |
-| regional-cn | 13,939 |
-| regional-ru | 6,176 |
-| annoyances | 4,296 |
-| popup | 4,022 |
-| social | 3,458 |
+| ads-malware-tracking | 273,877 |
+| ads | 229,549 |
+| phishing | 144,975 |
+| tracking | 141,735 |
+| ads-regional | 127,560 |
+| privacy | 57,466 |
+| malware | 19,588 |
+| regional-cn | 13,986 |
+| regional-ru | 6,175 |
+| annoyances | 4,294 |
+| popup | 4,026 |
+| social | 3,488 |
 | whitelist | 3,235 |
 | annoyances-regional | 1,840 |
 | spyware | 690 |
@@ -79,17 +79,17 @@
 
 | 类型 | 数量 |
 |---|---|
-| network | 579,830 |
-| css | 39,729 |
+| network | 580,785 |
+| css | 39,717 |
 | third-party | 6,821 |
-| popup | 3,266 |
+| popup | 3,270 |
 | script | 1,590 |
-| all | 1,387 |
+| all | 1,388 |
 | image | 1,208 |
-| css-extended | 617 |
-| document | 616 |
+| document | 621 |
+| css-extended | 618 |
 | generic-hide | 430 |
-| xhr | 405 |
+| xhr | 410 |
 | subdocument | 235 |
 | removeparam | 214 |
 | ping | 61 |

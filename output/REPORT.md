@@ -1,14 +1,14 @@
 # Adblock Filter Aggregator Report
 
-Generated: 2026-07-01 22:04:30.626
+Generated: 2026-07-02 09:55:26.659
 
 ## Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total rules parsed | 1,214,518 |
-| Unique rules after dedup | 637,582 |
-| Duplicates removed | 576,936 |
+| Total rules parsed | 1,208,070 |
+| Unique rules after dedup | 632,821 |
+| Duplicates removed | 575,249 |
 | Invalid rules | 3,184 |
 | Sources processed | 26 |
 
@@ -18,7 +18,7 @@ Generated: 2026-07-01 22:04:30.626
 - xhr: 410
 - script: 1,590
 - third-party: 6,821
-- network: 580,770
+- network: 576,007
 - image: 1,208
 - stylesheet: 49
 - websocket: 7
@@ -33,36 +33,36 @@ Generated: 2026-07-01 22:04:30.626
 - generic-block: 4
 - object: 13
 - document: 621
-- css: 39,717
+- css: 39,718
 - replace: 2
 - all: 1,388
 - redirect: 10
 - important: 17
 - csp: 38
 - rewrite: 23
-- css-extended: 618
+- css-extended: 619
 
 ## Category Distribution
 
-- ads: 229,546
+- ads: 229,553
 - stylesheet: 86
 - script: 1,591
-- regional-cn: 13,986
-- regional-ru: 6,175
-- tracking: 141,735
-- privacy: 57,465
-- annoyances: 4,293
-- social: 3,488
+- regional-cn: 13,972
+- regional-ru: 6,166
+- tracking: 141,705
+- privacy: 57,467
+- annoyances: 4,289
+- social: 3,489
 - document: 641
 - spyware: 690
 - popup: 4,026
-- ads-regional: 127,558
-- malware: 19,588
-- phishing: 144,975
-- ads-malware-tracking: 273,876
-- abuse: 649
-- cookies: 476
-- mining: 240
+- ads-regional: 121,143
+- malware: 19,581
+- phishing: 145,372
+- ads-malware-tracking: 273,457
+- abuse: 646
+- cookies: 474
+- mining: 239
 - redirect: 96
 - whitelist: 3,235
 - csp: 39
@@ -74,34 +74,34 @@ Generated: 2026-07-01 22:04:30.626
 
 ## Top Domains
 
-- com.br: 6,889
+- com.br: 6,892
 - in.net: 5,085
 - actonservice.com: 2,974
-- com.cn: 2,423
-- wixstudio.com: 2,344
-- co.uk: 2,247
-- r2.dev: 1,758
+- com.cn: 2,422
+- wixstudio.com: 2,398
+- co.uk: 2,252
+- r2.dev: 1,756
 - omtrdc.net: 1,727
-- com.au: 1,342
+- com.au: 1,344
 - optimizely.com: 1,105
 - run.app: 789
-- cloudfront.net: 767
+- cloudfront.net: 766
 - adobedc.net: 718
-- co.jp: 607
-- framer.app: 605
-- hl.cn: 594
+- co.jp: 608
+- framer.app: 600
+- hl.cn: 590
 - co.kr: 563
 - amazonaws.com: 511
 - fbcdn.net: 496
 - px-cloud.net: 308
-- com.tr: 301
-- pages.dev: 287
+- com.tr: 302
+- pages.dev: 286
 - appspot.com: 278
 - qq.com: 272
-- cpanel.site: 260
+- cpanel.site: 263
 - tiktokv.com: 254
 - baidu.com: 249
-- co.za: 242
+- co.za: 243
 - iocnt.de: 225
 - co.nz: 223
 - co.il: 214

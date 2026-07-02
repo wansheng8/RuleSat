@@ -1,10 +1,10 @@
 {
   "mode": "all",
-  "elapsed": "45.4s",
+  "elapsed": "56.9s",
   "fetchedCount": 26,
-  "totalParsed": 1214518,
-  "totalUnique": 637582,
-  "duplicatesRemoved": 576936,
+  "totalParsed": 1208070,
+  "totalUnique": 632821,
+  "duplicatesRemoved": 575249,
   "invalidRules": 3184,
   "sourceCount": 26,
   "ruleTypes": {
@@ -12,7 +12,7 @@
     "xhr": 410,
     "script": 1590,
     "third-party": 6821,
-    "network": 580770,
+    "network": 576007,
     "image": 1208,
     "stylesheet": 49,
     "websocket": 7,
@@ -27,35 +27,35 @@
     "generic-block": 4,
     "object": 13,
     "document": 621,
-    "css": 39717,
+    "css": 39718,
     "replace": 2,
     "all": 1388,
     "redirect": 10,
     "important": 17,
     "csp": 38,
     "rewrite": 23,
-    "css-extended": 618
+    "css-extended": 619
   },
   "categories": {
-    "ads": 229546,
+    "ads": 229553,
     "stylesheet": 86,
     "script": 1591,
-    "regional-cn": 13986,
-    "regional-ru": 6175,
-    "tracking": 141735,
-    "privacy": 57465,
-    "annoyances": 4293,
-    "social": 3488,
+    "regional-cn": 13972,
+    "regional-ru": 6166,
+    "tracking": 141705,
+    "privacy": 57467,
+    "annoyances": 4289,
+    "social": 3489,
     "document": 641,
     "spyware": 690,
     "popup": 4026,
-    "ads-regional": 127558,
-    "malware": 19588,
-    "phishing": 144975,
-    "ads-malware-tracking": 273876,
-    "abuse": 649,
-    "cookies": 476,
-    "mining": 240,
+    "ads-regional": 121143,
+    "malware": 19581,
+    "phishing": 145372,
+    "ads-malware-tracking": 273457,
+    "abuse": 646,
+    "cookies": 474,
+    "mining": 239,
     "redirect": 96,
     "whitelist": 3235,
     "csp": 39,
@@ -68,7 +68,7 @@
   "topDomains": [
     [
       "com.br",
-      6889
+      6892
     ],
     [
       "in.net",
@@ -80,19 +80,19 @@
     ],
     [
       "com.cn",
-      2423
+      2422
     ],
     [
       "wixstudio.com",
-      2344
+      2398
     ],
     [
       "co.uk",
-      2247
+      2252
     ],
     [
       "r2.dev",
-      1758
+      1756
     ],
     [
       "omtrdc.net",
@@ -100,7 +100,7 @@
     ],
     [
       "com.au",
-      1342
+      1344
     ],
     [
       "optimizely.com",
@@ -112,7 +112,7 @@
     ],
     [
       "cloudfront.net",
-      767
+      766
     ],
     [
       "adobedc.net",
@@ -120,15 +120,15 @@
     ],
     [
       "co.jp",
-      607
+      608
     ],
     [
       "framer.app",
-      605
+      600
     ],
     [
       "hl.cn",
-      594
+      590
     ],
     [
       "co.kr",
@@ -148,11 +148,11 @@
     ],
     [
       "com.tr",
-      301
+      302
     ],
     [
       "pages.dev",
-      287
+      286
     ],
     [
       "appspot.com",
@@ -164,7 +164,7 @@
     ],
     [
       "cpanel.site",
-      260
+      263
     ],
     [
       "tiktokv.com",
@@ -176,7 +176,7 @@
     ],
     [
       "co.za",
-      242
+      243
     ],
     [
       "iocnt.de",
